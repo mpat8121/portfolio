@@ -22,12 +22,14 @@ class IndexPage extends React.Component {
             👋
           </span>
         </h1>
-        <p>Welcome to your new Gatsby website. You are on your home page.</p>
+        <p>Welcome to my blog!</p>
         <p>
-          This starter comes out of the box with styled components and Gatsby's
-          default starter blog running on Netlify CMS.
+          Who am I?
         </p>
-        <p>Now go build something great!</p>
+        <p>I'm a fullstack dev who has been working for the same small IT shop in Sydney, Australia for more than 10 years...<br/>
+        I also run <a href="https:www.interapptive.com.au">Interapptive</a> on the side for funsies.</p>
+        <p>My tech stack is mostly Node.Js, C#, Angular, Ionic with a little bit of Java and Swift thrown in. I also use Azure for all my DevOps needs.</p>
+        <p>This blog is short snippets of things I need often, as well as small tips I've found whilst building things, along with some case studies of my projects.</p>
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
         </Link>
