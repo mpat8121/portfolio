@@ -17,6 +17,13 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `@isamrish/gatsby-plugin-google-adsense`,
+      options: {
+        googleAdClientId: "ca-pub-8451772669867652",
+        head: true
+      }
+    },
+    {
       resolve: "gatsby-plugin-local-search",
       options: {
         name: "blog",
