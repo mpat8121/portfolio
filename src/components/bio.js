@@ -7,7 +7,7 @@
 
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import Img from "gatsby-image"
 import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
@@ -20,7 +20,7 @@ function Bio() {
         const { author, social } = data.site.siteMetadata
         return (
           <Container>
-            <Image
+            <Img
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
               style={{
