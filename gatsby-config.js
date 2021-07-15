@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Aussie Tech Bytes`,
+    title: `Tech Bytes`,
     author: `Mick Patterson`,
     description: `Short snippets of frequent functions, 
-    small tips I've found whilst building things, 
-    along with some case studies of my projects and bits about me.`,
+    small tips and tricks I've found important and useful while building things, 
+    along with some case studies of my projects and bits about me and my story`,
     siteUrl: `https://www.mickpatterson.com.au/`,
     social: {
       twitter: `Mick_Patterson_`,
