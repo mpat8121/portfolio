@@ -19,6 +19,13 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-web-monetization`,
+      options: {
+        paymentPointer: `YOUR_ILP_PAYMENT_POINTER`,
+        excludedPaths: ['exclude', 'path'] // Optional
+      }
+    },
+    {
       resolve: `@isamrish/gatsby-plugin-google-adsense`,
       options: {
         googleAdClientId: "ca-pub-8451772669867652",
