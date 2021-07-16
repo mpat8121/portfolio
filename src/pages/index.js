@@ -30,6 +30,10 @@ class IndexPage extends React.Component {
         <p>I'm a self-taught fullstack dev who has been working for a small IT shop 
           in Sydney, Australia for more than 10 years...<br />
           I also run <a href="https://www.interapptive.com.au" target="_blank">Interapptive</a> on the side for funsies.</p>
+        <p>Originally, I completed a Bachelors degree in Mechanical Engineering. And then proceeded to
+          not work a single day using the skills I spent 4 years at university acquiring. A couple of years
+          spent doing CAD drafting work before moving into low level business analytics.
+        </p>
         <p>The tech stack I work with is mostly Node.Js, C#, Angular, Ionic with a 
           little bit of Java and Swift thrown in for Capacitor plugin development. 
           SQL Server, MySQL and MongoDB are my data stores of choice.
