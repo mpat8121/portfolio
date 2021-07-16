@@ -21,8 +21,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-web-monetization`,
       options: {
-        paymentPointer: `YOUR_ILP_PAYMENT_POINTER`,
-        excludedPaths: ['exclude', 'path'] // Optional
+        paymentPointer: `$ilp.uphold.com/4giKKPBDELyR`
       }
     },
     {
