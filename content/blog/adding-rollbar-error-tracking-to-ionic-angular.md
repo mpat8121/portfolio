@@ -5,7 +5,9 @@ title: Adding Rollbar Error Tracking to Ionic + Angular
 description: A quick how-to guide to adding Rollbar cloud error logging to your
   Ionic app with Angular
 ---
-[Rollbar](https://rollbar.com/) is a real-time cloud error logging service that has SDKs for a wide variety of languages, frameworks and platforms.
+![Rollbar-Logo](../assets/116429_rollbar_logo.png "Rollbar Logo")
+
+[Rollbar](https://rollbar.com/) is a real-time cloud error logging service that has SDKs for a wide variety of languages, frameworks, and platforms.
 
 Rollbar provides in-depth trace logs for any uncaught exception in your application code, along with allowing different level log entries to be called manually. It makes tracing back the path your users take to create errors a much simpler task.
 
@@ -49,7 +51,7 @@ const rollbarConfig: Rollbar.Configuration = {
 export const RollbarService = new InjectionToken<Rollbar>("rollbar");
 ```
 
-The type of Rollbar is an interface, which means we can't inject it into our app in standard ways. In order to use it properly, we need to use an [InjectionToken](https://angular.io/api/core/InjectionToken#description) instead. This allows us to assign the value of Rollbar to a token which can be injected into our components and services.
+The type of Rollbar is an interface, which means we can't inject it into our app in standard ways. In order to use it properly, we need to use an [InjectionToken](https://angular.io/api/core/InjectionToken#description) instead. This allows us to assign the value of Rollbar to a token that can be injected into our components and services.
 
 ```javascript
 @Injectable({
