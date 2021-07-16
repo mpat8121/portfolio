@@ -5,6 +5,8 @@ title: Integrating Firebase with Ionic + Angular
 description: A quick how-to guide for adding Firebase into an Ionic application
   using Angular
 ---
+![Firebase-Logo](../assets/firebase-1024x293.png "Firebase Logo")
+
 [Firebase](https://firebase.google.com/) provides a wide variety of modules that are highly useful for mobile & web apps, particularly Authentication, Firestore DocumentDB, Storage, Analytics, and App Performance Monitoring.
 
 Here, we will integrate Firebase with an Ionic Capacitor app built with Angular.
