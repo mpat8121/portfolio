@@ -18,7 +18,7 @@ After scouring documentation and tutorials, this is where I ended up ->
 ### On the server:
 
 * I spun up a boilerplate Express server
-* Installed the socket.io npm package
+* Installed the socket.io npm package - npm i socket.io
 * Instantiated socket.io in the app.js file:
 
 ```javascript
@@ -94,3 +94,82 @@ let io = require("socket.io")(server);
   Following the server set up, we move onto the client app -> 
 
   ### On the Client:
+
+  In this case, we're working with Angular, so I installed the socket.io-client npm package.
+
+  To maintain structure within the Angular app, I then created a chat service provider:
+
+  ```javascript
+  import { Injectable } from '@angular/core';
+  import { ConfigService } from './config.service';
+  import { ChatData, ChatEmitType } from '../models/models';
+  import * as io from 'socket.io-client';
+
+  @Injectable({
+    providedIn: 'root'
+  })
+  export class ChatService {
+
+    socket: SocketIOClient.Socket;
+
+    constructor(private cs: ConfigService) {
+      
+    }
+
+    connect(): SocketIOClient.Socket {
+      this.socket = io.connect(this.cs.baseUrl);
+      return this.socket;
+    }
+
+    on(eventName: ChatEmitType, callback: any): void {
+      this.socket.on(eventName, (...args: any) => {
+        let _args = args;
+        callback.apply(this.socket, _args);
+      });
+    }
+
+    typing(data: ChatData): void {
+      const eventType: ChatEmitType = 'user-typing';
+      this.socket.emit(eventType, data);
+    }
+
+    emit(eventName: ChatEmitType, data?: ChatData): void {
+      console.log(eventName);
+      this.socket.emit(eventName, data);
+    }
+  }
+  ```
+
+The ConfigService in this case is another service file that is holding some variable values. It would be more appropriate to define these in the Angular environment.ts files instead. The baseUrl variable, in this case, is the socket.io URL which is your node-express server URL. This tells the socket client library where to connect and emit the events to. 
+
+The key method in this is the on() as it handles binding to all the socket.io-client events that occur. 
+
+Finally, in the page we actually show to the users for the chat room, simply exposing the above service is sufficient to start pushing events to the socket.io server.
+
+As part of the ngOnInit of the component, connect to the socket.io server and bind the events:
+
+```javascript
+this.socket = this.cs.connect();
+
+this.socket.on('show-message', (msg: ChatMessage) => {
+  this.messages.push(msg);
+});
+
+this.socket.on('user-typing', (username: string) => {
+  if (username != this.username) {
+    this.userIsTypingStream$.next(true);
+    this.userInput$.next();
+  }
+})
+
+this.socket.on('send-group-message', (msg: ChatMessage) => {
+  if (msg.username != this.username) {
+    this.userIsTypingStream$.next(false);
+    const c = moment(msg.created);
+    msg.created = "Today " + c.format("h:mm A");
+    msg.timestamp = c.format("YYYY-MM-DDTHH:mm:ss");
+    this.messages.push(msg);
+    this.events.publish('chat:messages', this.messages);
+  };
+});
+```
