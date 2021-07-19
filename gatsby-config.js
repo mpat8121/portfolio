@@ -19,6 +19,28 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: ["/admin"],
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+            allSitePage {
+              edges {
+                node {
+                  path
+                }
+              }
+            }
+          }
+        `,
+      }
+    },
+    {
       resolve: `gatsby-plugin-web-monetization`,
       options: {
         paymentPointer: `$ilp.uphold.com/4giKKPBDELyR`
