@@ -6,7 +6,7 @@ module.exports = {
     description: `Short snippets of frequent functions, 
     small tips and tricks I've found important and useful while building things, 
     along with some case studies of my projects and bits about me and my story`,
-    siteUrl: `https://www.mickpatterson.com.au/`,
+    siteUrl: `https://www.mickpatterson.com.au`,
     social: {
       twitter: `Mick_Patterson_`,
     },
@@ -21,23 +21,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        exclude: ["/admin"],
-        query: `
-          {
-            site {
-              siteMetadata {
-                siteUrl
-              }
-            }
-            allSitePage {
-              edges {
-                node {
-                  path
-                }
-              }
-            }
-          }
-        `,
+        excludes: [`/admin`],
       }
     },
     {
