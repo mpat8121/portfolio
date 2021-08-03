@@ -18,6 +18,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-dark-mode',
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
