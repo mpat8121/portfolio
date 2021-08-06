@@ -33,12 +33,9 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p>
-              Written by <strong>{author}</strong>.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                Follow me on Twitter
-              </a>
+            <p style={{color: 'var(--textLink)'}}>
+              Blog by <a href={`https://twitter.com/${social.twitter}`} style={{color: 'var(--textLink)'}}>
+                {author}</a>
             </p>
           </Container>
         )
