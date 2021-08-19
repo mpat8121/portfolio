@@ -12,7 +12,7 @@ In my infinite wisdom, I thought these would be best placed into the HTTP header
 
 It has taken me two full days to get the headers appearing in the client Javascript...
 
-## Adding Response Headers
+### Adding Response Headers
 
 Azure functions in nodejs expose a response object in the context of the function:
 
