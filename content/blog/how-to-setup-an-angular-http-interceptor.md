@@ -6,7 +6,7 @@ description: An HTTP interceptor is a piece of logic that is able to attach to a
   HTTP request or response. This logic can then modify the data being
   transferred.
 ---
-## What is an HTTP Interceptor?
+### What is an HTTP Interceptor?
 
 Every HTTP transaction that occurs between the client and server of web applications has a request and a response.
 
