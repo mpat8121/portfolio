@@ -10,6 +10,8 @@ module.exports = {
     social: {
       twitter: `Mick_Patterson_`,
     },
+    keywords: [`blog`, `angular`, `javascript`, `ionic`, `nodejs`, `sql`,
+    `mongo`, `sql server`, `c#`]
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,

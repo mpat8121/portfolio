@@ -1,6 +1,21 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+
+  createTypes(`
+    type Mdx implements Node {
+      frontmatter: MdxFrontmatter!
+    }
+    type MdxFrontmatter {
+      updatedAt: Date
+      featured: File @fileByRelativePath
+    }
+  `)
+}
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
