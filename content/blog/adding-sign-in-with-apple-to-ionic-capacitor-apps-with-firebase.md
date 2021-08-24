@@ -12,9 +12,13 @@ If you are new to [Firebase](https://firebase.google.com) then you'll need to si
 
 Give your project a name in step 1, if you want analytics, leave it enabled in step 2 and hit create.
 
-Once it has finished spinning up, hit the iOS button to add an iOS app to the project. Apple sign in is only really useful for users with Apple devices, so iOS only.
+Once it has finished spinning up, hit the iOS button to add an iOS app to the project. Apple sign-in is only really useful for users with Apple devices, so iOS only.
+
+You will need to provide a bundle ID but everything else can be ignored for now.
 
 ### Create an Ionic Capacitor app
+
+Over in a terminal, create a new ionic app using the blank template and any framework you prefer from the options.
 
 ### Add Sign-in with Apple Capacitor Plugin
 
