@@ -20,7 +20,31 @@ You will need to provide a bundle ID but everything else can be ignored for now.
 
 Over in a terminal, create a new ionic app using the blank template and any framework you prefer from the options.
 
-### Add Sign-in with Apple Capacitor Plugin
+`ionic start appleSignInDemo blank`
+
+Once that is finished, we need to add Capacitor to the app:
+
+`npm i @capacitor/core`
+
+`npm i -D @capacitor/cli`
+
+`npx cap init`
+
+The command will prompt some questions about the naming of your app. Make sure it matches the bundle you specified in the Firebase console.
+
+### Add iOS and Sign-in with Apple Capacitor Plugin
+
+After the ionic CLI has finished creating the app we need to add the iOS platform and the Apple Sign-in plugin:
+
+`npm i @capacitor/ios`
+
+`npx cap add ios`
+
+The [Apple Sign-in plugin](https://github.com/capacitor-community/apple-sign-in) is part of the [Capacitor Community](https://github.com/capacitor-community) Github repo and was originally written by Max Lynch (the CEO of Ionic itself).
+
+The installation is pretty straightforward:
+
+`npm i @capacitor-community/apple-sign-in`
 
 ### Configure Firebase in Ionic
 
