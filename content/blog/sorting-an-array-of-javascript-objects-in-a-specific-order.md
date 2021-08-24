@@ -4,6 +4,8 @@ date: 2021-07-17T07:17:55.451Z
 title: Sorting an Array of JavaScript Objects in a Specific Order
 description: Sorting an Array of JavaScript Objects in a Specific Order
 ---
+![Ordered-Cars](../assets/ordered-cars.jpg "Ordered Cars")
+
 Sorting an array of objects in javascript is simple enough using the default sort() function for all arrays:
 
 ```javascript
