@@ -9,7 +9,11 @@ description: Setting up an API with NodeJs and Express is a topic that is well
   versioning setup. In this post we'll cover one simple way to configure this
   with NodeJs and Express.
 ---
-Setting up an Express API
+### Why do we need API Versioning?
+
+For a simple API, being able to create separate versions may not be necessary. However, for larger API's with more complex requirements, it may be necessary to make breaking changes that you don't want to expose your users to. In this case, your best bet is to create a new version of the API so that both the initial version and the new version can be run in parallel while you transition your users to an updated client that plays nicely with the new version of your API.
+
+### Setting up an Express API
 
 In a command/terminal window, navigate to a new folder to create the project in. In that folder run `npm init`
 
@@ -33,7 +37,7 @@ app.listen(port, () => {
 });
 ```
 
-
+### Setting up the Routes
 
 Then, in the project directory create a Routes folder. This folder will hold the separate directories that control the navigation routes to our API endpoints.
 
@@ -53,6 +57,8 @@ Now, in this Routes folder there are a few options on how we proceed:
 
 * v1/users/index.js
 * v2/users/index.js
+
+### Adding the Routes to your App
 
 Now, in the app.js file we'll add the routing options:
 
