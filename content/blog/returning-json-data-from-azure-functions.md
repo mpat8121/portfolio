@@ -1,7 +1,12 @@
 ---
+path: returning-json-data-from-azure-functions
+date: 2021-07-13T17:12:03.284Z
 title: Returning JSON objects from an Azure Function in Node.js & Typescript
-date: "2021-07-13T17:12:03.284Z"
-description: "Return JSON from an Azure Function with Typescript"
+description: Often, by default, an Azure Function written in NodeJs stringifies
+  the response object being returned. This results in unnecessary JSON parsing
+  on the client in order to be able to process the response. Luckily, we can
+  avoid this by making a simple change to the Azure Function to ensure the
+  object is returned.
 ---
 
 By default, a new Javascript/Typescript function created in an Azure functions app stringifies any data the function returns in the context.res object. 
