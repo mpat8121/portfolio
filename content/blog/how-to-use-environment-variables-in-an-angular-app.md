@@ -12,8 +12,9 @@ When a new Angular app is created via the CLI tooling using ng new, one of the f
 
 By default, this folder contains two files:
 
-\- environment.ts\
-- environment.prod.ts
+\- environment.ts
+
+\- environment.prod.ts
 
 These files come prepopulated with the following code:
 
@@ -40,3 +41,27 @@ The simple explanation of the usage of these files is that any values added into
 The different files are used depending on the build type defined. Running ng build --prod will cause the environment.prod.ts file to be used in place of the standard environment.ts file that is used for the normal ng build process.
 
 This will result in any reference to the environment files from within the Angular app to use the correct environment value as defined in the relative file.
+
+In your app itself, there is no need to import the specific file to separate your environments. Only the default or main environment file should be imported into your Angular files:
+
+```typescript
+import { Injectable } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
+import { environment } from '../../environments/environment';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class DataService {
+  constructor(
+    private http: HttpClient
+  ) {}
+  
+  // Get some data. If in development mode return a string array.
+  // If in prod mode get string array from server via API
+  async getData(url: string): Promise<string[]> { 
+    if (!environment.production) return ['development', 'data', 'values'];
+    return this.http.get(url).toPromise();
+  }
+}
+```
