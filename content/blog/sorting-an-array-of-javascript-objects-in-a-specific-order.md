@@ -2,7 +2,10 @@
 path: Sorting-Array-JavaScript-Objects-Specific-Order
 date: 2021-07-17T07:17:55.451Z
 title: Sorting an Array of JavaScript Objects in a Specific Order
-description: Sorting an Array of JavaScript Objects in a Specific Order
+description: Sorting an Array of JavaScript Objects in a Specific Order is a use
+  case that comes up quite frequently when building UI layouts to meet client
+  specifications. Unfortunately, it is more challenging than a standard array
+  sort and requires additional setup work.
 ---
 ![Ordered-Cars](../assets/ordered-cars.jpg "Ordered Cars")
 
