@@ -4,7 +4,8 @@ import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
-import {Toggle} from "react-toggle-component"
+import { Toggle } from "react-toggle-component"
+import CookieConsent from "react-cookie-consent";
 
 class Layout extends React.Component {
   render() {
@@ -50,12 +51,12 @@ class Layout extends React.Component {
             <ThemeToggler>
               {({ theme, toggleTheme }) => (
                 <label htmlFor="theme-toggle">
-                    <Toggle
-                      onToggle={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
-                      name="theme-toggle"
-                      checked={theme === "dark"}
-                      backgroundColor="var(--textTitle)"
-                    />
+                  <Toggle
+                    onToggle={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+                    name="theme-toggle"
+                    checked={theme === "dark"}
+                    backgroundColor="var(--textTitle)"
+                  />
                   <i class="fas fa-moon"></i>
                 </label>
               )}
@@ -66,6 +67,13 @@ class Layout extends React.Component {
         <Footer>
           © {new Date().getFullYear()}, Mick Patterson
         </Footer>
+        <CookieConsent
+          location="bottom"
+          buttonText="Accept"
+          declineButtonText="Decline"
+          cookieName="gatsby-gdpr-google-analytics">
+          This site uses cookies ...
+        </CookieConsent>
       </Wrapper>
     )
   }

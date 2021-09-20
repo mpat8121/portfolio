@@ -2,9 +2,7 @@
 path: Add-Apple-Sign-in-Ionic-Capacitor-Firebase
 date: 2021-08-23T12:04:55.793Z
 title: Adding Sign-in with Apple to Ionic Capacitor Apps with Firebase
-description: Authentication is vital for any app with user accounts. Apple
-  requires that their authentication provider is available on all apps submitted
-  to the iOS app store.
+description: Authentication is vital for any app with user accounts. Apple requires that their authentication provider is available on all apps submitted to the iOS app store.
 ---
 ### Setup the Firebase Project
 

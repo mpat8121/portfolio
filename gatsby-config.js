@@ -154,5 +154,15 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: `UA-150549522-1`,
+        },
+        environments: ['production', 'developmnet']
+        
+      }
+    }
   ],
 }
