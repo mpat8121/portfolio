@@ -11,6 +11,16 @@ description: Date manipulation and calculations are core to a huge amount of
 ---
 ![glasses-sitting-on-calendar](../assets/pexels-olya-kobruseva-5386754.jpg "Calendar of Days")
 
+Date manipulation and calculations are core to a huge amount of enterprise business logic. Being a wizard at using dates and turning them into simple values to run your logic on is critical. Knowing how to calculate the number of days between two dates is an essential piece of logic to have in your utility belt. This post will explain clearly how the math works as well as creating a simple utility function that can be used anywhere.
+
+### Understanding the Javascript Date Object
+
+The Javascript date object API is big and provides a wide range of functionality around dates in general. We're not going to need to dig into it, but it is well worth looking further into for other requirements.
+
+
+
+
+
 ```javascript
 function daysBetweenTwoDates(firstDate, secondDate) {
    /** 
