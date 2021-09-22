@@ -110,7 +110,7 @@ export const pageQuery = graphql`
   }
 `
 const MarkdownWrapper = styled.div`
-  p, ul, h3 {
+  p, ul, h3, h4, li {
     color: var(--textNormal)
   }
   a {
