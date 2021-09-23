@@ -11,14 +11,14 @@ description: Frontend developers will inevitably need to make HTTP requests
 
  Frontend developers will inevitably need to make HTTP requests frequently when building out the client-side of a full-stack app. Having a solid understanding of these methods and how to build the requests is essential in being a top-shelf frontend developer.
 
-## The HTTP Methods
+### The HTTP Methods
 
 There are four main HTTP methods that a good frontend developer will know like the back of their hand:
 
-\- GET\
-- POST\
-- PUT\
-- DELETE
+1. GET
+2. POST
+3. PUT
+4. DELETE
 
 ### HTTP Get
 
