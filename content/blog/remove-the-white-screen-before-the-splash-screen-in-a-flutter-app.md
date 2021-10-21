@@ -9,11 +9,11 @@ description: By default, iOS and Android show a native loading screen before the
   good user experience. We are unable to remove this native screen, but we can
   customise it a little bit to make it less intrusive.
 ---
-## Why is there a white screen before the splash?
+### Why is there a white screen before the splash?
 
 By default, iOS and Android show a native loading screen before the splash screen of a Flutter app is displayed. This default screen is completely white which means your app will have a white "flash" before showing your custom splash screen in your app's colours and with your logo. This is not a good user experience. We are unable to remove this native screen, but we can customise it a little bit to make it less intrusive.
 
-## Customising the white screen
+### Customising the white screen
 
 The white screen is native to the platform (Android and iOS) so it can't be removed. Fortunately, both platforms provide the ability to set the background colour of this screen. This means that at a minimum, the white screen can be incorporated into the loading process of your app without sticking out like the plain white can.
 
