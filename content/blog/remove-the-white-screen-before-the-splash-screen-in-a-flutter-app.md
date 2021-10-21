@@ -44,7 +44,6 @@ The styles.xml will end up looking something like:
         <item name="android:windowBackground">?android:colorBackground</item>
     </style>
 </resources>
-
 ```
 
 Finally, to finish the setup, in the AndroidManifest.xml file we need to add references in:
@@ -84,7 +83,7 @@ The iOS solution is simpler and can be done in two places.
 
 The first is directly in the storyboard file if you can't/don't work directly in XCode very often.
 
-Open up LaunchScreen.storyboard found in ios/Runner/Base.Iproj. In this file, you will find one tag called <color> with a key of "backgroundColor" and attributes red, green, blue and alpha numbers. By default, they will all be set to 1. The other attributes are to be left as-is.
+Open up LaunchScreen.storyboard found in ios/Runner/Base.Iproj. In this file, you will find one tag called "color" with a key of "backgroundColor" and attributes red, green, blue and alpha numbers. By default, they will all be set to 1. The other attributes are to be left as-is.
 
 The trick with editing this file directly is that the values need to be decimals and so if you are working in standard RGB colour numbers, you need to divide them by 255 to get the equivalent decimal value.
 
