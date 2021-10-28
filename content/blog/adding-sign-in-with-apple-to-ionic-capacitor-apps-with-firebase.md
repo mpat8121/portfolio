@@ -2,7 +2,9 @@
 path: Add-Apple-Sign-in-Ionic-Capacitor-Firebase
 date: 2021-08-23T12:04:55.793Z
 title: Adding Sign-in with Apple to Ionic Capacitor Apps with Firebase
-description: Authentication is vital for any app with user accounts. Apple requires that their authentication provider is available on all apps submitted to the iOS app store.
+description: Authentication is vital for any app with user accounts. Apple
+  requires that their authentication provider is available on all apps submitted
+  to the iOS app store.
 ---
 ### Setup the Firebase Project
 
@@ -46,4 +48,76 @@ The installation is pretty straightforward:
 
 ### Configure Firebase in Ionic
 
+In your ionic you will need to add the Firebase npm package:
+
+`npm i firebase`
+
+Then, in your app.module.ts (if you've created an Angular based Ionic project) you'll need to add to the general imports:
+
+`import firebase from "firebase/app";`
+
+and then above the NgModule declaration:
+
+`firebase.initializeApp(environment.firebaseConfig);`
+
+Now we need to add the Firebase details into the environment.ts file:
+
+```
+export const environment = {
+  production: false,
+  firebaseConfig: {
+    apiKey: "YOU-API-KEY",
+    authDomain: "YOUR-APP-DOMAIN.firebaseapp.com",
+    databaseURL: "https://YOUR-APP-DOMAIN.firebaseio.com",
+    projectId: "PROJECT-NAME",
+    storageBucket: "PROJECT-NAME.appspot.com",
+    messagingSenderId: "SENDER-ID-NUMBER",
+    appId: "APP-ID-NUMBER",
+    measurementId: "MEASUREMENT-ID"
+  }
+}
+```
+
+These values come from the Firebase Project settings.
+
 ### Configure Apple Sign-in for Ionic
+
+Using the CLI, create a login page:
+
+ionic generate page login
+
+Then, in the html, add the Apple Sign-in button. You will need to style this button in-line with Apple's style guide to ensure compliance.
+
+```html
+<ion-content>
+  <ion-button expand="block" color="dark" class="ion-margin-bottom" *ngIf="iosVersion >= 13"
+    (click)="signIn('apple')">
+    <ion-icon name="logo-apple"></ion-icon> &nbsp; Sign in with Apple
+  </ion-button>
+ </ion-content>
+```
+
+Sign in with Apple is not supported on anything earlier than iOS 13, so we are hiding the button if the user is on an older version.
+
+Then, in the login.component.ts we need to implement the sign-in logic (this is a Capacitor V2 example for the import of the plugins):
+
+```typescript
+import firebase from "firebase/app";
+import "firebase/auth";
+import { Plugins } from "@capacitor/core";
+const { SignInWithApple } = Plugins;
+
+async signIn(provider: string): Promise<void> {
+  const { response } = await SignInWithApple.Authorize();
+  let provider = new firebase.auth.OAuthProvider("apple.com");
+  provider.addScope("email");
+  provider.addScope("name");
+  credential = provider.credential({
+    idToken: response.identityToken,
+  });
+  // Redirect preferred for mobile according to above
+  result = await firebase.auth().signInWithCredential(credential);
+}
+```
+
+The result object (if logged in with the correct username/password combination will be the Firebase authentication result containing the user information needed to continue personalising the app and to make any subsequent authenticated Firebase API calls.
