@@ -57,7 +57,7 @@ class Layout extends React.Component {
                     checked={theme === "dark"}
                     backgroundColor="var(--textTitle)"
                   />
-                  <i class="fas fa-moon"></i>
+                  <i className="fas fa-moon"></i>
                 </label>
               )}
             </ThemeToggler>
