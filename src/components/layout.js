@@ -6,6 +6,7 @@ import { rhythm } from "../utils/typography"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
 import { Toggle } from "react-toggle-component"
 import CookieConsent from "react-cookie-consent";
+import { slide as Menu } from 'react-burger-menu'
 
 class Layout extends React.Component {
   render() {
@@ -32,6 +33,11 @@ class Layout extends React.Component {
     );
     return (
       <Wrapper>
+        <Menu styles={menuStyles}>
+          <Link id="home" href="/">Home</Link>
+          <Link id="about" href="/about">About</Link>
+          <Link id="privacy" href="/privacy">Privacy</Link>
+        </Menu>
         <div
           style={{
             marginLeft: `auto`,
@@ -68,8 +74,8 @@ class Layout extends React.Component {
           © {new Date().getFullYear()}, Mick Patterson
         </Footer>
         <CookieConsent
-          style={{width: '50%'}}
-          buttonStyle={{background: 'green'}}
+          style={{ width: '50%' }}
+          buttonStyle={{ background: 'green' }}
           location="bottom"
           buttonText="Accept"
           enableDeclineButton={true}
@@ -79,6 +85,25 @@ class Layout extends React.Component {
         </CookieConsent>
       </Wrapper>
     )
+  }
+}
+
+const menuStyles = {
+  bmBurgerBarsHover: {
+    background: 'var(--textNormal)'
+  },
+  bmBurgerButton: {
+    position: 'fixed',
+    width: '36px',
+    height: '30px',
+    left: '36px',
+    top: '36px'
+  },
+  bmBurgerBars: { background: 'var(--textNormal)' },
+  bmMenu: {
+    background: 'var(--textNormal)',
+    padding: '2.5em 1.5em 0',
+    fontSize: '1.15em'
   }
 }
 
