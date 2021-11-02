@@ -70,7 +70,6 @@ class Layout extends React.Component {
         <CookieConsent
           style={{width: '50%'}}
           buttonStyle={{background: 'green'}}
-          debug={true}
           location="bottom"
           buttonText="Accept"
           enableDeclineButton={true}
