@@ -68,11 +68,15 @@ class Layout extends React.Component {
           © {new Date().getFullYear()}, Mick Patterson
         </Footer>
         <CookieConsent
+          style={{width: '50%'}}
+          buttonStyle={{background: 'green'}}
+          debug={true}
           location="bottom"
           buttonText="Accept"
+          enableDeclineButton={true}
           declineButtonText="Decline"
           cookieName="gatsby-gdpr-google-analytics">
-          This site uses cookies ...
+          This site uses cookies to improve your experience
         </CookieConsent>
       </Wrapper>
     )
