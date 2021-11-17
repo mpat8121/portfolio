@@ -5,6 +5,7 @@ title: How to setup an Angular HTTP Interceptor
 description: An HTTP interceptor is a piece of logic that is able to attach to a
   HTTP request or response. This logic can then modify the data being
   transferred.
+categories: []
 ---
 ### What is an HTTP Interceptor?
 

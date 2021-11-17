@@ -8,6 +8,7 @@ description: Date manipulation and calculations are core to a huge amount of
   number of days between two dates is an essential piece of logic to have in
   your utility belt. This post will explain clearly how the math works as well
   as creating a simple utility function that can be used anywhere.
+categories: []
 ---
 ![calculate-days-between-two-dates-javascript](../assets/pexels-olya-kobruseva-5386754.jpg "How to calculate the number of days between two dates in Javascript")
 

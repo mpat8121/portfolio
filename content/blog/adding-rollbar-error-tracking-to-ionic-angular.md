@@ -4,6 +4,7 @@ date: 2021-07-14T01:57:25.441Z
 title: Adding Rollbar Error Tracking to Ionic + Angular
 description: A quick how-to guide to adding Rollbar cloud error logging to your
   Ionic app with Angular
+categories: ["ionic", "angular", "javascript"]
 ---
 ![Rollbar-Logo](../assets/116429_rollbar_logo.png "Rollbar Logo")
 

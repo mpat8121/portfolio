@@ -6,6 +6,7 @@ description: Manipulating dates in Javascript is an extremely common requirement
   for a large number of apps and server logic (when using NodeJs). The ability
   to retrieve the number of months between dates is a very common and useful
   skill to have in your toolkit.
+categories: []
 ---
 Manipulating dates in Javascript is an extremely common requirement for a large number of apps and server logic (when using NodeJs). The ability to retrieve the number of months between dates is a very common and useful skill to have in your toolkit.
 

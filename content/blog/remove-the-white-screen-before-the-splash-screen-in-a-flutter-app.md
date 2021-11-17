@@ -8,6 +8,7 @@ description: By default, iOS and Android show a native loading screen before the
   custom splash screen in your app's colours and with your logo. This is not a
   good user experience. We are unable to remove this native screen, but we can
   customise it a little bit to make it less intrusive.
+categories: []
 ---
 ### Why is there a white screen before the splash?
 

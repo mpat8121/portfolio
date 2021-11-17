@@ -4,6 +4,7 @@ date: 2021-07-14T01:45:40.922Z
 title: Integrating Firebase with Ionic + Angular
 description: A quick how-to guide for adding Firebase into an Ionic application
   using Angular
+categories: []
 ---
 ![Firebase-Logo](../assets/firebase-1024x293.png "Firebase Logo")
 

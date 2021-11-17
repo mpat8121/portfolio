@@ -7,6 +7,7 @@ description: Building an API with NodeJs and Express is always one of the key
   user requests, the NodeJs API application can also help maintain database
   integrity by performing scheduled maintenance checks to ensure everything
   remains in solid working order.
+categories: []
 ---
 ![How to Setup Scheduled Functions with NodeJs, Express and Node-Cron](../assets/pexels-pixabay-273153.jpg "How to Setup Scheduled Functions with NodeJs, Express and Node-Cron")
 

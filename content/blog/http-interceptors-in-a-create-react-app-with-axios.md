@@ -5,6 +5,7 @@ title: HTTP Interceptors in a Create-React-App with Axios
 description: A how-to for adding HTTP interceptors to a Create-React-App app
   with the Axios npm library to check and modify request and response headers
   for all HTTP requests
+categories: []
 ---
 ![React-Stock-Image](../assets/react-face-code.jpg "React Code")
 

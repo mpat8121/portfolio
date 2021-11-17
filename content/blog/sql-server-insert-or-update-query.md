@@ -4,6 +4,7 @@ date: 2021-07-31T05:48:17.519Z
 title: SQL Server Insert or Update Query with T-SQL & Merge
 description: A standard SQL Server query to execute that will insert a new row
   or update an existing one
+categories: []
 ---
 ![SQL-Database](../assets/database.jpg "SQL Database")
 
