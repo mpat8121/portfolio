@@ -94,6 +94,7 @@ export const pageQuery = graphql`
       body
       frontmatter {
         title
+        categories
         date(formatString: "MMMM DD, YYYY")
         description
         image: featured {
