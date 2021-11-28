@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `Tech Bytes`,
+    title: `Mick Patterson`,
     author: `Mick Patterson`,
     description: `Short snippets of frequent functions, 
     small tips and tricks I've found important and useful while building things, 
@@ -21,7 +21,10 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
-    'gatsby-plugin-dark-mode',
+    `gatsby-plugin-dark-mode`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-feed-mdx`,
+    `gatsby-plugin-root-import`,
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
@@ -83,8 +86,6 @@ module.exports = {
           })),
       },
     },
-    `gatsby-plugin-feed-mdx`,
-    `gatsby-plugin-root-import`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -7,7 +7,8 @@ description: Arrays are one of the most common data structures you will use in
   contain complex data objects. Creating lists that have clean information in
   them is vital for a good user experience. One way to do this is to make sure
   you are not displaying the same information multiple times.
-categories: []
+categories: ["Javascript"]
+image: ../assets/duplicate-entries-feature.jpg
 ---
 Arrays are one of the most common data structures you will use in Javascript. They create lists for displaying to users that can be simple or contain complex data objects. Creating lists that have clean information in them is vital for a good user experience. One way to do this is to make sure you are not displaying the same information multiple times.
 

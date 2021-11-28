@@ -70,3 +70,4 @@ yarn-error.log
 
 # VSCode Config Files
 .vscode
+__queuestorage__

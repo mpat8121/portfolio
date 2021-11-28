@@ -6,7 +6,8 @@ description: The humble HTML input tag is actually an extremely useful
   and   powerful HTML tag. Not only are they used for constructing forms, but
   they   allow for all sorts of additional functionality to be added to your
   page.
-categories: ["html"]
+categories: ["HTML"]
+image: ../assets/http-input-feature.jpg
 ---
 The humble HTML input tag is actually an extremely useful and powerful HTML tag. Not only are they used for constructing forms, but they allow for all sorts of additional functionality to be added to your page.
 

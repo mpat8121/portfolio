@@ -1,21 +1,35 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXProvider } from "@mdx-js/react";
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
-import styled from "styled-components"
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.mdx
     const siteTitle = this.props.data.site.siteMetadata.title
     const image = post.frontmatter.image
-      ? post.frontmatter.image.childImageSharp.resize
+      ? post.frontmatter.image.childImageSharp.sizes.src
       : null
     const { previous, next } = this.props.pageContext
+
+    const h2 = props => <h2 className="title is-4" style={{ color: "var(--text)" }} {...props} />
+    const h3 = props => <h3 className="title is-5" style={{color: "var(--text)"}} {...props} />
+    const h4 = props => <h4 className="title is-6" style={{color: "var(--text)"}} {...props} />
+    const p = props => (
+      <div className="content"><p {...props} /></div>
+    )
+
+    const components = {
+      h2,
+      h3,
+      h4,
+      p,
+    }
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -25,21 +39,30 @@ class BlogPostTemplate extends React.Component {
           image={image}
           pathname={this.props.location.pathname}
         />
-        <h1 style={{ color: 'var(--textTitle)' }}>{post.frontmatter.title}</h1>
+        <h1 className="title" style={{ color: 'var(--text)' }}>{post.frontmatter.title}</h1>
+
         <p
           style={{
             ...scale(-1 / 5),
             display: `block`,
             marginBottom: rhythm(1),
             marginTop: rhythm(-1),
-            color: 'var(--textNormal)'
+            color: 'var(--text)'
           }}
         >
           {post.frontmatter.date}
         </p>
-        <MarkdownWrapper>
-          <MDXRenderer>{post.body}</MDXRenderer>
-        </MarkdownWrapper>
+        <p className="content"><Link style={{ color: 'var(--text)' }}>
+          <div className="tags">{post.frontmatter.categories.map(category => {
+            return (<span key={category} className="tag">{category}</span>)
+          })}
+          </div>
+        </Link> </p>
+        <p>
+          <MDXProvider components={components}>
+            <MDXRenderer>{post.body}</MDXRenderer>
+          </MDXProvider>
+        </p>
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -55,19 +78,19 @@ class BlogPostTemplate extends React.Component {
             justifyContent: `space-between`,
             listStyle: `none`,
             padding: 0,
-            
+
           }}
         >
           <li>
             {previous && (
-              <Link style={{color: 'var(--textLink)'}} to={`/blog${previous.fields.slug}`} rel="prev">
+              <Link style={{ color: 'var(--text)' }} to={`/blog${previous.fields.slug}`} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link style={{color: 'var(--textLink)'}} to={`/blog${next.fields.slug}`} rel="next">
+              <Link style={{ color: 'var(--text)' }} to={`/blog${next.fields.slug}`} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}
@@ -97,12 +120,10 @@ export const pageQuery = graphql`
         categories
         date(formatString: "MMMM DD, YYYY")
         description
-        image: featured {
+        image {
           childImageSharp {
-            resize(width: 1200) {
-              src
-              height
-              width
+            sizes(maxWidth: 600) {
+              ...GatsbyImageSharpSizes
             }
           }
         }
@@ -110,11 +131,3 @@ export const pageQuery = graphql`
     }
   }
 `
-const MarkdownWrapper = styled.div`
-  p, ul, h3, h4, li {
-    color: var(--textNormal)
-  }
-  a {
-    color: var(--textLink)
-  }
-`;

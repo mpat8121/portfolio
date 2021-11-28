@@ -6,7 +6,8 @@ description: Sorting an Array of JavaScript Objects in a Specific Order is a use
   case that comes up quite frequently when building UI layouts to meet client
   specifications. Unfortunately, it is more challenging than a standard array
   sort and requires additional setup work.
-categories: []
+categories: ["Javascript"]
+image: "../assets/ordered-cars.jpg"
 ---
 ![Ordered-Cars](../assets/ordered-cars.jpg "Ordered Cars")
 

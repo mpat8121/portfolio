@@ -5,7 +5,8 @@ title: How to Use Environment Variables in An Angular App
 description: Environment variables in an Angular app are extremely useful for
   storing constants in your app that need to be used frequently, such as API
   url's, API access keys, Firebase config values and other general flags.
-categories: []
+categories: ["Angular", "Javascript", "Productivity"]
+image: ../assets/angular-env-feature.jpg
 ---
 Environment variables in an Angular app are extremely useful for storing constants in your app that need to be used frequently, such as API url's, API access keys, Firebase config values and other general flags.
 

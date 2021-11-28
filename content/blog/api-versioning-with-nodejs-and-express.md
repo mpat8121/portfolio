@@ -8,7 +8,8 @@ description: Setting up an API with NodeJs and Express is a topic that is well
   Anytime you see an API url with /v1/ in it, the API is using an internal
   versioning setup. In this post we'll cover one simple way to configure this
   with NodeJs and Express.
-categories: []
+categories: ["NodeJs", "Javascript"]
+image: ../assets/api-versioning-feature.jpg
 ---
 ### Why do we need API Versioning?
 

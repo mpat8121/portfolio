@@ -5,7 +5,8 @@ title: Setting iOS App to Portrait Only for iPads
 description: A quick how-to for setting portrait (or landscape) only for your
   iOS app for iPads as the default setting in XCode doesn't apply to all devices
   equally.
-categories: []
+categories: ["iOS"]
+image: "../assets/screen-shot-2021-07-17-at-8.38.02-pm.png"
 ---
 A quick tip here for new-to-XCode iOS developers.
 

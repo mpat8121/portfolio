@@ -10,6 +10,8 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.15",
     "@isamrish/gatsby-plugin-google-adsense": "^1.2.0",
@@ -29,6 +31,7 @@
     "gatsby-plugin-netlify-cms": "^4.3.7",
     "gatsby-plugin-offline": "^3.2.23",
     "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sass": "^5.2.0",
     "gatsby-plugin-sharp": "^2.14.4",
     "gatsby-plugin-sitemap": "^4.5.0",
     "gatsby-plugin-styled-components": "^3.0.7",
@@ -53,6 +56,7 @@
     "react-toggle-component": "^3.0.8",
     "react-typography": "^0.16.19",
     "react-use-flexsearch": "^0.1.1",
+    "sass": "^1.43.5",
     "styled-components": "^4.2.0",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
@@ -60,8 +64,10 @@
     "typography-theme-wordpress-2016": "^0.16.19"
   },
   "devDependencies": {
+    "bulma": "^0.9.3",
     "gatsby-cli": "^2.12.66",
     "gatsby-plugin-root-import": "^2.0.5",
+    "node-sass": "^6.0.1",
     "prettier": "^1.17.0"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",

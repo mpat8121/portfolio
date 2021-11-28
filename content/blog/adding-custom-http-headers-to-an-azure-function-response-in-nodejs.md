@@ -6,6 +6,7 @@ description: Adding custom headers to the response object of of an Azure
   Function written in Node sounds simple. Turns out it may not be as simple as
   it sounds.
 categories: ["nodejs", "azure functions", "http"]
+image: ../assets/http-headers-feature.jpg
 ---
 I'm building a Functions app API for a project at work. This API needs to communicate with another product's API and so is moving OAuth tokens back and forth. 
 

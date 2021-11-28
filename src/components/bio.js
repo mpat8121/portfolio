@@ -25,7 +25,7 @@ function Bio() {
               alt={author}
               style={{
                 marginRight: rhythm(1 / 2),
-                marginBottom: 0,
+                marginBottom: rhythm(1 / 2),
                 minWidth: 50,
                 borderRadius: `100%`,
               }}
@@ -33,8 +33,8 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p style={{color: 'var(--textLink)'}}>
-              Blog by <a href={`https://twitter.com/${social.twitter}`} style={{color: 'var(--textLink)'}}>
+            <p style={{ color: 'var(--text)', 'margin-top': '15px' }}>
+              Blog by <a href={`https://twitter.com/${social.twitter}`} style={{ color: 'var(--text)' }}>
                 {author}</a>
             </p>
           </Container>

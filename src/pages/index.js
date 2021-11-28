@@ -1,4 +1,5 @@
 import React from "react"
+import "../styles/library.scss"
 import { graphql } from "gatsby"
 
 import Bio from "../components/bio"
@@ -14,7 +15,7 @@ class IndexPage extends React.Component {
     const localSearchBlog = data.localSearchBlog
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={location} title={siteTitle}>
         <SEO title="All posts"
           keywords={
             [
@@ -58,6 +59,14 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            categories
+            image {
+              childImageSharp {
+                sizes(maxWidth: 600) {
+                  ...GatsbyImageSharpSizes
+                }
+              }
+            }
           }
         }
       }
