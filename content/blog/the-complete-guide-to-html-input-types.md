@@ -6,7 +6,8 @@ description: The humble HTML input tag is actually an extremely useful
   and   powerful HTML tag. Not only are they used for constructing forms, but
   they   allow for all sorts of additional functionality to be added to your
   page.
-categories: ["HTML"]
+categories:
+  - HTML
 image: ../assets/http-input-feature.jpg
 ---
 The humble HTML input tag is actually an extremely useful and powerful HTML tag. Not only are they used for constructing forms, but they allow for all sorts of additional functionality to be added to your page.
@@ -66,13 +67,33 @@ They are useful for auto-populating data that you don't want your users to see o
 
 ## Image
 
+This image input type allows an image to be used in place of a button. It's a fast/convenient way to be able to customise buttons for your forms and general UI.
+
+Most modern CSS frameworks provide extensive customisation of the traditional button HTML element, so this input type is not frequently required.
+
 ## Number
+
+The number input type restricts the user to only being able to enter actual numbers. If the user tries to type any alphabetic character, the input will not accept it. 
+
+This input type is especially useful on e-commerce applications where the user needs to select a quantity of items.
+
+The input is versatile in that it can be configured to allow decimals as well as providing up and down arrows with pre-defined increments and decrements. The input also allows control over what the minimum and maximum values entered can be. Again, this is useful in e-commerce in ensuring the order is at least one item and less than the total number of stock available, for example.
 
 ## Range
 
+The range input is very similar to the number input in its functionality. The main difference is that the range input type presents the user with a slider they can drag to select the numeric value.
+
+Again, this input provides the ability to set the minimum and maximum allowed values as well as how much the value changes for each step of the slide. The main drawback of the range compared to the number input is that it is less accurate for the user when choosing a value, so the user experience is not as good if very defined or specific values need to be selected.
+
 ## Search
 
+The search input is a copy of the general text type input. The only real difference is that most modern internet browsers have built-in functionality to present the search type input with custom "Search styles" which may reduce the amount of customisation you as the developer need to perform to make it look different from the text and more like a specific search utility.
+
 ## Tel
+
+The tel input type is used for capturing telephone numbers from the user. Unfortunately, because telephone formats vary so widely globally, this input type does not have any pre-configured value validation built-in. 
+
+The input does have a "pattern" attribute that accepts a regular expression which will allow you to automatically validate the entered value for specific formats or to prevent junk values from being entered.
 
 ## Time
 
