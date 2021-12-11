@@ -97,7 +97,7 @@ The input does have a "pattern" attribute that accepts a regular expression whic
 
 ## Time
 
-The time input is for recording the hours and minutes component of the time. 
+The time input is for recording the hours and minutes component of the time. When the user clicks on the time input, they are presented with a small pop-up that allows them to make a selection for the hours and minutes.
 
 The input will default to the operating system locale when displaying either 12 or 24-hour time formats. Additionally, the time input type renders and behaves slightly differently in each browser. It will need to be styled accordingly to allow for these differences.
 
@@ -105,14 +105,40 @@ Similar to the numeric inputs, the time input can be restricted to only allow se
 
 ## Date
 
+The date input allows a user to select a day, month and year value, with no time attached. Similar to the time input type, the user is presented with a small pop-up when they click on the input where they can select the desired date. 
+
+Similar to the number input, the date range can be pre-defined to prevent users from selecting invalid dates for your application's purposes. 
+
 ## Datetime-Local
+
+The datetime-local input type is basically the combination of the date and time input types. It allows the user to select the full date and specific time. Similar to the date input type, the date range can be restricted.
+
+This sort of input is more efficient for calendar-booking type apps where both the date and time are relevant.
+
+This input type can have some compatibility issues with some browsers and will fall back to a standard text input when the browser is unable to interpret the datetime-local input type.
 
 ## Week
 
+The week input type allows the user to select a full week period from a calendar pop-up. The selection is then recorded as the week number of the year (1-52). 
+
+The input allows for a minimum and maximum week to be selected and can span across multiple years. The input will display the week number and the year it falls within.
+
 ## Month
+
+This input type presents the user with a customised calendar pop-up with the month names grouped into years. The user then can only select the whole month. The input displays the selected month and the year.
+
+Again, the start and end month/years can be predefined when configuring the input.
 
 ## URL
 
+The URL input type is specifically built to allow users to enter a website URL. Similar to the tel input type, the url input has the pattern attribute so that the user is forced into entering the url in the correct format. This can be useful to ensure the url is https or has a query string parameter added.
+
 ## Submit
 
+The submit input type is a special button type input that automatically tries to submit an HTML form to a server (the URL for which should be configured in the form). This input type can be tricky to use if you have multiple forms and multiple submit buttons on a single page. Ensuring they are connected to the right form is critical.
+
 ## Reset
+
+The reset input type is another special button type input. When clicked, the reset button will clear the values of all other inputs that are in the HTML form grouping that the reset button resides within.
+
+It is a useful input to allow a user to restart a process.
