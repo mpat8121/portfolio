@@ -97,6 +97,12 @@ The input does have a "pattern" attribute that accepts a regular expression whic
 
 ## Time
 
+The time input is for recording the hours and minutes component of the time. 
+
+The input will default to the operating system locale when displaying either 12 or 24-hour time formats. Additionally, the time input type renders and behaves slightly differently in each browser. It will need to be styled accordingly to allow for these differences.
+
+Similar to the numeric inputs, the time input can be restricted to only allow selections between certain times - business hours only as an example.
+
 ## Date
 
 ## Datetime-Local
