@@ -8,7 +8,7 @@ const AllPosts = ({ posts }) => (
       const {categories, image} = node.frontmatter;
       
       return (
-        <div className="column is-one-quarter" key={node.fields.slug}>
+        <div className="column is-half-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd" key={node.fields.slug}>
           <div className="card has-equal-height">
             <div className="card-image">
               <figure className="image is-2by1">
