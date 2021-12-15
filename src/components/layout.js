@@ -79,7 +79,7 @@ class Layout extends React.Component {
           <section>{children}</section>
         </div>
         <footer className="footer">
-          <div class="content has-text-centered">
+          <div className="content has-text-centered">
             © {new Date().getFullYear()}, <Link style={{ color: "var(--text)" }} to={`/`}>Mick Patterson</Link>
             <div><Link style={{ color: "var(--text)" }} to={`/privacy`}>Privacy Policy</Link></div>
           </div>
