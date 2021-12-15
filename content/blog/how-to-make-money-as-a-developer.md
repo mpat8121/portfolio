@@ -29,21 +29,33 @@ The below ways to make money as a developer will assist you in finding the way(s
 
    Freelancing can be lucrative no matter where you live, as well as giving you the flexibility to work from anywhere. That being said, it is a hard grind, particularly to get started. 
 
-   Finding clients, convincing them you're the developer for them, completing the work and then getting paid are all an ongoing hustle. Once you've completed a number of projects and created a good reputation for yourself, the work will start coming to you and you'll be able to command premium rates. 
+   Finding clients, convincing them you're the developer for them, completing the work and then getting paid are all ongoing hustles. Once you've completed a number of projects and created a good reputation for yourself, the work will start coming to you and you'll be able to command premium rates. 
 
    Most of the freelancers I know hustled hard initially until they found a few clients that had ongoing work requirements that they then contracted to outside of the standard freelancing platforms. From my experience, this is the most common outcome. 
 
-   The flexibility and variety of work offered via freelancing are very attractive to some people if they can get themselves setup and with a good reputation.
+   The flexibility and variety of work offered via freelancing are very attractive to some people if they can get themselves set up and with a good reputation.
 
    Sites, where you can sign up as a freelancer to offer your skills, include:
 
-   \- Freelancer.com\
-   - upwork.com\
-   - fiverr.com \
-   - toptal.com\
-   - guru.com\
-   - peopleperhour.com
+   * [Freelancer.com](https://freelancer.com)
+   * [upwork.com](https://upwork.com)
+   * [fiverr.com ](https://fiverr.com)
+   * [toptal.com](https://toptal.com)
+   * [guru.com](https://guru.com)
+   * [peopleperhour.com](https://peopleperhour.com)
 3. ### Run your own company
+
+   This is one option that I personally have implemented. I run [Interapptive](https://www.interapptive.com.au) with a business partner. We started out offering services but found more satisfaction and better balance in building our [own apps](https://play.google.com/store/apps/dev?id=7306544510458352015) and [SaaS products](https://www.defectwise.com.au).
+
+   The main reason for me to decide to have my own company is that the earning potential is essentially infinite. It is only limited by my own desire to work and successes. 
+
+   It is really hard work though.
+
+   For me, having a company also allows me to split my personal finances from the company. I don't have to use my own money to pay for the resources the company requires. All invoices and expenses go through the company. As the owner of the company, I am able to invest personal funds if required.
+
+   In order to run your own company, you need to have something to sell. As a developer, this can either be services or a product. Further in this list, there are ideas for both of these. You also have to be willing to do the advertising and marketing and all administration work that comes with being the owner of a company.
+
+   It is also easier as a company to hire freelancers, contractors or employees if and when required. 
 4. ### Build indie apps
 5. ### Blogging
 6. ### Affiliate Marketing
@@ -75,3 +87,4 @@ The below ways to make money as a developer will assist you in finding the way(s
 32. ### Flip Web Domains
 33. ### Flip Websites
 34. ### SEO Consulting
+35. ### SaaS Flipping
