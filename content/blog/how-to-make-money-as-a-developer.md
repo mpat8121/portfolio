@@ -61,7 +61,7 @@ The below ways to make money as a developer will assist you in finding the way(s
 
 4. ### Build indie apps
 
-   Building indie apps is complimentary to the above. Most likely, you'll publish your apps under a company or trading name, but behind the scenes it is not necessary to actually have a company.
+   Building indie apps is complementary to the above. Most likely, you'll publish your apps under a company or trading name, but behind the scenes, it is not necessary to actually have a company.
 
    Apps can be incredibly lucrative, either through in-app advertising and purchases or through upfront purchases. 
 
