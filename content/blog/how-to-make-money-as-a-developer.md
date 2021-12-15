@@ -26,6 +26,23 @@ The below ways to make money as a developer will assist you in finding the way(s
 
    The downsides of a full-time job are you have to work the hours the company or your boss expects or is required to get the work done. This can mean unpaid overtime. It's also possible that the nature of the work can be boring or repetitive. There's only so many times you can write code to automate sending email notifications before you start losing interest. Ultimately, there is also only so many promotions you can get before you hit a ceiling. This can either mean you need to move into a management only role or job hop to try to find the best lead/senior role available. 
 2. ### Freelancing
+
+   Freelancing can be lucrative no matter where you live, as well as giving you the flexibility to work from anywhere. That being said, it is a hard grind, particularly to get started. 
+
+   Finding clients, convincing them you're the developer for them, completing the work and then getting paid are all an ongoing hustle. Once you've completed a number of projects and created a good reputation for yourself, the work will start coming to you and you'll be able to command premium rates. 
+
+   Most of the freelancers I know hustled hard initially until they found a few clients that had ongoing work requirements that they then contracted to outside of the standard freelancing platforms. From my experience, this is the most common outcome. 
+
+   The flexibility and variety of work offered via freelancing are very attractive to some people if they can get themselves setup and with a good reputation.
+
+   Sites, where you can sign up as a freelancer to offer your skills, include:
+
+   \- Freelancer.com\
+   - upwork.com\
+   - fiverr.com \
+   - toptal.com\
+   - guru.com\
+   - peopleperhour.com
 3. ### Run your own company
 4. ### Build indie apps
 5. ### Blogging
