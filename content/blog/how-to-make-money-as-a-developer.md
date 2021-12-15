@@ -12,37 +12,49 @@ image: ../assets/how-make-money-feature.jpg
 ---
 ### How to Make Money as a Developer
 
-1. Fulltime Employment
-2. Freelancing
-3. Run your own company
-4. Build indie apps
-5. Blogging
-6. Affiliate Marketing
-7. Sponsorships
-8. Guest blog posting
-9. Create and Sell code templates
-10. Build a SaaS Product
-11. Create and Sell e-books
-12. Create and Sell e-learning courses
-13. Run a Youtube Channel
-14. Host a Podcast
-15. Paid Coding Challenges
-16. Bug bounty Hunting
-17. Mentoring and One-to-One Coaching
-18. Run a Patreon account
-19. Use Buy Me a Coffee
-20. Live Stream Coding on Twitch
-21. Create and Distribute a Newsletter
-22. Create a personal brand and sell merchandise
-23. Create a dropshipping Shopify site
-24. Create a Trading bot
-25. Create and Sell a Chatbot
-26. Write technical documentation
-27. Create WordPress Plugins and Themes
-28. Create sponsored open source content
-29. Create and Sell Graphic Web Assets
-30. Sponsored Twitter/Facebook Postings
-31. Create Niche Websites to Sell
-32. Flip Web Domains
-33. Flip Websites
-34. SEO Consulting
+If you're an individual who can code, with any level of experience, you are lucky. Your skills are in demand given that we live in a digital world and people and businesses need your skills to help them succeed.
+
+There's a lot of content out there on the internet telling you that you can make passive income as a developer. This is... up to interpretation. It is possible to have created products that generate ongoing income for you without requiring large amounts of ongoing input, but the real truth is that none of the possible ways to make money as a developer are work free. Some require less ongoing work than others, but they all require your time and energy. If you want to outsource the ongoing work, this is an option, but your profit margins will need to be sufficient to make it financially viable.
+
+The below ways to make money as a developer will assist you in finding the way(s) that suits your desired lifestyle, work-life balance and time availability.
+
+1. ### Full-time Employment
+
+   This is the most secure way to make money as a developer. A fulltime job should give you the security of getting paid consistently throughout the year. 
+
+   If you find a good job, you will be paid quite well and should be able to spend your days working with interesting people. Working in a team and on larger projects/products will also most likely give you a really good education on setting up processes and various management styles to get products built.
+
+   The downsides of a full-time job are you have to work the hours the company or your boss expects or is required to get the work done. This can mean unpaid overtime. It's also possible that the nature of the work can be boring or repetitive. There's only so many times you can write code to automate sending email notifications before you start losing interest. Ultimately, there is also only so many promotions you can get before you hit a ceiling. This can either mean you need to move into a management only role or job hop to try to find the best lead/senior role available. 
+2. ### Freelancing
+3. ### Run your own company
+4. ### Build indie apps
+5. ### Blogging
+6. ### Affiliate Marketing
+7. ### Sponsorships
+8. ### Guest blog posting
+9. ### Create and Sell code templates
+10. ### Build a SaaS Product
+11. ### Create and Sell e-books
+12. ### Create and Sell e-learning courses
+13. ### Run a Youtube Channel
+14. ### Host a Podcast
+15. ### Paid Coding Challenges
+16. ### Bug bounty Hunting
+17. ### Mentoring and One-to-One Coaching
+18. ### Run a Patreon account
+19. ### Use Buy Me a Coffee
+20. ### Live Stream Coding on Twitch
+21. ### Create and Distribute a Newsletter
+22. ### Create a personal brand and sell merchandise
+23. ### Create a dropshipping Shopify site
+24. ### Create a Trading bot
+25. ### Create and Sell a Chatbot
+26. ### Write technical documentation
+27. ### Create WordPress Plugins and Themes
+28. ### Create sponsored open source content
+29. ### Create and Sell Graphic Web Assets
+30. ### Sponsored Twitter/Facebook Postings
+31. ### Create Niche Websites to Sell
+32. ### Flip Web Domains
+33. ### Flip Websites
+34. ### SEO Consulting
