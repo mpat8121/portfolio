@@ -3,7 +3,9 @@ import React from "react"
 
 class CategoryPageTemplate extends React.Component {
     render() {
-        console.log(this.props, this.context, this.state)
+        const { data, pageContext } = this.props;
+        console.log("Category data site", data.site)
+        console.log("Category page context category", pageContext.category)
         return <div></div>
     }
 }

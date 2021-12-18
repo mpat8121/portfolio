@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 class PrivacyPage extends React.Component {
 
     render() {
-        console.log(this.props);
         const { data, location } = this.props;
         const siteTitle = data.site.siteMetadata.title;
         return (
