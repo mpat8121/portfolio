@@ -27,11 +27,10 @@ function SEO({ description, lang, meta, image: metaImage, keywords, title, pathn
     `
   )
 
-  const metaDescription = description || site.siteMetadata.description
-  const image =
-    metaImage && metaImage.src
-      ? `${site.siteMetadata.siteUrl}${metaImage.src}`
-      : null
+  const metaDescription = description || site.siteMetadata.description;
+  const imageSrc = metaImage && metaImage.childImageSharp.sizes.src;
+  const image = `${window.location.origin}${imageSrc}`
+    
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
   return (
     <Helmet
@@ -86,6 +85,10 @@ function SEO({ description, lang, meta, image: metaImage, keywords, title, pathn
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: image,
         },
       ]
         .concat(
