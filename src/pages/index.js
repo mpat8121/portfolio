@@ -24,12 +24,16 @@ class IndexPage extends React.Component {
             ]}
         />
         <Bio />
-        <SearchPosts
-          posts={posts}
-          localSearchBlog={localSearchBlog}
-          navigate={navigate}
-          location={location}
-        />
+        <div className="container">
+          <div className="columns">
+            <SearchPosts
+              posts={posts}
+              localSearchBlog={localSearchBlog}
+              navigate={navigate}
+              location={location}
+            />
+          </div>
+        </div>
       </Layout>
     )
   }
