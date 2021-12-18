@@ -1,46 +1,77 @@
 import { graphql } from "gatsby"
 import React from "react"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import SearchPosts from "../components/searchPosts"
 
 class CategoryPageTemplate extends React.Component {
-    render() {
-        const { data, pageContext } = this.props;
-        console.log("Category data site", data.site)
-        console.log("Category page context category", pageContext.category)
-        return <div></div>
-    }
+  render() {
+    const { data, pageContext } = this.props;
+    const posts = this.props.data.allMdx.edges
+    const location = this.props.location
+    const siteTitle = data.site.siteMetadata.title
+    const localSearchBlog = data.localSearchBlog
+    const navigate = this.props.navigate
+
+    return (
+      <Layout location={location} title={siteTitle}>
+        <SEO title={`${pageContext.category} Posts`}
+          keywords={
+            [
+              `blog`, `angular`, `javascript`, `ionic`, `nodejs`, `sql`,
+              `mongo`, `sql server`, `c#`
+            ]}
+        />
+        <h1 className="title has-text-centered" style={{color: "var(--text)"}}>{pageContext.category} Posts</h1>
+        <div className="container">
+          <div className="columns">
+            <SearchPosts
+              posts={posts}
+              localSearchBlog={localSearchBlog}
+              navigate={navigate}
+              location={location}
+            />
+          </div>
+        </div>
+      </Layout>
+
+    )
+  }
 }
 
 export default CategoryPageTemplate
 
 export const pageQuery = graphql`
-query {
-    site {
-      siteMetadata {
-        title
-      }
+query BlogPostsByCategory($category: [String]) {
+  site {
+    siteMetadata {
+      title
     }
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
-        edges {
-          node {
-            excerpt
-            fields {
-              slug
-            }
-            frontmatter {
-              date(formatString: "MMMM DD, YYYY")
-              title
-              description
-              categories
-              image {
-                childImageSharp {
-                  sizes(maxWidth: 600) {
-                    ...GatsbyImageSharpSizes
-                  }
-                }
+  }
+  localSearchBlog {
+    index
+    store
+  }
+  allMdx(filter: {frontmatter: {categories: {in: $category}}}) {
+    edges {
+      node {
+        excerpt
+        frontmatter {
+          title
+          categories
+          image {
+            childImageSharp {
+              sizes(maxWidth: 600) {
+								...GatsbyImageSharpSizes
               }
             }
           }
         }
+        fields {
+          slug
+        }
       }
+    }
+  }
 }
 `

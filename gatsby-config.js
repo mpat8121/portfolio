@@ -11,7 +11,8 @@ module.exports = {
       twitter: `Mick_Patterson_`,
     },
     keywords: [`blog`, `angular`, `javascript`, `ionic`, `nodejs`, `sql`,
-    `mongo`, `sql server`, `c#`]
+    `mongo`, `sql server`, `c#`],
+    image: "/blog-header-image.jpg"
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
