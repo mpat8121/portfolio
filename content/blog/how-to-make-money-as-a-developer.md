@@ -18,105 +18,123 @@ There's a lot of content out there on the internet telling you that you can make
 
 The below ways to make money as a developer will assist you in finding the way(s) that suits your desired lifestyle, work-life balance and time availability.
 
-1. ### Full-time Employment
+### Full-time Employment
 
-   This is the most secure way to make money as a developer. A fulltime job should give you the security of getting paid consistently throughout the year. 
+This is the most secure way to make money as a developer. A full-time job should give you the security of getting paid consistently throughout the year. 
 
-   If you find a good job, you will be paid quite well and should be able to spend your days working with interesting people. Working in a team and on larger projects/products will also most likely give you a really good education on setting up processes and various management styles to get products built.
+If you find a good job, you will be paid quite well and should be able to spend your days working with interesting people. Working in a team and on larger projects/products will also most likely give you a really good education on setting up processes and various management styles to get products built.
 
-   The downsides of a full-time job are you have to work the hours the company or your boss expects or is required to get the work done. This can mean unpaid overtime. It's also possible that the nature of the work can be boring or repetitive. There's only so many times you can write code to automate sending email notifications before you start losing interest. Ultimately, there is also only so many promotions you can get before you hit a ceiling. This can either mean you need to move into a management only role or job hop to try to find the best lead/senior role available. 
+The downsides of a full-time job are you have to work the hours the company or your boss expects or is required to get the work done. This can mean unpaid overtime. It's also possible that the nature of the work can be boring or repetitive. There's only so many times you can write code to automate sending email notifications before you start losing interest. Ultimately, there is also only so many promotions you can get before you hit a ceiling. This can either mean you need to move into management roles or job hop to try to find the best lead/senior role available. 
 
-2. ### Freelancing
+### Freelancing
 
-   Freelancing can be lucrative no matter where you live, as well as giving you the flexibility to work from anywhere. That being said, it is a hard grind, particularly to get started. 
+Freelancing can be lucrative no matter where you live, as well as giving you the flexibility to work from anywhere. That being said, it is a hard grind, particularly to get started. 
 
-   Finding clients, convincing them you're the developer for them, completing the work and then getting paid are all ongoing hustles. Once you've completed a number of projects and created a good reputation for yourself, the work will start coming to you and you'll be able to command premium rates. 
+Finding clients, convincing them you're the developer for them, completing the work and then getting paid are all ongoing hustles. Once you've completed a number of projects and created a good reputation for yourself, the work will start coming to you and you'll be able to command premium rates. 
 
-   Most of the freelancers I know hustled hard initially until they found a few clients that had ongoing work requirements that they then contracted to outside of the standard freelancing platforms. From my experience, this is the most common outcome. 
+Most of the freelancers I know hustled hard initially until they found a few clients that had ongoing work requirements that they then contracted to outside of the standard freelancing platforms. From my experience, this is the most common outcome. 
 
-   The flexibility and variety of work offered via freelancing are very attractive to some people if they can get themselves set up and with a good reputation.
+The flexibility and variety of work offered via freelancing are very attractive to some people if they can get themselves set up and with a good reputation.
 
-   Sites, where you can sign up as a freelancer to offer your skills, include:
+Sites, where you can sign up as a freelancer to offer your skills, include:
 
-   * [Freelancer.com](https://freelancer.com)
-   * [upwork.com](https://upwork.com)
-   * [fiverr.com ](https://fiverr.com)
-   * [toptal.com](https://toptal.com)
-   * [guru.com](https://guru.com)
-   * [peopleperhour.com](https://peopleperhour.com)
+* [Freelancer.com](https://freelancer.com)
+* [upwork.com](https://upwork.com)
+* [fiverr.com ](https://fiverr.com)
+* [toptal.com](https://toptal.com)
+* [guru.com](https://guru.com)
+* [peopleperhour.com](https://peopleperhour.com)
 
-3. ### Run your own company
+### Run your own company
 
-   This is one option that I personally have implemented. I run [Interapptive](https://www.interapptive.com.au) with a business partner. We started out offering services but found more satisfaction and better balance in building our [own apps](https://play.google.com/store/apps/dev?id=7306544510458352015) and [SaaS products](https://www.defectwise.com.au).
+This is one option that I personally have implemented. I run [Interapptive](https://www.interapptive.com.au) with a business partner. We started out offering services but found more satisfaction and better balance in building our [own apps](https://play.google.com/store/apps/dev?id=7306544510458352015) and [SaaS products](https://www.defectwise.com.au).
 
-   The main reason for me to decide to have my own company is that the earning potential is essentially infinite. It is only limited by my own desire to work and successes. 
+The main reason for me to decide to have my own company is that the earning potential is essentially infinite. It is only limited by my own desire to work and successes. 
 
-   It is really hard work though.
+It is really hard work though.
 
-   For me, having a company also allows me to split my personal finances from the company. I don't have to use my own money to pay for the resources the company requires. All invoices and expenses go through the company. As the owner of the company, I am able to invest personal funds if required.
+For me, having a company also allows me to split my personal finances from the company. I don't have to use my own money to pay for the resources the company requires. All invoices and expenses go through the company. As the owner of the company, I am able to invest personal funds if required.
 
-   In order to run your own company, you need to have something to sell. As a developer, this can either be services or a product. Further in this list, there are ideas for both of these. You also have to be willing to do the advertising and marketing and all administration work that comes with being the owner of a company.
+In order to run your own company, you need to have something to sell. As a developer, this can either be through services or a product. Further in this list, there are ideas for both of these. You also have to be willing to do the advertising and marketing and all administration work that comes with being the owner of a company.
 
-   It is also easier as a company to hire freelancers, contractors or employees if and when required.
+It is also easier as a company to hire freelancers, contractors or employees if and when required.
 
-4. ### Build indie apps
+### Build indie apps
 
-   Building indie apps is complementary to the above. Most likely, you'll publish your apps under a company or trading name, but behind the scenes, it is not necessary to actually have a company.
+Building indie apps is complementary to the above. Most likely, you'll publish your apps under a company or trading name, but behind the scenes, it is not necessary to actually have a company.
 
-   Apps can be incredibly lucrative, either through in-app advertising and purchases or through upfront purchases. 
+Apps can be incredibly lucrative, either through in-app advertising and purchases or through upfront purchases. 
 
-   Building an app can be a huge amount of work depending on the complexity of the app. It may also require a good understanding of the full-stack as you may need to build databases, APIs and the front-end of the app.
+Building an app can be a huge amount of work depending on the complexity of the app. It may also require a good understanding of the full-stack as you may need to build databases, APIs and the front-end of the app.
 
-   You're also likely going to need to perform all support duties for your users, which can become overwhelming if you create a popular app.
+You're also likely going to need to perform all support duties for your users, which can become overwhelming if you create a popular app.
 
-5. ### Blogging
+### Blogging
 
-   You're on my blog right now. Hopefully, it is providing some value to you. I didn't, and don't continue to, spend hours writing and formatting content and sourcing images just for fun. It makes some money too.
+You're on my blog right now. Hopefully, it is providing some value to you. I didn't, and don't continue to, spend hours writing and formatting content and sourcing images just for fun. It makes some money too.
 
-   Blogging can be a good money maker, but it isn't going to happen quickly. You'll need to produce a lot of content, and consistently add more. It'll need to be good content that also conforms to Google's SEO requirements to make sure you appear in the right search results.
+Blogging can be a good money maker, but it isn't going to happen quickly. You'll need to produce a lot of content, and consistently add more. It'll need to be good content that also conforms to Google's SEO requirements to make sure you appear in the right search results.
 
-   The main ways to make money from your blog are to include advertisements, include affiliate links that give you a percentage of any sales via the links, self-promotion of any other items/products you have to sell, and if you create a reputation for yourself, others may pay you to write guest posts on their blogs. 
+The main ways to make money from your blog are to include advertisements, include affiliate links that give you a percentage of any sales via the links, self-promotion of any other items/products you have to sell, and if you create a reputation for yourself, others may pay you to write guest posts on their blogs. 
 
-   Things like ads require you to have large amounts of traffic to your blog. For example, Google Adsense will pay somewhere in the range of $3-$6 for every 1,000 views of an advertisement displayed on your blog. so, in order to make $600 per month from your blog, you need at least 100,000 views. This is more than achievable but requires a lot of well-targeted content that is SEO'd and well written.
+Things like ads require you to have large amounts of traffic to your blog. For example, Google Adsense will pay somewhere in the range of $3-$6 for every 1,000 views of an advertisement displayed on your blog. so, in order to make $600 per month from your blog, you need at least 100,000 views. This is more than achievable but requires a lot of well-targeted content that is SEO'd and well written.
 
-6. ### Affiliate Marketing
+### Affiliate Marketing
 
-7. ### Sponsorships
+### Sponsorships
 
-8. ### Guest blog posting
+### Guest blog posting
 
-9. ### Create and Sell code templates
+### Create and Sell code templates
 
-10. ### Build a SaaS Product
+### Build a SaaS Product
 
-11. ### Create and Sell e-books
+### Create and Sell e-books
 
-12. ### Create and Sell e-learning courses
+### Create and Sell e-learning courses
 
-13. ### Run a Youtube Channel
+### Run a Youtube Channel
 
-14. ### Host a Podcast
+### Host a Podcast
 
-15. ### Paid Coding Challenges
+### Paid Coding Challenges
 
-16. ### Bug bounty Hunting
+### Bug bounty Hunting
 
-17. ### Mentoring and One-to-One Coaching
-18. ### Run a Patreon account
-19. ### Use Buy Me a Coffee
-20. ### Live Stream Coding on Twitch
-21. ### Create and Distribute a Newsletter
-22. ### Create a personal brand and sell merchandise
-23. ### Create a dropshipping Shopify site
-24. ### Create a Trading bot
-25. ### Create and Sell a Chatbot
-26. ### Write technical documentation
-27. ### Create WordPress Plugins and Themes
-28. ### Create sponsored open source content
-29. ### Create and Sell Graphic Web Assets
-30. ### Sponsored Twitter/Facebook Postings
-31. ### Create Niche Websites to Sell
-32. ### Flip Web Domains
-33. ### Flip Websites
-34. ### SEO Consulting
-35. ### SaaS Flipping
+### Mentoring and One-to-One Coaching
+
+### Run a Patreon account
+
+### Use Buy Me a Coffee
+
+### Live Stream Coding on Twitch
+
+### Create and Distribute a Newsletter
+
+### Create a personal brand and sell merchandise
+
+### Create a dropshipping Shopify site
+
+### Create a Trading bot
+
+### Create and Sell a Chatbot
+
+### Write technical documentation
+
+### Create WordPress Plugins and Themes
+
+### Create sponsored open source content
+
+### Create and Sell Graphic Web Assets
+
+### Sponsored Twitter/Facebook Postings
+
+### Create Niche Websites to Sell
+
+### Flip Web Domains
+
+### Flip Websites
+
+### SEO Consulting
+
+### SaaS Flipping
