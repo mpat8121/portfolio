@@ -7,37 +7,37 @@
 
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import styled from "styled-components"
-
-import { rhythm } from "../utils/typography"
 
 function Bio() {
   return (
     <StaticQuery
       query={bioQuery}
       render={data => {
-        const { author, social } = data.site.siteMetadata
+        const { social } = data.site.siteMetadata
         return (
-          <Container>
-            <Img
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: rhythm(1 / 2),
-                minWidth: 50,
-                borderRadius: `100%`,
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            />
-            <p style={{ color: 'var(--text)', 'margin-top': '15px' }}>
-              Blog by <a href={`https://twitter.com/${social.twitter}`} style={{ color: 'var(--text)' }}>
-                {author}</a>
-            </p>
-          </Container>
+          <div className="columns is-mobile">
+            <div className="column is-half-desktop is-full-mobile">
+              <h1 className="title" style={{ color: "var(--text)" }}>Delve into the Full-Stack World</h1>
+              <p className="content">
+                In this blog, I explore everything full-stack web developer related from niche bug fixes, mobile development, API configuration and web developer lifestyle matters.
+              </p>
+              <p className="content">
+                For front-end developers I'll be detailing all sorts of configuration and quirks when working with JavaScript, Angular, React and Ionic/Capacitor.js.
+              </p>
+              <p className="content">
+                For the back-end developers, I work with Node.js, C#/.NET and SQL or MongoDB. If that applies to you, there'll be tidbits to make your life easier.
+              </p>
+              <p style={{ color: 'var(--text)' }}>
+                Follow me on Twitter <a href={`https://twitter.com/${social.twitter}`} style={{ color: 'var(--text)' }}>
+                  @{social.twitter}</a> for updates and thoughts on life.
+              </p>
+            </div>
+            <div className="column is-desktop">
+              <figure className="image">
+                <img style={{ filter: "var(--svg-color-filter)", maxHeight: "300px" }} src="../blog-header-image.svg" alt="Blog card feature" />
+              </figure>
+            </div>
+          </div>
         )
       }}
     />
@@ -46,26 +46,14 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/favicon-large.png/" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
     site {
       siteMetadata {
-        author
         social {
           twitter
         }
       }
     }
   }
-`
-
-const Container = styled.div`
-  display: flex;
 `
 
 export default Bio

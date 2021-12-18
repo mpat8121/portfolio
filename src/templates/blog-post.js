@@ -20,15 +20,17 @@ class BlogPostTemplate extends React.Component {
     const h2 = props => <h2 className="title is-4" style={{ color: "var(--text)" }} {...props} />
     const h3 = props => <h3 className="title is-5" style={{color: "var(--text)"}} {...props} />
     const h4 = props => <h4 className="title is-6" style={{color: "var(--text)"}} {...props} />
-    const p = props => (
-      <div className="content"><p {...props} /></div>
-    )
-
+    const p = props => <p className="content" {...props} />
+    const a = props => <a style={{color: "var(--textLink)"}} {...props} />
+    const ul = props => <ul className="ul-last" {...props} />
+    
     const components = {
       h2,
       h3,
       h4,
       p,
+      a,
+      ul
     }
 
     return (
@@ -69,7 +71,6 @@ class BlogPostTemplate extends React.Component {
             color: 'var(--hr)'
           }}
         />
-        <Bio />
 
         <ul
           style={{

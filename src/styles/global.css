@@ -11,10 +11,10 @@ body > footer {
 
 body.light {
   -webkit-font-smoothing: antialiased;
-  --bg: white;
+  --bg: #ffffff;
   --hover-text: #0e182a;
   --text: #0e182a;
-  --toggle: #0e182a;
+  --toggle: hsl(0, 0%, 100%);
   --tag: rgb(36, 120, 43);
   --tag-text: white;
   --consent-accept: rgb(36, 120, 43);
@@ -31,6 +31,7 @@ body.dark {
   --tag-text: white;
   --consent-accept: rgb(36, 120, 43);
   --consent-accept-text: white;
+  --svg-color-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
 .navbar, .navbar-menu {
@@ -88,4 +89,8 @@ div[class^='blog-post'] {
   background-color: var(--bg) !important;
   color: var(--text);
   flex-shrink: 0;
+}
+
+.ul-last {
+  margin-bottom: 1.5rem !important;
 }
