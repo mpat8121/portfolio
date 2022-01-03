@@ -4,10 +4,10 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+
 class ContactPage extends React.Component {
 
     render() {
-
         const { data, location } = this.props;
         const siteTitle = data.site.siteMetadata.title;
         return (
