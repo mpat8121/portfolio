@@ -77,9 +77,25 @@ Blogging can be a good money maker, but it isn't going to happen quickly. You'll
 
 The main ways to make money from your blog are to include advertisements, include affiliate links that give you a percentage of any sales via the links, self-promotion of any other items/products you have to sell, and if you create a reputation for yourself, others may pay you to write guest posts on their blogs. 
 
-Things like ads require you to have large amounts of traffic to your blog. For example, Google Adsense will pay somewhere in the range of $3-$6 for every 1,000 views of an advertisement displayed on your blog. so, in order to make $600 per month from your blog, you need at least 100,000 views. This is more than achievable but requires a lot of well-targeted content that is SEO'd and well written.
+Things like ads require you to have large amounts of traffic to your blog. For example, Google Adsense will pay somewhere in the range of $3-$6 for every 1,000 views of an advertisement displayed on your blog. so, in order to make $600 per month from your blog, you need at least 100,000 views per month. This is more than achievable but requires a lot of well-targeted content that is SEO'd and well written. In short, you will need hundreds of posts. Some will bring more traffic (and revenue) than others, but unfortunately, there is no certain way of knowing which posts will perform.
+
+For instance, [API Versioning with NodeJs and Express](https://www.mickpatterson.com.au/blog/api-versioning-with-nodejs-and-express/) is my most heavily viewed post. There is no data from Google search trends, on my tech Twitter feeds or anywhere else I know of that indicated that this would be a topic that people were looking for specifically.
 
 ### Affiliate Marketing
+
+Affiliate marketing and blogging tend to be run in parallel, so if you're wanting to pursue affiliate marketing, you are probably going to need a blog. 
+
+Affiliate marketing is quite simple if you can get enough eyeballs on your blog or wherever you are posting your affiliate links.
+
+An affiliate link is a URL link to a product or service with a unique identifier added to the end. The unique identifier allows the provider of the product or service to know that you were the source of the visitor to their site. If the visitor makes a purchase or signs up for the service, you receive a payment for sending the person to the site in the first place. 
+
+Some of the bigger affiliate marketing providers have fully-fledged programs you can sign up for to send users to multiple products (such as [Amazon](https://affiliate-program.amazon.com.au/)). Others only offer a single product or service and so you only need to create an account and get the link for the single item. 
+
+These sorts of links for products are particularly useful if you blog about a specific technology or niche that has specific products. Your readers will be interested in the products just by already having found their way to your blog.
+
+Some of the bigger ticket items offer big payouts if you send someone to their site and they make the purchase required. Others run on percentages rather than specified amounts (Amazon pays up to 12% of the product purchase price for example).
+
+If you have other sources for an audience (social media for example) you can promote the affiliate links there. I would preface this with caution though as social media followers can find this to be spammy. Email newsletters can be a great way to promote affiliate products that match the topic of the newsletter to an already engaged audience.
 
 ### Sponsorships
 
