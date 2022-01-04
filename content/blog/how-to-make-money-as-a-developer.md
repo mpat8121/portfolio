@@ -99,11 +99,39 @@ If you have other sources for an audience (social media for example) you can pro
 
 ### Sponsorships
 
+A sponsorship essentially entails a business approaching you as a blogger to write one or more articles about their product offering. This can be a specific retail product or a service or a piece of software. As part of this agreement, the business will pay you either a set amount per post or an ongoing percentage of any sales that come from your blog posts (essentially the same as affiliate marketing). 
+
+Sponsorships will work best if you already have a big audience either through blog traffic or a YouTube channel where the product can really be showcased. You'll also need to have a good reputation otherwise businesses won't approach you for their products.
+
 ### Guest blog posting
 
-### Create and Sell code templates
+Once you've built a blog, created lots of good content and have a good audience, people in the blogging community of your niche will start to take notice. 
 
-### Build a SaaS Product
+Guest posting is a good way to contribute to the community for the benefit of both yourself and the person you provide a post for. If you're well known and have your name on somebody else's blog, they'll get more traffic (win!) and you'll get more referral traffic from that post.
+
+If you're lucky, the blog you get to post on will be bigger and more popular than yours at the time of writing/posting so you'll gain a lot of exposure.
+
+Conversely, if you're the bigger name of the two, you can negotiate a fee with your counterpart for the post you write and post on their blog.  
+
+### Create and Sell Code Templates
+
+As you're reading the post, I'm assuming you're a developer or technology-based individual which most likely means you can code at least somewhat proficiently.
+
+Selling your code as templates is a good way to create an ongoing income stream. 
+
+The premise is relatively simple - you code up a template product (website, mobile app) and sell it online. 
+
+Standing out in a crowded market is going to be your biggest challenge with this income stream. Again, having a pre-existing audience is going to greatly assist you in getting this off the ground and pushed out to other potential customers.
+
+There are a number of platforms where you can list your templates (all of which will take a cut of each sale). Some of these are:
+
+\- [Gumroad](https://gumroad.com/)\
+- [ThemeForest](https://themeforest.net/)\
+- [Codester](https://www.codester.com/)
+
+Each of these platforms have rules regarding the quality of the templates and other items you must adhere to before they will list your product. 
+
+An additional option is to configure your website/blog to allow the purchase/digital download itself. This is the best way to ensure you receive 100% of the purchase price, but you lose the benefits of having a pre-established marketplace.
 
 ### Create and Sell e-books
 
@@ -117,7 +145,9 @@ If you have other sources for an audience (social media for example) you can pro
 
 ### Bug bounty Hunting
 
-### Mentoring and One-to-One Coaching
+### Mentoring 
+
+### One-to-One Coaching
 
 ### Run a Patreon account
 
@@ -152,5 +182,7 @@ If you have other sources for an audience (social media for example) you can pro
 ### Flip Websites
 
 ### SEO Consulting
+
+### Build a SaaS Product
 
 ### SaaS Flipping
