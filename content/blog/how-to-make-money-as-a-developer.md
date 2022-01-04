@@ -16,7 +16,9 @@ If you're an individual who can code, with any level of experience, you are luck
 
 There's a lot of content out there on the internet telling you that you can make passive income as a developer. This is... up to interpretation. It is possible to have created products that generate ongoing income for you without requiring large amounts of ongoing input, but the real truth is that none of the possible ways to make money as a developer are work free. Some require less ongoing work than others, but they all require your time and energy. If you want to outsource the ongoing work, this is an option, but your profit margins will need to be sufficient to make it financially viable.
 
-The below ways to make money as a developer will assist you in finding the way(s) that suits your desired lifestyle, work-life balance and time availability.
+Many of the below ways to make money are complimentary and will give you the best results if you do connect and cross-promote your content to make the most of them.
+
+The below ways to make money as a developer will assist you in finding the way(s) that suits your desired lifestyle, work-life balance, skillsets and time availability.
 
 ### Full-time Employment
 
@@ -49,13 +51,13 @@ Sites, where you can sign up as a freelancer to offer your skills, include:
 
 This is one option that I personally have implemented. I run [Interapptive](https://www.interapptive.com.au) with a business partner. We started out offering services but found more satisfaction and better balance in building our [own apps](https://play.google.com/store/apps/dev?id=7306544510458352015) and [SaaS products](https://www.defectwise.com.au).
 
-The main reason for me to decide to have my own company is that the earning potential is essentially infinite. It is only limited by my own desire to work and successes. 
+The main reason for me to decide to have my own company is that the earning potential is essentially infinite. It is only limited by my own desire to work and how successful the things I make are.
 
 It is really hard work though.
 
 For me, having a company also allows me to split my personal finances from the company. I don't have to use my own money to pay for the resources the company requires. All invoices and expenses go through the company. As the owner of the company, I am able to invest personal funds if required.
 
-In order to run your own company, you need to have something to sell. As a developer, this can either be through services or a product. Further in this list, there are ideas for both of these. You also have to be willing to do the advertising and marketing and all administration work that comes with being the owner of a company.
+In order to run your own company, you need to have something to sell. As a developer, this can either be through services or a product. Further in this list, there are ideas for both of these. You also have to be willing to do the advertising, marketing and all administration work that comes with being the owner of a company.
 
 It is also easier as a company to hire freelancers, contractors or employees if and when required.
 
@@ -135,9 +137,27 @@ An additional option is to configure your website/blog to allow the purchase/dig
 
 ### Create and Sell e-books
 
+Are you an expert on a particular topic? Instead of breaking that down into 100's of blog posts, you can write it all down into an e-book. It's a lot easier now to self-publish the book or like above, just sell it on your own website. 
+
+An e-book is a lot of work initially as you need to get everything you know about the topic written down in a sensible, structured way to make the total book coherent and it needs to be reasonably substantial in content and length to make it worth the purchase price for the buyer. However, once it is written and published, an e-book is a very good source of ongoing income with a little bit of marketing to get the e-book in front of potential buyers. 
+
 ### Create and Sell e-learning courses
 
+There are great pre-existing platforms for distributing e-learning courses with low barriers to creating an account to upload your courses (assuming they meet the quality requirements of the platform). 
+
+Similar to the e-book, e-learning courses are a great way to make ongoing income from a single product if you are a subject matter expert and can create engaging video/learning content.
+
+The existing platforms will take a percentage of each sale, but a platform like [Udemy](https://www.udemy.com/) will get you in front of millions of potential students. Udemy even provides courses themselves to help content creators create courses for their platform.
+
+The tech industry/coding space is very competitive for e-learning, but the demand is also huge, so if you can create great content and market it well, this can be a very profitable income source.
+
 ### Run a Youtube Channel
+
+A YouTube channel is a slow burn income source, similar to blogging. It will take lots of content over a sustained period of time before you start seeing any real income being generated.
+
+Creating your own channel and putting up videos is simple enough, but you need to get 1000's of subscribers before YouTube allows you to monetise your channel, and even then, the income you can generate is always predicated by the number of views your video (ads) gets. 
+
+This is why you need to build a huge audience over a long time and continually feed that audience with new content. The channels with huge subscriber bases make pretty good money so it is worth the time and effort in the long run.
 
 ### Host a Podcast
 
@@ -157,7 +177,7 @@ An additional option is to configure your website/blog to allow the purchase/dig
 
 ### Create and Distribute a Newsletter
 
-### Create a personal brand and sell merchandise
+### Sell Merchandise
 
 ### Create a dropshipping Shopify site
 
