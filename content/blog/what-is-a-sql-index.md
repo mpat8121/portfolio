@@ -7,6 +7,8 @@ description: SQL databases are fundamentally pretty simple. Data is organised
   key for a SQL database is to be performant. Sometimes, queries can be
   extremely slow to return the filtered down dataset that our app is looking
   for. This is where SQL indexes come in.
+categories: ["SQL"]
+image: ../assets/sql-index-feature.jpg
 ---
 ## What is a SQL Index?
 
