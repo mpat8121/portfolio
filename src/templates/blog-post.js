@@ -12,7 +12,7 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.mdx
     const siteTitle = this.props.data.site.siteMetadata.title
     const image = post.frontmatter.image
-      ? post.frontmatter.image.childImageSharp.sizes.src
+      ? post.frontmatter.image.childImageSharp.fixed.src
       : null
     const { previous, next } = this.props.pageContext
 
@@ -108,6 +108,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
         author
       }
     }
@@ -122,9 +123,9 @@ export const pageQuery = graphql`
         description
         image {
           childImageSharp {
-            sizes(maxWidth: 600) {
-              ...GatsbyImageSharpSizes
-            }
+            fixed(width: 600) {
+              ...GatsbyImageSharpFixed
+            }          
           }
         }
       }

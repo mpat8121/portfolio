@@ -29,8 +29,7 @@ function SEO({ description, lang, meta, image: metaImage, keywords, title, pathn
 
   const metaDescription = description || site.siteMetadata.description;
   const imageSrc = metaImage;
-  const isBrowser = typeof window !== "undefined";
-  const image = isBrowser ? `${window.location.origin}${imageSrc}` : ''
+  const image = `${site.siteMetadata.siteUrl}${imageSrc}`
     
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
   return (
