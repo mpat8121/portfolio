@@ -100,19 +100,11 @@ function SEO({ description, lang, meta, image: metaImage, keywords, title, pathn
             }
             : []
         )
-        .concat(metaImage
+        .concat(imageSrc
           ? [
             {
               property: "og:image",
               content: image,
-            },
-            {
-              property: "og:image:width",
-              content: metaImage.width,
-            },
-            {
-              property: "og:image:height",
-              content: metaImage.height,
             },
             {
               name: "twitter:card",
