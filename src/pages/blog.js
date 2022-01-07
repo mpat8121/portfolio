@@ -11,7 +11,7 @@ class Blog extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMdx.edges
     const localSearchBlog = data.localSearchBlog
-
+    const image = data.file.publicURL
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts"
@@ -20,6 +20,7 @@ class Blog extends React.Component {
               `blog`, `angular`, `javascript`, `ionic`, `nodejs`, `sql`,
               `mongo`, `sql server`, `c#`
             ]}
+            image={image}
         />
         <SearchPosts
           posts={posts}
@@ -44,6 +45,9 @@ export const pageQuery = graphql`
     localSearchBlog {
       index
       store
+    }
+    file(relativePath: {eq: "home-page-feature.jpg"}) {
+      publicURL
     }
     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {

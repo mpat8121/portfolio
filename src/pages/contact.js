@@ -10,6 +10,8 @@ class ContactPage extends React.Component {
     render() {
         const { data, location } = this.props;
         const siteTitle = data.site.siteMetadata.title;
+        const image = data.file.publicURL
+
         return (
             <Layout location={location} title={siteTitle}>
                 <SEO title="Contact"
@@ -17,7 +19,9 @@ class ContactPage extends React.Component {
                         [
                             `blog`, `angular`, `javascript`, `ionic`, `nodejs`, `sql`,
                             `mongo`, `sql server`, `c#`
-                        ]} />
+                        ]}
+                    image={image}
+                />
                 <section className="hero is-fullheight">
                     <div className="hero-body">
                         <div className="container">
@@ -81,4 +85,7 @@ query {
         title
       }
     }
+    file(relativePath: {eq: "home-page-feature.jpg"}) {
+        publicURL
+      }
 }`
