@@ -128,8 +128,9 @@ Standing out in a crowded market is going to be your biggest challenge with this
 There are a number of platforms where you can list your templates (all of which will take a cut of each sale). Some of these are:
 
 \- [Gumroad](https://gumroad.com/)\
-- [ThemeForest](https://themeforest.net/)\
-- [Codester](https://www.codester.com/)
+
+* [ThemeForest](https://themeforest.net/)\
+* [Codester](https://www.codester.com/)
 
 Each of these platforms have rules regarding the quality of the templates and other items you must adhere to before they will list your product. 
 
@@ -161,11 +162,35 @@ This is why you need to build a huge audience over a long time and continually f
 
 ### Host a Podcast
 
+Podcasting is a great way to combine a number of income streams. Just like blogging, podcasting allows you to push affiliate products, run sponsorship deals and sell your own products.
+
+Generating a podcast following is like all of these methods. It will take time and you will need to create good content.
+
+Podcasting is also a cool way to meet a wide variety of people as your interviewees and you'll get to talk about some really interesting things with them.
+
+Podcast platforms (like Spotify) put you in front of a lot of potential listeners without having to do any targeted marketing, although they are super competitive as there are a lot of podcasts already out there.
+
 ### Paid Coding Challenges
+
+If you are a superhero developer or have a wealth of experience in a very specific niche, paid coding challenges can be a fun and interesting way to make some extra money. 
+
+Usually, there are cash prizes for the bigger coding challenge websites/competitions. Because they are bigger, your competition will be greater and you'll have to do very well to make it worth your while.
+
+Sometimes, big companies run coding challenges with big cash prizes. For example, Salesforce.com ran a competition back in 2013 with a $1 Million first prize. NVidia offered a total prize pool of $43,000 in their Jetson Developer Challenge, including a $10,000 first prize.
 
 ### Bug bounty Hunting
 
-### Mentoring 
+Some companies offer bounties for individuals who find and inform the company of any bugs in their software. Generally, this is focused on security-related bugs as this is what exposes companies the most in terms of both reputation and finances. A lot of white-hat hackers make a side-income doing this. 
+
+You'll need to make sure it is a genuine bug that can be clearly explained or reproduced, as well as ensuring the company will pay you a bounty for your efforts. Not all companies do, so do your research before diving into their source code.
+
+### Mentoring
+
+Mentoring can be a highly rewarding way to make some extra money. Not only do you get paid, but you are directly helping someone improve themselves (and hopefully making some more money themselves).
+
+Having a mentor is great for beginner developers as well as developers looking to move from technical roles to lead/management roles that involve the management of colleagues.
+
+If you're someone who either has a wealth of technical knowledge or have made the transition from a technical role into management or C-Level, mentoring is an option that you'd be more than qualified for.
 
 ### One-to-One Coaching
 
