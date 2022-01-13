@@ -372,6 +372,18 @@ There are a number of existing marketplaces for website flipping (the most popul
 
 ### SEO Consulting
 
+As a successful web developer, you will be intimately familiar with SEO - making websites that have content that will be found when a user Googles the right words.
+
+SEO is a complicated concept for non-technical people and small business owners who have outsourced their web development needs in their entirety. 
+
+You can offer your services to review their existing website content in order to ensure they are following best SEO practices, develop a content strategy for them to ensure they have fresh, relevant content being discovered by Google and that their Search Console and Analytics are configured properly so they can see what is working, what people are looking for and what they should add or remove.
+
 ### Build a SaaS Product
+
+SaaS products unlock the holy grail of recurring revenue - users who pay you every month for your software. They don't necessarily have to install anything to use your software and all documentation, tutorials and community are online to assist them using your product. You will need to provide some standard support for users who have issues with the software and you will be fixing bugs along the way, but having 500 users paying $10/month for your SaaS product provides good regular money.
+
+The best thing about SaaS is that it can be built for all industries. This means you can build a SaaS product for things you have a deep knowledge of, things you are personally interested in or things you know nothing about. Obviously, the more you know about something before you start the better/easier it will be for building the software, but this is not a prerequisite.
+
+There are a number of tools already built to assist with configuring everything you need (like [Stripe](https://www.stripe.com) for payments, [Supabase](https://supabase.com/) for authentication and database management) and no-code tools to streamline building a SaaS product.
 
 ### SaaS Flipping
