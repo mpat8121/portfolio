@@ -264,7 +264,7 @@ The Shopify site can be built with specific SEO content in mind to get your site
 
 This method will require a bit of an initial outlay in finances to pre-purchase the merchandise in order to be able to ship it to your customers quickly. You will also need somewhere to store the merchandise.
 
-### Create a dropshipping Shopify Site
+### Create a Dropshipping Shopify Site
 
 Similar to the above, you can create a Shopify site selling anything. If you aren't someone who has much of a design eye for creating content yourself for a brand or you don't want to outlay the money as per the above, then dropshipping may be the option for you.
 
@@ -308,17 +308,67 @@ An alternative for this is to create your own, highly technical, blog. Do your o
 
 ### Create WordPress Plugins and Themes
 
-### Create sponsored open source content
+WordPress powers roughly one-third of all websites on the Internet currently. Yep, one-third. That's a huge amount of websites out there running WordPress. All of these sites use a theme and any number of plugins to add functionality.
+
+Finding a niche for a plugin that needs to be created can be hard, but with so many websites out there, building a plugin in a high-demand niche can still be lucrative. It just needs to be a really good plugin. 
+
+Similarly with themes. There are a lot of themes out there already but if you create a well built, performant and beautiful theme, you can make good money from them.
+
+### Create Sponsored Open Source Content
+
+Open-source software is software where the source code is freely available to anyone. You as the creator will also be the maintainer so you will help users with using your software as well as fixing any issues they report. 
+
+Most open-source distribution platforms now have the option to turn on sponsorships which allow your users to donate to you to say thank you for creating and maintaining the software that they are using. 
+
+If you build popular software, the demands on your time can be significant but if you are lucky, your community of users will be appreciative and show you this via donations.
 
 ### Create and Sell Graphic Web Assets
 
+A lot of web developers (myself included) are more technical than they are graphic design orientated. 
+
+If you are one of the lucky ones to have a strong design side to you, creating assets for other developers can be a great way to supplement your income. 
+
+There are lots of platforms offering web assets either for free or for royalties to their creator that the millions of web developers globally use every day. 
+
+If you can create top-quality, interesting and useful web assets, you can create a nice side-income stream for yourself selling them.
+
 ### Sponsored Twitter/Facebook Postings
+
+Similar to the guest blog posts and sponsorships, sponsored social media posts are a great way to make some additional income.
+
+If you've got a big audience, other people will pay you good money to post about them or their products. Most, if not all, posts you see from users with big followers talking about a product or service that is not offered by the user themself is most likely a sponsored post. The user is being paid a preset fee to post about the other product or service.
+
+Obviously, the bigger your audience, the more money you can command for each post.
+
+The best way to go about this is to create an audience around a specific topic or area of expertise. Others in the topic will approach you to gain further visibility. 
+
+You don't need to have millions of followers to be able to start doing this (obviously that'd make you more money), but you can start with a few thousand followers.
+
+It is also sensible to review the product or service and the person asking you to post for quality and authenticity. It can be very damaging to you personally if you publicise a bad product or your followers get ripped off in any way.
 
 ### Create Niche Websites to Sell
 
+The concept of this is relatively simple. You build a website focusing on a specific topic or niche. You market it and get a good amount of monthly traffic consistently coming to the site. Then you put it up for sale and you get an amount of money based upon the monthly traffic you've managed to generate.
+
+An alternative to this to potentially make more money is to do the above, but with a Shopify site selling actual products. You then use the average monthly sales as the basis for your asking price.
+
+The value for the buyer is that the website is young and by growing the traffic they can make more money from it (or do the same as you - sell it again with a higher traffic base for a higher price).
+
+This can take a bit of grunt work, but if you can streamline your website building process to minimise the time and effort required to get it up and running, it may well be a lucrative method to make some income.
+
 ### Flip Web Domains
 
+The concept of this is that you buy domain names that are in demand. When someone approaches you to buy it, you sell it at a higher price than what you paid for it. No work, no website, only money.
+
+The trick here is identifying in-demand domains that are available at an affordable price, finding a buyer and convincing them to buy it from you at your asking price.
+
+You can trawl through any domain name registrar website for available domain names in conjunction with Google Search Trends to find popular topics. Buy domains you think will become more in-demand and then sell them. Simples.
+
 ### Flip Websites
+
+Flipping websites is similar to creating a niche website and selling it, except that you don't have to find the niche and create the website. You buy an existing website, improve it, increase the monthly traffic and sell it for more than you paid for it. Or, if it happens to be particularly lucrative in monthly recurring revenue, keep it and run the website as a business.
+
+There are a number of existing marketplaces for website flipping (the most popular being [Flippa](https://flippa.com/)) that list websites for sale. You can search by type of website and the current monthly profit or asking price is shown. Expect to pay somewhere in the order of 3x the annual recurring revenue for the website.
 
 ### SEO Consulting
 
