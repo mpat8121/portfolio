@@ -387,3 +387,9 @@ The best thing about SaaS is that it can be built for all industries. This means
 There are a number of tools already built to assist with configuring everything you need (like [Stripe](https://www.stripe.com) for payments, [Supabase](https://supabase.com/) for authentication and database management) and no-code tools to streamline building a SaaS product.
 
 ### SaaS Flipping
+
+This is obviously very similar to the website flipping topic mentioned earlier, with the caveat of focusing particularly on SaaS web apps. This is an important distinction because of the nature of SaaS web apps. Generally speaking, they can be treated as a business unto themselves. They have a product and generally require multiple facets of management - development, marketing, advertising, support etc. This means SaaS flipping essentially fits into the category of business flipping.
+
+Your initial outlay will be more significant, but if you can even increase the revenue of the SaaS product by 2x, the amount you can sell it again for is substantially more.
+
+If you buy a SaaS product for $40,000 (roughly a $1000/month revenue product) and double that to $2000/month revenue, you can then sell it for >$90,000 to the right buyer.
