@@ -14,7 +14,9 @@ image: ../assets/how-make-money-feature.jpg
 
 If you're an individual who can code, with any level of experience, you are lucky. Your skills are in demand given that we live in a digital world and people and businesses need your skills to help them succeed.
 
-There's a lot of content out there on the internet telling you that you can make passive income as a developer. This is... up to interpretation. It is possible to have created products that generate ongoing income for you without requiring large amounts of ongoing input, but the real truth is that none of the possible ways to make money as a developer are work free. Some require less ongoing work than others, but they all require your time and energy. If you want to outsource the ongoing work, this is an option, but your profit margins will need to be sufficient to make it financially viable.
+There's a lot of content out there on the internet telling you that you can make passive income as a developer. This is... up to interpretation. 
+
+It is possible to have created products that generate ongoing income for you without requiring large amounts of ongoing input, but the real truth is that none of the possible ways to make money as a developer are work free or truly passive. Some require less ongoing work than others, but they all require your time and energy. If you want to outsource the ongoing work, this is an option, but your profit margins will need to be sufficient to make it financially viable.
 
 Many of the below ways to make money are complimentary and will give you the best results if you do connect and cross-promote your content to make the most of them.
 
@@ -194,9 +196,31 @@ If you're someone who either has a wealth of technical knowledge or have made th
 
 ### One-to-One Coaching
 
-### Run a Patreon account
+This is similar to mentoring, but will most likely require a bigger time investment to make it worth your while. 
+
+This will involve finding individuals who are wanting to be taught how to implement the same things you already know. 
+
+Doing this one-on-one is harder work, but the money is better than running an online course or webinars. Individuals pay for the exclusivity and individual attention afforded by having 100% of your time to help them learn. 
+
+You will need to be a subject matter expert on whatever specific topics you decide to coach in as you will need to be able to handle any/all questions your student may have.
+
+### Run a Patreon Account
+
+For those of you not familiar with Patreon, it is a membership platform for creators. Essentially, you create content and post it to your account. Individuals then subscribe to your profile for access to your content.
+
+Creating a paying audience on Patreon is a really good way to create a strong revenue stream. You will need to continually be producing good content that your subscribers want (and to attract new subscribers).
+
+Patreon was originally built to facilitate artists and other visual content creators. but has expanded for those who write. I would still strongly recommend adding as much visual content as you can into your posts in order to attract the eyes of potential subscribers.
 
 ### Use Buy Me a Coffee
+
+Buy Me a Coffee is similar to Patreon in that it is a platform to facilitate subscribers to content creators. Where it differs and provides a different income channel for you is that it has widget plugins for websites so that content creators can put the widget in their own websites.
+
+You have most likely seen this widget down the bottom of website pages with a little coffee cup in a coloured circle (including on this very website - it should be down the bottom right corner). 
+
+Clicking on the widget opens a modal that facilitates a one-time donation to the content creator of preset (or custom) amounts of money. 
+
+Again, you'll need a big audience for this to create any meaningful income for you. It also relies more on the generosity of your viewers as it is just a donation essentially.
 
 ### Live Stream Coding on Twitch
 
