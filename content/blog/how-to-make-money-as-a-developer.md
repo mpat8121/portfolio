@@ -18,6 +18,8 @@ There's a lot of content out there on the internet telling you that you can make
 
 It is possible to have created products that generate ongoing income for you without requiring large amounts of ongoing input, but the real truth is that none of the possible ways to make money as a developer are work free or truly passive. Some require less ongoing work than others, but they all require your time and energy. If you want to outsource the ongoing work, this is an option, but your profit margins will need to be sufficient to make it financially viable.
 
+In my experience, the holy grail of making money as a developer is to create relatively low ongoing-work products that are sold as subscription products. These have limitless income potential and are not predicated on **having** to find additional customers to keep the product viable. It is possible to find 100 customers that are fairly static paying a subscription fee every month without you having to do too much. There's no better feeling than the monthly subscription money hitting your bank account every month.
+
 Many of the below ways to make money are complimentary and will give you the best results if you do connect and cross-promote your content to make the most of them.
 
 The below ways to make money as a developer will assist you in finding the way(s) that suits your desired lifestyle, work-life balance, skillsets and time availability.
@@ -156,11 +158,13 @@ The tech industry/coding space is very competitive for e-learning, but the deman
 
 ### Run a Youtube Channel
 
-A YouTube channel is a slow burn income source, similar to blogging. It will take lots of content over a sustained period of time before you start seeing any real income being generated.
+A [YouTube](https://www.youtube.com) channel is a slow burn income source, similar to blogging. It will take lots of content over a sustained period of time before you start seeing any real income being generated.
 
 Creating your own channel and putting up videos is simple enough, but you need to get 1000's of subscribers before YouTube allows you to monetise your channel, and even then, the income you can generate is always predicated by the number of views your video (ads) gets. 
 
 This is why you need to build a huge audience over a long time and continually feed that audience with new content. The channels with huge subscriber bases make pretty good money so it is worth the time and effort in the long run.
+
+The channels with millions of subscribers are the ones that make a good, living wage directly from their channel.
 
 ### Host a Podcast
 
@@ -170,7 +174,7 @@ Generating a podcast following is like all of these methods. It will take time a
 
 Podcasting is also a cool way to meet a wide variety of people as your interviewees and you'll get to talk about some really interesting things with them.
 
-Podcast platforms (like Spotify) put you in front of a lot of potential listeners without having to do any targeted marketing, although they are super competitive as there are a lot of podcasts already out there.
+Podcast platforms (like [Spotify](https://www.spotify.com)) put you in front of a lot of potential listeners without having to do any targeted marketing, although they are super competitive as there are a lot of podcasts already out there.
 
 ### Paid Coding Challenges
 
@@ -194,6 +198,8 @@ Having a mentor is great for beginner developers as well as developers looking t
 
 If you're someone who either has a wealth of technical knowledge or have made the transition from a technical role into management or C-Level, mentoring is an option that you'd be more than qualified for.
 
+There are platforms (like [Codementor.io](https://www.codementor.io/) and [CodingCoach.io](https://codingcoach.io/)) that you can sign up for to help create mentor-mentoree connections.
+
 ### One-to-One Coaching
 
 This is similar to mentoring, but will most likely require a bigger time investment to make it worth your while. 
@@ -206,7 +212,7 @@ You will need to be a subject matter expert on whatever specific topics you deci
 
 ### Run a Patreon Account
 
-For those of you not familiar with Patreon, it is a membership platform for creators. Essentially, you create content and post it to your account. Individuals then subscribe to your profile for access to your content.
+For those of you not familiar with [Patreon](https://www.patreon.com/), it is a membership platform for creators. Essentially, you create content and post it to your account. Individuals then subscribe to your profile for access to your content.
 
 Creating a paying audience on Patreon is a really good way to create a strong revenue stream. You will need to continually be producing good content that your subscribers want (and to attract new subscribers).
 
@@ -214,7 +220,7 @@ Patreon was originally built to facilitate artists and other visual content crea
 
 ### Use Buy Me a Coffee
 
-Buy Me a Coffee is similar to Patreon in that it is a platform to facilitate subscribers to content creators. Where it differs and provides a different income channel for you is that it has widget plugins for websites so that content creators can put the widget in their own websites.
+[Buy Me a Coffee](https://www.buymeacoffee.com/) is similar to Patreon in that it is a platform to facilitate subscribers to content creators. Where it differs and provides a different income channel for you is that it has widget plugins for websites so that content creators can put the widget in their own websites.
 
 You have most likely seen this widget down the bottom of website pages with a little coffee cup in a coloured circle (including on this very website - it should be down the bottom right corner). 
 
@@ -224,17 +230,81 @@ Again, you'll need a big audience for this to create any meaningful income for y
 
 ### Live Stream Coding on Twitch
 
+[Twitch](https://www.twitch.tv/) is predominately a gaming streaming platform where you can go to watch others playing various video games. 
+
+That being said, there is no reason why you can't stream other activities, such as you coding up an application. Twitch does generally require more direct social interaction than some of these other methods. You will be expected to communicate with your followers while you are streaming.
+
+There are relatively big movements on social media amongst the 'code in public' believers who believe in sharing their endeavours to build profitable software in public. This can involve live-tweeting the construction of quick SaaS applications or similar, but as a developer, you could do the same on Twitch.
+
+There are some Twitch users with 10's of thousands of subscribers to their Twitch profiles that focus on nothing but coding.
+
+Twitch does have some requirements before you can start to monetise your profile, but the barrier is not so big that you'll be working forever for free before you reach the requirements.
+
 ### Create and Distribute a Newsletter
+
+There's a reason so many blogs and websites have those annoying popups and forms requesting you to give them your email address.
+
+They are so they can send you their newsletters.
+
+Email newsletters are a great way to push affiliate links, your own content and to advertise other platforms where you distribute content.
+
+Generally, if someone does give you their email address via your website, it means they are actively interested in your content. This makes them a great target to offer other items you have as they are most likely going to be interested in them too.
+
+If you've spent any time studying email marketing, you will know that email open rates are quite low and clicking on links contained within emails is even lower - generally < 1% of your total audience. This means having a huge number of subscribers is the best way to get a sufficient number of eyes on your products to make good sales and income from your newsletter.
+
+Creating interesting and engaging content with catchy subjects is the key for email newsletters in order to bring your readers in.
 
 ### Sell Merchandise
 
-### Create a dropshipping Shopify site
+Add another development string to your bow. Create a [Shopify](https://www.shopify.com/) site, find merchandise suppliers and create yourself a custom brand. Get your brand printed onto this merchandise (t-shirts, mugs, baseball caps, etc) and sell them via the Shopify site. 
 
-### Create a Trading bot
+The great thing about this is a pre-built audience is not a necessity. Obviously, it will help as they will be the consumers aware of your brand, but creating a cool brand doesn't need to have prior knowledge of your mad coding skills.
+
+The Shopify site can be built with specific SEO content in mind to get your site trending for different types of searches. Your merchandise doesn't only have to be specific to your brand, it can be your whole industry as a niche. 
+
+This method will require a bit of an initial outlay in finances to pre-purchase the merchandise in order to be able to ship it to your customers quickly. You will also need somewhere to store the merchandise.
+
+### Create a dropshipping Shopify Site
+
+Similar to the above, you can create a Shopify site selling anything. If you aren't someone who has much of a design eye for creating content yourself for a brand or you don't want to outlay the money as per the above, then dropshipping may be the option for you.
+
+Dropshipping is the process of listing products for sale on your site that when they are ordered, the order is forwarded directly onto the manufacturer. The manufacturer then fulfils the order for you and ships it to your customer.
+
+The money here is that you charge the customer more than the merchandiser charges you e.g. you swell a t-shirt for $12 and the manufacturer charges you $4 per shirt. You get to keep the $8.
+
+The downside of this is that shipping can be very slow and having visibility of the order can be difficult. You also have to do all the customer support work with limited visibility.
+
+Some of the bigger drop shippers outsource customer support to virtual assistants. They pay a monthly retainer for the virtual assistant to deal with all incoming queries regarding orders or the products in general. This means it is possible to have a low-effort e-commerce store running, but it will take considerable effort to get it up and running.
+
+There are thousands of posts on how to set up dropshipping sites with Shopify as well as how to find lucrative products to sell.
+
+### Create and Sell a Trading Bot
+
+A trading bot is a great way to attempt to make some extra money if you know your way around the financial markets. 
+
+A trading bot essentially takes some of your money and invests it in stocks. It then monitors these stocks for price peaks and troughs and automates the continued buying and selling of the stocks to maximise buying when they are cheap and selling when the price is high. You get to keep the profits.
+
+Obviously, there is a necessary initial input of money for the bot to trade with. How much this is will depend on your appetite for risk as it is possible the market will start (or continue) on a downward trend and you'll need to wait a long time to be able to potentially recoup your initial investment. 
+
+Additionally, assuming you can prove that the bot provides an overall return on investment, it becomes an asset you can sell to others. Pricing models for this could be a percentage of all monthly transactions or a percentage of a minimum required monthly investment. 
 
 ### Create and Sell a Chatbot
 
-### Write technical documentation
+Similar to the above trading bot, chatbots are in high demand as more and more businesses look to automate as much of their business grunt work as they can.
+
+Chatbots have some pre-built intelligence to them to answer questions in a chat asked by users (or potential users). If they get to a point where they can not answer the question, then they direct the user to you or one of your staff for assistance.
+
+Chatbots can be built for a number of different platforms to assist with whole websites or Facebook business pages and similar other platforms.
+
+### Write Technical Documentation
+
+As a developer, you have a good grasp of technical concepts. You are probably also a pretty quick learner of new technology. 
+
+Writing technical documentation is a skill set that requires both good technical knowledge as well as being able to communicate in a clear manner to non-technical individuals. All companies that do any sort of technical work have a need for technical documentation. This means the opportunities for this are many and vast.
+
+Generally, writing for another company will require you to either freelance or contract to them. Some companies have full-time positions for technical writers as well.
+
+An alternative for this is to create your own, highly technical, blog. Do your own technical documentation for things you have built or for things other people have built that are widely used in your community. This will help build your reputation amongst the community and help you promote your other channels of potential income.
 
 ### Create WordPress Plugins and Themes
 
