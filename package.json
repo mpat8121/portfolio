@@ -67,7 +67,7 @@
     "bulma": "^0.9.3",
     "gatsby-cli": "^2.12.66",
     "gatsby-plugin-root-import": "^2.0.5",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "prettier": "^1.17.0"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
