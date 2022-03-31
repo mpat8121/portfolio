@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const AllPosts = ({ posts }) => (
   <div className="columns is-multiline">
@@ -13,7 +14,7 @@ const AllPosts = ({ posts }) => (
             <div className="card-image">
               <figure className="image is-2by1">
                 <Link style={{ boxShadow: `none`, color: 'var(--textLink)' }} to={`/blog${node.fields.slug}`}>
-                  <img src={image ? image.childImageSharp.sizes.src : ''} alt="Blog card feature" />
+                  <GatsbyImage image={image ? image.childImageSharp.gatsbyImageData : ''} alt="Blog card feature" />
                 </Link>
               </figure>
             </div>

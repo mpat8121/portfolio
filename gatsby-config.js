@@ -11,14 +11,15 @@ module.exports = {
       twitter: `Mick_Patterson_`,
     },
     keywords: [`blog`, `angular`, `javascript`, `ionic`, `nodejs`, `sql`,
-    `mongo`, `sql server`, `c#`],
+      `mongo`, `sql server`, `c#`],
     image: "/blog-header-image.jpg"
   },
   plugins: [
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-styled-components`,
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
@@ -105,6 +106,12 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [".mdx", ".md"],
+        remarkPlugins: [
+          require('gatsby-remark-vscode').remarkPlugin, {
+            theme: `Cobalt2`,
+            extensions: [`theme-cobalt2`],
+          }
+        ],
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
@@ -117,9 +124,6 @@ module.exports = {
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
-          },
-          {
-            resolve: `gatsby-remark-vscode`,
           },
           {
             resolve: `gatsby-remark-copy-linked-files`,
@@ -163,7 +167,7 @@ module.exports = {
           trackingId: `UA-150549522-1`,
         },
         environments: ['production', 'developmnet']
-        
+
       }
     }
   ],

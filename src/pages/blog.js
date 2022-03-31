@@ -63,9 +63,7 @@ export const pageQuery = graphql`
             categories
             image {
               childImageSharp {
-                sizes(maxWidth: 600) {
-                  ...GatsbyImageSharpSizes
-                }
+                gatsbyImageData(width: 600)
               }
             }
           }

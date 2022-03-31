@@ -8,6 +8,7 @@ import { Toggle } from "react-toggle-component"
 import CookieConsent from "react-cookie-consent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
+import CategoryList from "./categoryList"
 
 class Layout extends React.Component {
   componentDidMount() {
@@ -79,6 +80,14 @@ class Layout extends React.Component {
           <section>{children}</section>
         </div>
         <footer className="footer">
+          <div className="columns">
+            <div className="column">
+              <CategoryList />
+            </div>
+            <div className="column">1</div>
+            <div className="column">1</div>
+            <div className="column">1</div>
+          </div>
           <div className="content has-text-centered">
             © {new Date().getFullYear()}, <Link style={{ color: "var(--text)" }} to={`/`}>Mick Patterson</Link>
             <div><Link style={{ color: "var(--text)" }} to={`/privacy`}>Privacy Policy</Link></div>
