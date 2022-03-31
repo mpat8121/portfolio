@@ -2,8 +2,14 @@
 path: use-azure-devops-to-deploy-a-nodejs-function-app
 date: 2022-03-31T06:49:54.928Z
 title: Use Azure DevOps to deploy a NodeJs Function app
-description: Setting up continuous deployment on an Azure Function app can save a lot of time, particularly if your development process follows small, agile deployments where you may deploy to your production environment multiple times a day or week.
-categories: ["Azure","DevOps","Productivity"]
+description: Setting up continuous deployment on an Azure Function app can save
+  a lot of time, particularly if your development process follows small, agile
+  deployments where you may deploy to your production environment multiple times
+  a day or week.
+categories:
+  - Azure
+  - DevOps
+  - Productivity
 image: ../assets/deploy-function-app-feature.jpg
 ---
 Setting up continuous deployment on an Azure Function app can save a lot of time, particularly if your development process follows small, agile deployments where you may deploy to your production environment multiple times a day or week.
@@ -20,8 +26,6 @@ The below yml content is based on a Linux based function app, but there are comm
 
 The basic anatomy is:
 
-
-
 1. Tell Azure which branch to run the logic on to publish
 2. Create some variables so it knows which Azure subscription to connect to and which Function app to deploy to
 3. Define which VM type to create
@@ -29,10 +33,9 @@ The basic anatomy is:
 5. Use the VM to run the npm commands to build the NodeJs project
 6. Create a zip of the build files
 7. Create an artifact of that zip file
-8. Upload the zip file to the Azure Function Appuse
+8. Upload the zip file to the Azure Function App
 
-
-```
+```yaml
 # Node.js Function App to Linux on Azure
 # Build a Node.js function app and deploy it to Azure as a Linux function app.
 # Add steps that analyze code, save build artifacts, deploy, and more:
@@ -119,3 +122,6 @@ stages:
              appType: functionAppLinux 
              appName: $(functionAppName)
              package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
+```
+
+Now, every time you push a Git commit to the 'deploy' branch of your project Git repository, this yml file will execute to build your project and upload it automatically to your Azure function app.
