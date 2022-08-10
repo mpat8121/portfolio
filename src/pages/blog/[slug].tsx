@@ -96,19 +96,17 @@ const BlogPost = (post: any) => {
           </header>
           <ReactMarkdown
             className="content"
-            children={post.content}
             remarkPlugins={[remarkHtml]}
             components={{
               code({ node, inline, className, children, ...props }) {
                 const match = /language-(\w+)/.exec(className || "")
                 return !inline && match ? (
                   <SyntaxHighlighter
-                    children={String(children).replace(/\n$/, "")}
                     style={a11yDark as any}
                     language={match[1]}
                     PreTag="div"
                     {...props}
-                  />
+                  >{String(children).replace(/\n$/, "")}</SyntaxHighlighter>
                 ) : (
                   <code className={className} {...props}>
                     {children}
@@ -116,7 +114,7 @@ const BlogPost = (post: any) => {
                 )
               },
             }}
-          />
+          >{post.content}</ReactMarkdown>
           <div className="has-text-centered">
             <p className="content">If you liked this post, please share it!</p>
             <TwitterShareButton url={shareUrl} title={post.frontMatter.title}>

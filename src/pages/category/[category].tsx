@@ -3,7 +3,6 @@ import Posts from "../../components/posts"
 import { getAllPosts, getPostsByCategory, Post } from "../../lib/blog"
 
 export async function getStaticProps({ params }: any) {
-  console.log("GetStaticProps", params)
   const categoryPosts = getPostsByCategory(params.category)
   return {
     props: {
