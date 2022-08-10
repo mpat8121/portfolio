@@ -5,8 +5,8 @@ title: Adding Sign-in with Apple to Ionic Capacitor Apps with Firebase
 description: Authentication is vital for any app with user accounts. Apple
   requires that their authentication provider is available on all apps submitted
   to the iOS app store.
-categories: ["ionic", "firebase", "javascript"]
-image: ../assets/sign-in-with-apple-feature.jpg
+categories: ["Ionic", "Firebase", "Javascript"]
+image: /assets/sign-in-with-apple-feature.jpg
 ---
 ### Setup the Firebase Project
 

@@ -5,9 +5,9 @@ title: Creating a Realtime Chat with NodeJs, Express and Socket.io
 description: Step-by-Step guide to setting up an express server to run as a
   realtime chat server
 categories: ["NodeJs", "Javascript"]
-image: ../assets/realtime-chat-feature.jpg
+image: /assets/realtime-chat-feature.jpg
 ---
-![socket.io-logo](../assets/socket.io.png "Socket.IO Logo")
+![socket.io-logo](/assets/socket.io.png "Socket.IO Logo")
 
 A few years ago I was tasked with building a mobile app (which happened to be my first). Part of this app's requirements was to have private chat rooms for each group of users. Users could be added to the group via invitation by the group creator.
 

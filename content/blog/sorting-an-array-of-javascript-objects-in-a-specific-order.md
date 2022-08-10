@@ -7,9 +7,9 @@ description: Sorting an Array of JavaScript Objects in a Specific Order is a use
   specifications. Unfortunately, it is more challenging than a standard array
   sort and requires additional setup work.
 categories: ["Javascript"]
-image: "../assets/ordered-cars.jpg"
+image: "/assets/ordered-cars.jpg"
 ---
-![Ordered-Cars](../assets/ordered-cars.jpg "Ordered Cars")
+![Ordered-Cars](/assets/ordered-cars.jpg "Ordered Cars")
 
 Sorting an array of objects in javascript is simple enough using the default sort() function for all arrays:
 

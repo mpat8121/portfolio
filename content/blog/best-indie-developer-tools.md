@@ -5,7 +5,7 @@ title: Best Indie Fullstack Developer Tools
 description: A curated list of the best developer tools for fullstack indie
   developers covering everything from coding, git, database admin and devops
 categories: ["Software", "Productivity"]
-image: ../assets/fullstack-tools-feature.jpg
+image: /assets/fullstack-tools-feature.jpg
 ---
 Developing, programming, coding, scripting, whatever you call it, is difficult. It's a fact.
 
@@ -13,7 +13,7 @@ Luckily, there are a plethora of tools we can use to make it just a little bit e
 
 The tools I personally use evolve depending on the projects and technologies I am working on but the below list are the ones I use pretty much every day, both personally and with colleagues.
 
-![Fullstack-Tools](../assets/fullstack-tools.jpg "Fullstack tools")
+![Fullstack-Tools](/assets/fullstack-tools.jpg "Fullstack tools")
 
 ### Coding
 

@@ -10,8 +10,17 @@ module.exports = {
     social: {
       twitter: `Mick_Patterson_`,
     },
-    keywords: [`blog`, `angular`, `javascript`, `ionic`, `nodejs`, `sql`,
-    `mongo`, `sql server`, `c#`],
+    keywords: [`blog`,
+    `angular`,
+    `javascript`,
+    `ionic`,
+    `nodejs`,
+    `sql`,
+    `mongo`,
+    `sql server`,
+    `c#`,
+    `fullstack`,
+    `html`],
     image: "/blog-header-image.jpg"
   },
   plugins: [
@@ -44,62 +53,6 @@ module.exports = {
         googleAdClientId: "ca-pub-8451772669867652",
         head: true
       }
-    },
-    {
-      resolve: "gatsby-plugin-local-search",
-      options: {
-        name: "blog",
-        engine: "flexsearch",
-        engineOptions: {
-          encode: "icase",
-          tokenize: "forward",
-          async: false,
-        },
-        query: `
-          {
-            allMdx {
-              nodes {
-                id
-                fields { slug }
-                excerpt
-                rawBody
-                frontmatter {
-                  title
-                  description
-                  date(formatString: "MMMM DD, YYYY")
-                }
-              }
-            }
-          }
-        `,
-        ref: "id",
-        index: ["title", "rawBody"],
-        store: ["id", "slug", "date", "title", "excerpt", "description"],
-        normalizer: ({ data }) =>
-          data.allMdx.nodes.map(node => ({
-            id: node.id,
-            slug: node.fields.slug,
-            rawBody: node.rawBody,
-            excerpt: node.excerpt,
-            title: node.frontmatter.title,
-            description: node.frontmatter.description,
-            date: node.frontmatter.date,
-          })),
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
     },
     {
       resolve: `gatsby-plugin-mdx`,
@@ -162,7 +115,7 @@ module.exports = {
         googleAnalytics: {
           trackingId: `UA-150549522-1`,
         },
-        environments: ['production', 'developmnet']
+        environments: ['production', 'development']
         
       }
     }

@@ -8,7 +8,7 @@ description: Being a software developer of any flavour opens a wide range of
 categories:
   - Money
   - Productivity
-image: ../assets/how-make-money-feature.jpg
+image: /assets/how-make-money-feature.jpg
 ---
 ### How to Make Money as a Developer
 

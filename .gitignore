@@ -54,10 +54,6 @@ typings/
 # dotenv environment variables file
 .env
 
-# gatsby files
-.cache/
-public
-
 # Mac files
 .DS_Store
 
@@ -71,3 +67,6 @@ yarn-error.log
 # VSCode Config Files
 .vscode
 __queuestorage__
+
+# NextJs Files
+.next 

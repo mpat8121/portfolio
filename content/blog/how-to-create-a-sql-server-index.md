@@ -9,7 +9,7 @@ description: Adding indexes to your SQL Server tables is something that you will
 categories:
   - SQL
   - Database
-image: ../assets/create-sql-index-feature.jpg
+image: /assets/create-sql-index-feature.jpg
 ---
 Adding indexes to your SQL Server tables is something that you will do plenty of times throughout your career, either as a full-stack developer or as a specialist database admin. Fortunately, adding indexes to tables in your database is a pretty simple task. 
 

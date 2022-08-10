@@ -10,7 +10,7 @@ categories:
   - Azure
   - DevOps
   - Productivity
-image: ../assets/deploy-function-app-feature.jpg
+image: /assets/deploy-function-app-feature.jpg
 ---
 Setting up continuous deployment on an Azure Function app can save a lot of time, particularly if your development process follows small, agile deployments where you may deploy to your production environment multiple times a day or week.
 
