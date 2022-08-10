@@ -6,18 +6,27 @@ import SEO from "../../components/seo"
 import {
   getPostsBySlug,
   getAllPosts,
-  markdownToHtml,
   Post,
 } from "../../lib/blog"
+import {
+  FacebookIcon,
+  FacebookShareButton,
+  TwitterIcon,
+  TwitterShareButton,
+} from "react-share"
+import config from "../../config"
+import ReactMarkdown from "react-markdown"
+import remarkHtml from "remark-html"
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
+import {a11yDark} from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 export async function getStaticProps({ params }: any) {
   const post = getPostsBySlug(params.slug)
-  const content = await markdownToHtml(post.content || "")
 
   return {
     props: {
       ...post,
-      content,
+      content: post.content,
     },
   }
 }
@@ -38,6 +47,7 @@ export async function getStaticPaths() {
 }
 
 const BlogPost = (post: Post) => {
+  const shareUrl = `${config.siteUrl}/blog/${post.slug}`
   return (
     <Layout>
       <SEO
@@ -77,10 +87,37 @@ const BlogPost = (post: Post) => {
               </span>
             </p>
           </header>
-          <div
+          <ReactMarkdown
             className="content"
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          ></div>
+            children={post.content}
+            remarkPlugins={[remarkHtml]}
+            components={{
+              code({ node, inline, className, children, ...props }) {
+                const match = /language-(\w+)/.exec(className || "")
+                return !inline && match ? (
+                  <SyntaxHighlighter
+                    children={String(children).replace(/\n$/, "")}
+                    style={a11yDark as any}
+                    language={match[1]}
+                    PreTag="div"
+                    {...props}
+                  />
+                ) : (
+                  <code className={className} {...props}>
+                    {children}
+                  </code>
+                )
+              },
+            }}
+          />
+          <footer>
+            <TwitterShareButton url={shareUrl} title={post.frontMatter.title}>
+              <TwitterIcon size={32} round />
+            </TwitterShareButton>
+            <FacebookShareButton url={shareUrl} quote={post.frontMatter.title}>
+              <FacebookIcon size={32} round />
+            </FacebookShareButton>
+          </footer>
         </div>
       </article>
     </Layout>

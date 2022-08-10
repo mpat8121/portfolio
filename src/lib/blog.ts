@@ -2,8 +2,6 @@ import fs from "fs"
 import { join } from "path"
 import matter from "gray-matter"
 import format from "date-fns/format"
-import { remark } from "remark"
-import html from "remark-html"
 
 const postsDir = join(process.cwd(), "content", "blog")
 
@@ -66,12 +64,3 @@ export const getAllPosts = (): Post[] => {
   return posts
 }
 
-/**
- * Converts a markdown formatted string to HTML for rendering
- * @param {string} markdown Raw markdown content from .md file
- * @returns {Promise<string>} HTML formatted string
- */
-export const markdownToHtml = async (markdown: string): Promise<string> => {
-  const result = await remark().use(html).process(markdown)
-  return result.toString()
-}
