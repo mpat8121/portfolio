@@ -8,9 +8,9 @@ description: Building an API with NodeJs and Express is always one of the key
   integrity by performing scheduled maintenance checks to ensure everything
   remains in solid working order.
 categories: ["NodeJs", "Javascript"]
-image: "../assets/pexels-pixabay-273153.jpg"
+image: "/assets/pexels-pixabay-273153.jpg"
 ---
-![How to Setup Scheduled Functions with NodeJs, Express and Node-Cron](../assets/pexels-pixabay-273153.jpg "How to Setup Scheduled Functions with NodeJs, Express and Node-Cron")
+![How to Setup Scheduled Functions with NodeJs, Express and Node-Cron](/assets/pexels-pixabay-273153.jpg "How to Setup Scheduled Functions with NodeJs, Express and Node-Cron")
 
 1. Create a NodeJs application
 

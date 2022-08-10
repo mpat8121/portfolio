@@ -6,9 +6,9 @@ description: A how-to for adding HTTP interceptors to a Create-React-App app
   with the Axios npm library to check and modify request and response headers
   for all HTTP requests
 categories: ["HTTP", "React", "Javascript"]
-image: "../assets/react-face-code.jpg"
+image: "/assets/react-face-code.jpg"
 ---
-![React-Stock-Image](../assets/react-face-code.jpg "React Code")
+![React-Stock-Image](/assets/react-face-code.jpg "React Code")
 
 ### Create a React App
 

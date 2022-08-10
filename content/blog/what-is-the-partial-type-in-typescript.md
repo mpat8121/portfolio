@@ -4,7 +4,7 @@ date: 2022-06-04T07:18:41.920Z
 title: What is the Partial Type in Typescript
 description: The Partial type in Typescript is a built in type that provides some very useful functionality to us to help manipulate other user-defined types while we are developing our app
 categories: ["Typescript", "Web Development"]
-image: ../assets/what-is-partial-feature.jpg
+image: /assets/what-is-partial-feature.jpg
 ---
 The Partial type in Typescript is a built in type that provides some very useful functionality to us to help manipulate other user-defined types while we are developing our app.
 
