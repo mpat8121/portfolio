@@ -7,8 +7,8 @@ description: Every full-stack application in production today probably connects
   a MySQL database like MariaDB, a SQL Server database like those provided by
   Azure or any other variety. This means that knowing how to wire up a stable
   connection to these databases from your NodeJs API is a critical skill.
-categories: ["SQL", "Nodejs", "Javascript"]
-image: ../assets/connect-to-sql-feature.jpg
+categories: ["SQL", "NodeJs", "Javascript"]
+image: /assets/connect-to-sql-feature.jpg
 ---
 Every full-stack application in production today probably connects to a database of some variety, whether that be a NoSQL database like MongoDB, a MySQL database like MariaDB, a SQL Server database like those provided by Azure or any other variety. This means that knowing how to wire up a stable connection to these databases from your NodeJs API is a critical skill.
 

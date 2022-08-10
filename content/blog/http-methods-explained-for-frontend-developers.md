@@ -7,9 +7,9 @@ description: Frontend developers will inevitably need to make HTTP requests
   solid understanding of these methods and how to build the requests is
   essential in being a top shelf frontend developer.
 categories: ["HTTP"]
-image: "../assets/pexels-pixabay-356043.jpg"
+image: "/assets/pexels-pixabay-356043.jpg"
 ---
-![http methods explained for frontend developers](../assets/pexels-pixabay-356043.jpg "http methods explained for frontend developers")
+![http methods explained for frontend developers](/assets/pexels-pixabay-356043.jpg "http methods explained for frontend developers")
 
 Frontend developers will inevitably need to make HTTP requests frequently when building out the client-side of a full-stack app. Having a solid understanding of these methods and how to build the requests is essential in being a top-shelf frontend developer.
 

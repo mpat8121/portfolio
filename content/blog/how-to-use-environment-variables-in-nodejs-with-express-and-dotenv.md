@@ -10,9 +10,9 @@ description: Environment variables in NodeJs are essential for setting
   consume these variables is essential in creating solid, production-ready
   NodeJs APIs for all applications.
 categories: ["NodeJs", "Javascript", "Productivity"]
-image: "../assets/pexels-pixabay-270557.jpg"
+image: "/assets/pexels-pixabay-270557.jpg"
 ---
-![How to use Environment Variables in NodeJs with Express and Dotenv](../assets/pexels-pixabay-270557.jpg "How to use Environment Variables in NodeJs with Express and Dotenv")
+![How to use Environment Variables in NodeJs with Express and Dotenv](/assets/pexels-pixabay-270557.jpg "How to use Environment Variables in NodeJs with Express and Dotenv")
 
 ### NodeJs Environment Variables
 

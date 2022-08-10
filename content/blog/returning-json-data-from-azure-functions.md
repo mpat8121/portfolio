@@ -8,7 +8,7 @@ description: Often, by default, an Azure Function written in NodeJs stringifies
   avoid this by making a simple change to the Azure Function to ensure the
   object is returned.
 categories: ["NodeJs", "Typescript", "Azure"]
-image: ../assets/json-function-feature.jpg
+image: /assets/json-function-feature.jpg
 ---
 
 By default, a new Javascript/Typescript function created in an Azure functions app stringifies any data the function returns in the context.res object. 

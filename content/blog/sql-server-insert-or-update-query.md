@@ -5,9 +5,9 @@ title: SQL Server Insert or Update Query with T-SQL & Merge
 description: A standard SQL Server query to execute that will insert a new row
   or update an existing one
 categories: ["SQL"]
-image: "../assets/database.jpg"
+image: "/assets/database.jpg"
 ---
-![SQL-Database](../assets/database.jpg "SQL Database")
+![SQL-Database](/assets/database.jpg "SQL Database")
 
 Need to run a SQL command that will either update an existing row of data in a table **or** insert a new one if the data doesn't exist?
 

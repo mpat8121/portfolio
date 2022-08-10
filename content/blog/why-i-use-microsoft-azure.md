@@ -4,7 +4,7 @@ date: 2021-07-14T03:10:47.970Z
 title: Why I use Microsoft Azure
 description: Reasons why Azure is the DevOps platform of choice for me
 categories: ["Azure", "Productivity"]
-image: ../assets/why-azure-feature.jpg
+image: /assets/why-azure-feature.jpg
 ---
 I didn't choose to get a Microsoft Azure account. I didn't review the options. I had a Microsoft account and a virtual machine set up for me. 
 

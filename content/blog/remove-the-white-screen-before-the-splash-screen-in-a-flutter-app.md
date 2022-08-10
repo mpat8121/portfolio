@@ -9,7 +9,7 @@ description: By default, iOS and Android show a native loading screen before the
   good user experience. We are unable to remove this native screen, but we can
   customise it a little bit to make it less intrusive.
 categories: ["Flutter", "iOS", "Android"]
-image: ../assets/white-screen-feature.jpg
+image: /assets/white-screen-feature.jpg
 ---
 ### Why is there a white screen before the splash?
 
@@ -107,7 +107,7 @@ The second method is via XCode.
 
 Open up your Flutter app in XCode and navigate to the LaunchScreen ViewController View node:
 
-![Fix-Flutter-White-Screen-Before-Splash-iOS](../assets/screen-shot-2021-10-21-at-9.18.04-pm.png "Fix-Flutter-White-Screen-Before-Splash-iOS")
+![Fix-Flutter-White-Screen-Before-Splash-iOS](/assets/screen-shot-2021-10-21-at-9.18.04-pm.png "Fix-Flutter-White-Screen-Before-Splash-iOS")
 
 On the right in the properties, there is the background attribute. Clicking on this and choosing custom will allow you to define the RGB value you'd like the colour of the white screen to now appear as.
 
