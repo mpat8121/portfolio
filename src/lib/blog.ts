@@ -64,3 +64,16 @@ export const getAllPosts = (): Post[] => {
   return posts
 }
 
+export const getNextPost = (currentPostSlug: string) => {
+  const allPosts = getAllPosts()
+  const currentIndex = allPosts.findIndex(post => post.slug === currentPostSlug)
+  const nextPost = allPosts[currentIndex + 1]
+  return nextPost || null
+}
+
+export const getPreviousPost = (currentPostSlug: string) => {
+  const allPosts = getAllPosts()
+  const currentIndex = allPosts.findIndex(post => post.slug === currentPostSlug);
+  const previousPost = allPosts[currentIndex - 1];
+  return previousPost || null
+}

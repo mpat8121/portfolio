@@ -7,6 +7,8 @@ import {
   getPostsBySlug,
   getAllPosts,
   Post,
+  getNextPost,
+  getPreviousPost,
 } from "../../lib/blog"
 import {
   FacebookIcon,
@@ -17,16 +19,19 @@ import {
 import config from "../../config"
 import ReactMarkdown from "react-markdown"
 import remarkHtml from "remark-html"
-import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
-import {a11yDark} from 'react-syntax-highlighter/dist/cjs/styles/prism'
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
+import { a11yDark } from "react-syntax-highlighter/dist/cjs/styles/prism"
 
 export async function getStaticProps({ params }: any) {
   const post = getPostsBySlug(params.slug)
-
+  const nextPost = getNextPost(params.slug)
+  const previousPost = getPreviousPost(params.slug)
   return {
     props: {
       ...post,
       content: post.content,
+      nextPost,
+      previousPost,
     },
   }
 }
@@ -46,7 +51,7 @@ export async function getStaticPaths() {
   }
 }
 
-const BlogPost = (post: Post) => {
+const BlogPost = (post: any) => {
   const shareUrl = `${config.siteUrl}/blog/${post.slug}`
   return (
     <Layout>
@@ -71,19 +76,21 @@ const BlogPost = (post: Post) => {
             <p className="content">{post.frontMatter.date}</p>
             <p className="content">
               <span className="tags">
-                {post.frontMatter.categories.map((category, index) => {
-                  return (
-                    <Link
-                      key={index}
-                      href={`/category/${category}`}
-                      style={{ color: "var(--text)" }}
-                    >
-                      <span key={category} className="tag">
-                        {category}
-                      </span>
-                    </Link>
-                  )
-                })}
+                {post.frontMatter.categories.map(
+                  (category: string, index: number) => {
+                    return (
+                      <Link
+                        key={index}
+                        href={`/category/${category}`}
+                        style={{ color: "var(--text)" }}
+                      >
+                        <span key={category} className="tag">
+                          {category}
+                        </span>
+                      </Link>
+                    )
+                  }
+                )}
               </span>
             </p>
           </header>
@@ -110,14 +117,43 @@ const BlogPost = (post: Post) => {
               },
             }}
           />
-          <footer>
+          <div className="has-text-centered">
+            <p className="content">If you liked this post, please share it!</p>
             <TwitterShareButton url={shareUrl} title={post.frontMatter.title}>
               <TwitterIcon size={32} round />
             </TwitterShareButton>
             <FacebookShareButton url={shareUrl} quote={post.frontMatter.title}>
               <FacebookIcon size={32} round />
             </FacebookShareButton>
-          </footer>
+          </div>
+          <ul
+            style={{
+              display: `flex`,
+              flexWrap: `wrap`,
+              justifyContent: `space-between`,
+              listStyle: `none`,
+              padding: 0,
+            }}
+          >
+            <li>
+              {post.previousPost && (
+                <Link href={`${config.siteUrl}/blog/${post.previousPost.slug}`}>
+                  <a style={{ color: "var(--text)" }}>
+                    ← {post.previousPost.frontMatter.title}
+                  </a>
+                </Link>
+              )}
+            </li>
+            <li>
+              {post.nextPost && (
+                <Link href={`${config.siteUrl}/blog/${post.nextPost.slug}`}>
+                  <a style={{ color: "var(--text)" }}>
+                    {post.nextPost.frontMatter.title} →
+                  </a>
+                </Link>
+              )}
+            </li>
+          </ul>
         </div>
       </article>
     </Layout>
