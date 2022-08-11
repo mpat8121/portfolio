@@ -17,7 +17,6 @@
     "@netlify/plugin-nextjs": "^4.14.1",
     "date-fns": "^2.29.1",
     "gray-matter": "^4.0.3",
-    "netlify-cms-app": "latest",
     "next": "latest",
     "next-sitemap": "^3.1.17",
     "react": "latest",
