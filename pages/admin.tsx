@@ -4,7 +4,7 @@ import config from "../cms/config"
 const CMS = dynamic(
   () =>
     import("netlify-cms-app").then(
-      (cms) => cms.default.init({ config }) as any
+      (cms: any) => cms.init({ config }) as any
     ),
   { ssr: false, loading: () => <p>Loading Admin...</p> }
 )
