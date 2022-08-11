@@ -28,7 +28,6 @@ const Posts = ({ posts }: { posts: Post[] }) => (
                       src={image ? image : ""}
                       alt="Blog card feature"
                       objectFit='contain'
-                      unoptimized={true}
                     />
                   </div>
                 </Link>
