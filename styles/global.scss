@@ -182,4 +182,10 @@ article[class^="blog-post"] {
   background: white;
 }
 
+// Admin Page Only Overwrites
+[class*="ListCardTitle"], [class*="CollectionTopHeading"],
+[class*="SidebarHeading"], [class*="CardHeading"] {
+  color: #0e182a !important;
+}
+
 @import "bulma/bulma";

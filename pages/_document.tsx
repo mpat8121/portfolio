@@ -27,6 +27,10 @@ const CustomDocument = () => {
   return (
     <Html>
       <Head>
+        <script
+          src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+          async
+        ></script>
       </Head>
       <body>
         <script dangerouslySetInnerHTML={{ __html: setInitialTheme }} />
