@@ -56,8 +56,7 @@ const BlogPost = (post: any) => {
   return (
     <Layout>
       <SEO
-        title={post.frontMatter.title}
-        description={post.frontMatter.description || post.frontMatter.excerpt}
+        post={post}
       />
       <article
         className="blog-post"

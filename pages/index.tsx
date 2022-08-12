@@ -24,7 +24,7 @@ const Home: NextPage<{ posts: Post[] }> = ({ posts }) => {
         <SEO
           title="All posts"
           keywords={keywords}
-          image={image}
+          heroImg={image}
         />
         <Bio />
         {posts.length === 0 ? (

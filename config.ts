@@ -1,4 +1,4 @@
-export default {
+const config: any = {
   title: `Mick Patterson`,
   author: `Mick Patterson`,
   description: `Short snippets of frequent functions, 
@@ -21,5 +21,6 @@ export default {
     `fullstack`,
     `html`,
   ],
-  image: "/blog-header-image.jpg",
 }
+config.image =`${config.siteUrl}/blog-header-image.svg`;
+export default config
