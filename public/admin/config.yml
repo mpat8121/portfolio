@@ -15,6 +15,17 @@ collections:
       - name: "date"
         label: "Date"
         widget: "datetime"
+      - name: "categories"
+        label: "Categories"
+        widget: "relation"
+        multiple: true
+        min: 1
+        options_length: 100
+        collection: config
+        file: blog_categories
+        value_field: categories.*.name
+        search_fields: [categories.*.name]
+        display_fields: [categories.*.name]
       - name: "title"
         label: "Title"
         widget: "string"
@@ -27,3 +38,17 @@ collections:
       - name: "body"
         label: "Body"
         widget: "markdown"
+  - name: config
+    label: Configuration
+    editor:
+      preview: false
+    files:
+      - name: blog_categories
+        label: Blog Categories
+        file: data/blog_categories.yml
+        fields:
+          - name: categories
+            widget: list
+            summary: '{{fields.name}}'
+            fields: 
+              - name: name
