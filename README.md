@@ -33,3 +33,13 @@ This is the blog by [Mick Patterson](https://twitter.com/Mick_Patterson_) built 
 1. **NextJs Reference**
 
     NextJs documentation: [Getting Started](https://nextjs.org/docs)
+
+1. **Using NetlifyCMS**
+
+    The Netlify CMS is available at `http://localhost:3000/admin` and will require you to log in with your GitHub account.
+
+    Once logged in, all the existing blog posts will be loaded for editing. New posts can be created from here as well. The new file will be added to this repository and automatically rendered.
+
+    The Collections section includes a Configuration collection. This contains an editable list of all the Categories that can be assigned to a blog post.
+
+    The blog post editor has a simple rich-text editor or can be used as a raw markdown editor to create content.
