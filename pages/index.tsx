@@ -9,7 +9,9 @@ import Posts from "../components/posts"
 import config from "../config"
 
 export async function getStaticProps() {
-  const posts = getAllPosts()
+  const posts = getAllPosts().sort((a, b) =>
+    new Date(a.frontMatter.date) < new Date(b.frontMatter.date) ? 1 : -1
+  )
   return {
     props: { posts },
   }
@@ -21,11 +23,7 @@ const Home: NextPage<{ posts: Post[] }> = ({ posts }) => {
   {
     return (
       <Layout>
-        <SEO
-          title="All posts"
-          keywords={keywords}
-          heroImg={image}
-        />
+        <SEO title="All posts" keywords={keywords} heroImg={image} />
         <Bio />
         {posts.length === 0 ? (
           <p>No blog posts found.</p>
