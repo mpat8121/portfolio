@@ -28,3 +28,19 @@ In order for an API to conform to the REST architecture, it essentially needs to
 * Uniform component interfaces so that all information is transferred in a standard, predictable format.
 
 There are more components that define a REST API, but the above is the core requirement for an API to be RESTful.
+
+REST APIs, when designed well, are fast. This makes them ideal for today's world with heavy reliance on mobile apps and serverless technologies.
+
+## Applying REST to a NodeJs API
+
+Before actually creating an API with NodeJs, it is a good idea to plan out your REST API endpoints. 
+
+The endpoints will need to be grouped into resources. Resources are essentially groupings of a data type or entity. Examples, depending on your app requirements, would be:
+
+* Users
+* Members
+* Projects
+* Notes
+* Questions
+
+By convention, the resource names are maintained as plurals in the REST definition, even if the REST API endpoint only deals with a single entity.
