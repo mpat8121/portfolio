@@ -15,7 +15,7 @@ image: assets/nodejs-rest-api-feature.jpg
 ---
 ## Creating a REST API With NodeJs
 
-This post is going to cover as much as possible on creating an API with NodeJs, from the very basic definitions of the core components of an API, to a simple app, to complex routing and layering of the app, through to CORS, Web Sockets, database connection and pool management.
+This post is going to cover as much as possible on creating an API with NodeJs, from the very basic definitions of the core components of an API, to a simple app, to complex routing and layering of the app, through to CORS, Web Sockets, database connections, pool management and error handling.
 
 ### What is REST?
 
@@ -44,3 +44,18 @@ The endpoints will need to be grouped into resources. Resources are essentially 
 * Questions
 
 By convention, the resource names are maintained as plurals in the REST definition, even if the REST API endpoint only deals with a single entity.
+
+### Endpoint Structure
+
+The above grouping of resources will result in REST-compliant URLs for your API consumers:
+
+* https://myapidomain.com/api/v1/users 
+* https://myapidomain.com/api/v1/users/:userId
+
+From these, any HTTP verb can be configured:
+
+* Get all users -> GET https://myapidomain.com/api/v1/users
+* Get one user -> GET https://myapidomain.com/api/v1/users/:userId
+* Create one user -> POST https://myapidomain.com/api/v1/users
+* Update one user -> PATCH https://myapidomain.com/api/v1/users/:userId
+* Delete one user -> DELETE https://myapidomain.com/api/v1/users/:userId
