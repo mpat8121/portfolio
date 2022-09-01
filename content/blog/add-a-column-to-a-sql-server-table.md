@@ -8,7 +8,7 @@ categories:
 title: How to Add a Column to a SQL Server Table
 description: Modifying existing SQL tables is a common use case as the data
   models for your application change. The most basic of these modifications is
-  to add a new column to a SQL table to capture more data.
+  adding a new column to a SQL table to capture more data.
 image: /assets/add-sql-column-feature.jpg
 ---
 Modifying existing SQL tables is a common use case as the data models for your application change. The most basic of these modifications is to add a new column to a SQL table to capture more data.
