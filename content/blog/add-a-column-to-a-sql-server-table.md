@@ -11,9 +11,9 @@ description: Modifying existing SQL tables is a common use case as the data
   adding a new column to a SQL table to capture more data.
 image: /assets/add-sql-column-feature.jpg
 ---
-Modifying existing SQL tables is a common use case as the data models for your application change. The most basic of these modifications is to add a new column to a SQL table to capture more data.
+Modifying existing SQL tables is a common use case as the data models for your application change. The most basic of these modifications is adding a new column to a SQL table to capture more data.
 
-This can be done using SQL Server management software that provides a simple user-interface to interact with your database and tables, ot with SQL Server commands themselves. Using the commands provides the greatest flexibility as you can create the command to action exactly what your table adjustment requires.
+Simple changes can be done using SQL Server management software that provides a simple user-interface to interact with your database and tables.For more complex operations SQL Server commands are usually preferable. Using the commands provides the greatest flexibility to action exactly what your table adjustment requires, while also providing a record of the changes you made.
 
 To do this via a SQL Server command, we are going to use the ALTER keyword. The ALTER keyword does more than just allowing us to add columns to a table. It is also used when deleting or modifying existing columns in the table as well as allowing us to add, modify or drop constraints on the table columns (foreign keys, unique etc).
 
