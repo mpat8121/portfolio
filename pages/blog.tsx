@@ -6,7 +6,9 @@ import Posts from "../components/posts"
 import { getAllPosts, Post } from "../lib/blog"
 
 export async function getStaticProps() {
-  const posts = getAllPosts()
+  const posts = getAllPosts().sort((a, b) =>
+    new Date(a.frontMatter.date) < new Date(b.frontMatter.date) ? 1 : -1
+  )
   return {
     props: { posts },
   }
