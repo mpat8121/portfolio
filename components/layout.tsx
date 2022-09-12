@@ -57,9 +57,9 @@ const Layout = ({ children }: any) => {
               <Link href={`/about`}>
                 <a className="navbar-item">About</a>
               </Link>
-              <Link href={`/contact`}>
+              {/* <Link href={`/contact`}>
                 <a className="navbar-item">Contact</a>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </nav>

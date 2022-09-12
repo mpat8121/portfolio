@@ -54,7 +54,7 @@ const Posts = ({ posts }: { posts: Post[] }) => (
                           query: { category },
                         }}
                       >
-                        <a style={{ color: "var(--textLink)" }}>{category}</a>
+                        <a className="tag-link">{category}</a>
                       </Link>
                     </span>
                   )
