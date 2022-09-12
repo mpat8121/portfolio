@@ -13,7 +13,7 @@ image: /assets/white-screen-feature.jpg
 ---
 ### Why is there a white screen before the splash screen?
 
-By default, both iOS and Android show a native loading screen before the splash screen of a Flutter app is displayed. This default screen is completely white which means your app will have a white "flash" before showing your custom splash screen in your app's chosen colours and logo, making for a bad user experience. It is currently not possible to remove this native screen, but we can customise it to make it less intrusive.
+By default, both iOS and Android show a native loading screen before the splash screen of a Flutter app is displayed. This default screen is completely white, which means your app will have a white "flash" before showing your custom splash screen in your app's chosen colours and logo, making for a bad user experience. It is currently not possible to remove this native screen, but we can customise it to make it less intrusive.
 
 ### How to customise the white screen
 
@@ -85,7 +85,7 @@ These settings both hide the flashing white screen and set the Android app initi
 
 The iOS solution to hide the extra white screen is quite simple and can be done in one of two places.
 
-The first way of doing this is directly in the iOS *Storyboard** file if you prefer not to work in XCode:
+The first way of doing this is directly in the iOS **Storyboard** file if you prefer not to work in XCode:
 
 Open up **LaunchScreen.storyboard** found in *ios/Runner/Base.Iproj*. This file contains a tag called **"color"** with a key of "backgroundColor" and attributes red, green, blue and alpha numbers. All of these values are set to 1 by default (resulting in the RGB code for white).
 
@@ -105,7 +105,7 @@ Here's what the "color" tag in the **LaunchScreen.storyboard** looked like for a
 />
 ```
 
-The second option to change the colour of the splash screen in XCode:
+The second option is to change the colour of the splash screen in XCode:
 
 Open up your Flutter app in XCode and navigate to the LaunchScreen ViewController View node (see path below).
 
