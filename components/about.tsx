@@ -28,7 +28,7 @@ const About = () => {
           </p>
           <p className="about-p">
             I hold a Bachelors degree in Mechanical Engineering, and from there I started my working life doing CAD drafting and business
-            analytics for a few major Australian companies. Over time my responsibilites shifted to building business process management
+            analytics for a few major Australian companies. Over time my responsibilities shifted to building business process management
             applications using Angular, and a couple of years later I published my very first cross-platform mobile app.
           </p>
           <p className="about-p">
