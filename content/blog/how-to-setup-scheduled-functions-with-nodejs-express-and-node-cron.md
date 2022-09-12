@@ -1,25 +1,29 @@
 ---
 path: setup-scheduled-logic-with-nodejs-express-node-cron
 date: 2021-09-21T11:27:54.430Z
-title: How to Setup Scheduled Functions with NodeJs, Express and Node-Cron
-description: Building an API with NodeJs and Express is always one of the key
-  building blocks of any full stack application. In conjunction with managing
-  user requests, the NodeJs API application can also help maintain database
+title: How to set up Scheduled Functions with NodeJs, Express and Node-Cron
+description: Building an API with NodeJs and Express is always a key
+  building block of any full stack application. In conjunction with managing
+  user requests, a NodeJs API application can also help maintain database
   integrity by performing scheduled maintenance checks to ensure everything
   remains in solid working order.
-categories: ["NodeJs", "Javascript"]
+categories: ["NodeJs", "Javascript", "Cron"]
 image: "/assets/pexels-pixabay-273153.jpg"
 ---
-![How to Setup Scheduled Functions with NodeJs, Express and Node-Cron](/assets/pexels-pixabay-273153.jpg "How to Setup Scheduled Functions with NodeJs, Express and Node-Cron")
+![How to set up Scheduled Functions with NodeJs, Express and Node-Cron](/assets/pexels-pixabay-273153.jpg "How to Setup Scheduled Functions with NodeJs, Express and Node-Cron")
 
-1. Create a NodeJs application
+Step 1: Create a [NodeJs](https://nodejs.org/en/) application.
+
+Initialize a new app with npm and install the [Express](http://expressjs.com/) package. Make sure NodeJs is installed on your machine. 
 
    \- npm init
 
    \- npm i express
-2. Setup the express server
 
-   \- Create the app.js file (or server.js is you prefer)
+Step 2: Set up the Express server
+
+   \- Create the **app.js** file (note that some people prefer to call this file **server.js**)
+   \- Configure the port and set up the listener
 
 ```javascript
 const express = require("express");
@@ -31,18 +35,19 @@ app.listen(app.get("port"), () => {
 });
 ```
 
-3. Add node-cron npm package to the application
+Step 3: Add the [node-cron](https://www.npmjs.com/package/node-cron) npm package to the application
 
    \- npm i node-cron
 
-4. Set up a scheduled jobs folder & files
+Step 4: Set up a folder for your scheduled jobs
 
-   \- Create a folder called "scheduled jobs"
-5. Create the logic of the scheduled jobs
+   \- Create a folder called "scheduledFunctions" or similar
 
-   \- In the above folder, either create a single file to hold all your scheduled function logic or if preferred, a file per scheduled logic
+Step 5: Define the logic to run your scheduled jobs
 
-   \- The scheduled logic needs to be configured as so:
+   \- In the folder you just set up, create a file to hold your scheduled function logic. You can also use different files for each task if you prefer.
+
+   \- Configure scheduled logic
 
    ```javascript
    const CronJob = require("node-cron");
@@ -50,26 +55,27 @@ app.listen(app.get("port"), () => {
    exports.initScheduledJobs = () => {
      const scheduledJobFunction = CronJob.schedule("*/5 * * * *", () => {
        console.log("I'm executed on a schedule!");
+       // Add your custom logic here
      });
 
      scheduledJobFunction.start();
    }
    ```
 
-   \- The frequency at which this logic is executed is defined by the Cron Schedule Expression defined as the first argument to the Cron.schedule function.
+   \- The execution frequency of your custom function is defined as the first argument to the Cron.schedule function. Note that this argument is written as a Cron Schedule Expression or [crontab](https://en.wikipedia.org/wiki/Cron). I find [Crontab Guru](https://crontab.guru/) a really useful resource to play around and get comfortable with schedule expressions so you can easily set up your own.
 
-   A really good resource to play around with schedule expressions is the [Crontab Guru](https://crontab.guru/). Experimenting with the schedules will allow you to find what schedule expression you require.
-6. Configure the express app to initialise the job schedules
+Step 6: Configure the Express app to initialise and run the job schedules
 
-   \- In the app.js file add a call to the init function(s) from your scheduled file(s).
-
+   \- In the **app.js** file add a call to the init function(s) from your scheduled file(s).
+   
    ```javascript
    const express = require("express");
+   // DEFINE the path to your scheduled function(s)
    const scheduledFunctions = require('./scheduledFunctions');
    const app = express();
    app.set("port", process.env.PORT || 3000);
 
-   // ADD CALL HERE
+   // ADD CALL to execute your function(s)
    scheduledFunctions.initScheduledJobs();
 
    app.listen(app.get("port"), () => {
@@ -77,4 +83,4 @@ app.listen(app.get("port"), () => {
    });
    ```
 
-   This will generate the functions and their schedules in the Cron scheduler when your app starts up.
+   Start the app to generate the functions and their schedules in the Cron scheduler. Your custom logic will be executed to schedule as long as the app is running.
