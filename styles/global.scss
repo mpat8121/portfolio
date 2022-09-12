@@ -29,6 +29,7 @@ body[data-theme="light"] {
   --color-bg-primary: #fff;
   --color-bg-toggle: #0e182a;
   --color-hyperlink: hsl(229deg, 53%, 53%);
+  --color-category-link: white; 
 }
 
 body[data-theme="dark"] {
@@ -48,6 +49,11 @@ body[data-theme="dark"] {
   --color-bg-primary: #15232d;
   --color-bg-toggle: #a9a9a9;
   --color-hyperlink: rgb(75, 171, 205);
+  --color-category-link: white; 
+}
+
+.tag-link {
+  color: var(--color-category-link) !important;
 }
 
 strong {
