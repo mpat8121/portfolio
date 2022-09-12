@@ -13,7 +13,7 @@ const About = () => {
           </h1>
           <p className="about-p">Welcome to my blog!</p>
           <p className="about-p">
-            I'm Mick, a self-taught fullstack developer working for a small IT
+            I&apos;m Mick, a self-taught fullstack developer working for a small IT
             shop in Sydney, Australia for over 10 years...
             <br />I also run{" "}
             <a
@@ -32,7 +32,7 @@ const About = () => {
             applications using Angular, and a couple of years later I published my very first cross-platform mobile app.
           </p>
           <p className="about-p">
-            The tech stack I work with evolves constantly, but I'm most familiar with Node.Js, C#, Angular, Ionic
+            The tech stack I work with evolves constantly, but I&apos;m most familiar with Node.Js, C#, Angular, Ionic
             with a little bit of Java and Swift thrown in for Capacitor plugin
             development. Microsoft SQL Server, MySQL and MongoDB are my data stores of
             choice. I also use Microsoft Azure for all my hosting and DevOps needs.

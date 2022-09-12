@@ -14,7 +14,7 @@ const Bio = () => {
             </p>
             <p>
               In this blog, I explore the world of full-stack web development. Here you will find
-              everything I learned in over a decade on the job, from niche bug fixes, how-to's on mobile app development and API
+              everything I learned in over a decade on the job, from niche bug fixes, how-to&apos;s on mobile app development and API
               configuration questions to info about the life of a web developer.
             </p>
             <p>
