@@ -10,21 +10,21 @@ const Bio = () => {
         <div className="column content has-text-centered">
           <div>
             <p className="title" style={{ color: "var(--text)" }}>
-              Delve into the Full-Stack World
+              A window into the Full-Stack World
             </p>
             <p>
-              In this blog, I explore everything full-stack web developer
-              related from niche bug fixes, mobile development, API
-              configuration and web developer lifestyle matters.
+              In this blog, I explore the world of full-stack web development. Here you will find
+              everything I learned in over a decade on the job, from niche bug fixes, how-to's on mobile app development and API
+              configuration questions to info about the life of a web developer.
             </p>
             <p>
-              For front-end developers I will be detailing all sorts of
-              configuration and quirks when working with JavaScript, Angular,
-              React and Ionic/Capacitor.js.
+              For front-end developers I will be outlining common
+              configurations and quirks you may find when working with JavaScript, Angular,
+              React, Flutter and Ionic/Capacitor.js.
             </p>
             <p>
-              For the back-end developers, I work with Node.js, C#/.NET and SQL
-              or MongoDB. If that applies to you, there will be tidbits to make
+              These days I most commonly work on the back-end using Node.Js, C#/.NET and SQL
+              or MongoDB. After building several indie apps currently sold in the major stores, I can share quite a few tidbits to make
               your life easier.
             </p>
             <p style={{ color: "var(--text)" }}>

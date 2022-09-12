@@ -6,15 +6,15 @@ const About = () => {
       <div className="column">
         <div className="content has-text-centered">
           <h1 className="title" style={{ color: "var(--text)" }}>
-            Hey{" "}
+            Hi There!{" "}
             <span role="img" aria-label="wave emoji">
               👋
             </span>
           </h1>
-          <p className="about-p">Welcome!</p>
+          <p className="about-p">Welcome to my blog!</p>
           <p className="about-p">
-            I am a self-taught fullstack dev who has been working for a small IT
-            shop in Sydney, Australia for more than 10 years...
+            I'm Mick, a self-taught fullstack developer working for a small IT
+            shop in Sydney, Australia for over 10 years...
             <br />I also run{" "}
             <a
               href="https://www.interapptive.com.au"
@@ -24,24 +24,22 @@ const About = () => {
             >
               InterApptive
             </a>{" "}
-            on the side for funsies.
+            on the side.
           </p>
           <p className="about-p">
-            Originally, I completed a Bachelors degree in Mechanical
-            Engineering. And then proceeded to not work a single day using the
-            skills I spent 4 years at university acquiring. A couple of years
-            spent doing CAD drafting work before moving into low level business
-            analytics.
+            I hold a Bachelors degree in Mechanical Engineering, and from there I started my working life doing CAD drafting and business
+            analytics for a few major Australian companies. Over time my responsibilites shifted to building business process management
+            applications using Angular, and a couple of years later I published my very first cross-platform mobile app.
           </p>
           <p className="about-p">
-            The tech stack I work with is mostly Node.Js, C#, Angular, Ionic
+            The tech stack I work with evolves constantly, but I'm most familiar with Node.Js, C#, Angular, Ionic
             with a little bit of Java and Swift thrown in for Capacitor plugin
-            development. SQL Server, MySQL and MongoDB are my data stores of
-            choice. I also use Microsoft Azure for all my DevOps needs.
+            development. Microsoft SQL Server, MySQL and MongoDB are my data stores of
+            choice. I also use Microsoft Azure for all my hosting and DevOps needs.
           </p>
           <p className="about-p">
-            My work with InterApptive focusses on mobile apps, with our current
-            project being{" "}
+            My own company InterApptive focusses on mobile apps, feel free to check out our current major
+            project {" "}
             <a
               style={{ color: "var(--textNormal)" }}
               href="https://defectwise.com.au"
@@ -52,9 +50,9 @@ const About = () => {
             </a>
           </p>
           <p className="about-p">
-            I write short snippets of common code that gets used a lot, small
-            tips I have found whilst building stuff, along with some case studies
-            of my projects and a bit about how I got here.
+            In this blog I want to share short snippets of common code that gets used a lot, small
+            but crucial tips that I wish I learned sooner, I will also write up some case studies
+            about my projects and my own professional development that may help others on their journey.
           </p>
         </div>
       </div>
