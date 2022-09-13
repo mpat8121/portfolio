@@ -1,5 +1,6 @@
 import Layout from "../../components/layout"
 import Posts from "../../components/posts"
+import SEO from "../../components/seo"
 import { getAllPosts, getPostsByCategory, Post } from "../../lib/blog"
 
 export async function getStaticProps({ params }: any) {
@@ -36,6 +37,7 @@ export async function getStaticPaths() {
 const CategoryPage = ({ categoryPosts }: any) => {
   return (
     <Layout>
+      <SEO />
       <Posts posts={categoryPosts} />
     </Layout>
   )
