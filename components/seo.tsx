@@ -4,7 +4,7 @@ import config from "../config"
 import { NextSeo } from "next-seo"
 import { Post } from "../lib/blog"
 
-const SEO = ({title, keywords, heroImg, post}: any) => {
+const SEO = ({ title, keywords, heroImg, post, category }: any) => {
   const {
     title: configTitle,
     description: configDesc,
@@ -54,25 +54,29 @@ const SEO = ({title, keywords, heroImg, post}: any) => {
       </>
     )
   } else {
+    let url = siteUrl
+    if (category) {
+      url = `${url}/categories/${category}`
+    }
     return (
       <Head>
-      <title>{configTitle}</title>
-      <meta name="robots" content="follow, index" />
-      <meta name="keywords" content={keywords}></meta>
-      <meta content={configTitle} name="description" />
-      <meta property="og:type" content="website" />
-      <meta property="og:title" content={configTitle} />
-      <meta property="og:description" content={configTitle} />
-      <meta property="og:image" content={heroImg} />
-      <meta property="og:site_name" content={configTitle} />
-      <meta property="twitter:card" content="summary" />
-      <meta property="twitter:creator" content={social.twitter} />
-      <meta property="twitter:title" content={configTitle} />
-      <meta property="twitter:description" content={configTitle} />
-      <meta property="twitter:image" content={heroImg} />
-      <meta name="monetization" content="$ilp.uphold.com/4giKKPBDELyR"></meta>
-      <link rel="canonical" href={siteUrl} />
-    </Head>
+        <title>{title}</title>
+        <meta name="robots" content="follow, index" />
+        <meta name="keywords" content={keywords}></meta>
+        <meta content={title} name="description" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={title} />
+        <meta property="og:image" content={heroImg} />
+        <meta property="og:site_name" content={title} />
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:creator" content={social.twitter} />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={title} />
+        <meta property="twitter:image" content={heroImg} />
+        <meta name="monetization" content="$ilp.uphold.com/4giKKPBDELyR"></meta>
+        <link rel="canonical" href={url} />
+      </Head>
     )
   }
 }

@@ -8,6 +8,7 @@ export async function getStaticProps({ params }: any) {
   return {
     props: {
       categoryPosts,
+      category: params.category
     },
   }
 }
@@ -34,10 +35,10 @@ export async function getStaticPaths() {
   }
 }
 
-const CategoryPage = ({ categoryPosts }: any) => {
+const CategoryPage = ({ categoryPosts, category }: any) => {
   return (
     <Layout>
-      <SEO />
+      <SEO title={category} category={category} />
       <Posts posts={categoryPosts} />
     </Layout>
   )
