@@ -2,7 +2,7 @@ backend:
   name: github
   repo: mpat8121/portfolio
 media_folder: public/assets
-public_folder: assets
+public_folder: /assets
 collections:
   - name: blog
     label: Blog
@@ -50,5 +50,5 @@ collections:
           - name: categories
             widget: list
             summary: '{{fields.name}}'
-            fields: 
+            fields:
               - name: name
