@@ -12,7 +12,7 @@ description: The default maximum execution time of an individual Azure Function
   that long should have the architecture changed to delegate the workload
   differently, however, if you need just a little bit more time, there is a way
   to enable this without having to re-architect the function.
-image: assets/azure-functions-timeout-feature.jpg
+image: /assets/azure-functions-timeout-feature.jpg
 ---
 In every Azure Functions project there is a host.json file that is created when initialising the project.
 

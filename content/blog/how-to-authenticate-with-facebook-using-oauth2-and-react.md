@@ -8,7 +8,7 @@ title: How to Authenticate with Facebook using OAuth2 and React
 description: This post will be discussing how to authenticate with the Facebook
   API using OAuth2, React and requesting the required scopes to access the
   Facebook Ads/Marketing API.
-image: assets/facebook-login.jpg
+image: /assets/facebook-login.jpg
 ---
 Authentication with Facebook API is necessary to access certain features like user data, posts, etc. Facebook provides an OAuth 2.0 authentication protocol to authenticate users and obtain an access token. In order to use this protocol with React, we need to follow a few steps. Let's dive in.
 

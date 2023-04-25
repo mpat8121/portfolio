@@ -11,7 +11,7 @@ description: You'll often hear or read that a recursive function was used to
   solve a programming problem that arose during the development of a piece of
   software. So, what is a recursive function, how does it work and when or why
   would the need to use one occur?
-image: assets/recursion-feature.jpg
+image: /assets/recursion-feature.jpg
 ---
 ## W﻿hat is a Recursive Function?
 

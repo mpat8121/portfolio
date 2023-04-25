@@ -11,7 +11,7 @@ description: Web server caching is the storage of frequently accessed data in a
   secondary, temporary location to reduce the overall load on a web server.
   Caching allows data to be served directly from memory which can be faster and
   more efficient than making multiple connections to the actual database.
-image: assets/what-is-cache-feature.jpg
+image: /assets/what-is-cache-feature.jpg
 ---
 ## W﻿hat is Web Server Caching?
 

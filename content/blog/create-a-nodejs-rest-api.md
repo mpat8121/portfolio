@@ -11,7 +11,7 @@ description: REST APIs are a key building block of the Internet as we know it,
   built using many different technologies and languages. If you're a web
   developer with Javascript knowledge, using NodeJs to build an API is a
   no-brainer.
-image: assets/nodejs-rest-api-feature.jpg
+image: /assets/nodejs-rest-api-feature.jpg
 ---
 ## Creating a REST API With NodeJs
 

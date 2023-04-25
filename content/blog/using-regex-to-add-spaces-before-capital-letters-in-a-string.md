@@ -12,7 +12,7 @@ description: >
   title or in a card for a dashboard.
 
   Unfortunately, the API may not be aware of this, nor capable of returning a string formatted in a nice way to allow the label to be human-readable.
-image: assets/user-regex-to-add-space.jpg
+image: /assets/user-regex-to-add-space.jpg
 ---
 Quite often as a frontend developer, you will want to use a string returned from an API as a header or a label in one way or another. Perhaps as a tab title or in a card for a dashboard.\
 
