@@ -19,7 +19,7 @@ Luckily, the solution is actually pretty simple. It doesn't even involve coding 
 
 All function apps have a set of configuration settings that can be applied in the settings through the portal:
 
-![azure-function-timezone-setting](/assets/screen-shot-2022-02-18-at-9.26.53-pm.png "Set the Azure function timezone")
+![azure-function-timezone-setting](/assets/screen-shot-2022-02-18-at-9.26.53-pm.jpg "Set the Azure function timezone")
 
 One of these settings is WEBSITE_TIME_ZONE, which as the name suggests, allows us to define the timezone of the web application that runs behind the scenes of all Azure Function apps.
 
@@ -37,11 +37,11 @@ So, for me, as I am East-Coast Australia based, I would configure my apps:
 
 For Windows -
 
-![Azure-funtions-app-timezone-setting](/assets/screen-shot-2022-02-18-at-9.36.16-pm.png "Set Azure functions Timezone Setting")
+![Azure-funtions-app-timezone-setting](/assets/screen-shot-2022-02-18-at-9.36.16-pm.jpg "Set Azure functions Timezone Setting")
 
 And for Linux -
 
-![Azure-funtions-app-timezone-setting](/assets/screen-shot-2022-02-18-at-9.37.02-pm.png "Set Azure functions Timezone Setting")
+![Azure-funtions-app-timezone-setting](/assets/screen-shot-2022-02-18-at-9.37.02-pm.jpg "Set Azure functions Timezone Setting")
 
 ## Testing
 

@@ -11,7 +11,7 @@ title: How to Deploy a NodeJs App to Ubuntu Virtual Machine with Azure DevOps
 description: Deploying a NodeJs app to an Ubuntu Virtual Machine hosted with
   Azure using Azure DevOps should be pretty straightforward. Turns out, it is
   quite a lot more finicky than might appear!
-image: /assets/28cac142-3783-4917-8134-9290f767ee64.jpeg
+image: /assets/28cac142-3783-4917-8134-9290f767ee64.jpg
 ---
 T﻿he pre-configuration steps that are required to ensure your server is ready to accept the NodeJs app files and to ensure Azure DevOps can connect to the server are:
 

@@ -7,7 +7,7 @@ description: A quick how-to guide for adding Firebase into an Ionic application
 categories: ["Angular", "Ionic", "Javascript", "Firebase"]
 image: /assets/integrate-firebase-feature.jpg
 ---
-![Firebase-Logo](/assets/firebase-1024x293.png "Firebase Logo")
+![Firebase-Logo](/assets/firebase-1024x293.jpg "Firebase Logo")
 
 [Firebase](https://firebase.google.com/) provides a wide variety of modules that are highly useful for mobile & web apps, particularly Authentication, Firestore DocumentDB, Storage, Analytics, and App Performance Monitoring.
 

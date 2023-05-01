@@ -109,7 +109,7 @@ The second option is to change the colour of the splash screen in XCode:
 
 Open up your Flutter app in XCode and navigate to the LaunchScreen ViewController View node (see path below).
 
-![Fix-Flutter-White-Screen-Before-Splash-iOS](/assets/screen-shot-2021-10-21-at-9.18.04-pm.png "Fix-Flutter-White-Screen-Before-Splash-iOS")
+![Fix-Flutter-White-Screen-Before-Splash-iOS](/assets/screen-shot-2021-10-21-at-9.18.04-pm.jpg "Fix-Flutter-White-Screen-Before-Splash-iOS")
 
 On the right hand side under **properties**, you will find the background attribute. Clicking on this and choosing *custom* will allow you to define the RGB value to override the white screen.
 
