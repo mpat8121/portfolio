@@ -24,10 +24,12 @@ const Posts = ({ posts }: { posts: Post[] }) => (
                   <div style={{width: '100%', height: '300px', position: 'relative'}}>
                     <Image
                       className="blog-image"
-                      layout="fill"
+                      width={'100'}
+                      height={'300'}
+                      // layout="fill"
                       src={image ? image : ""}
                       alt="Blog card feature"
-                      objectFit='contain'
+                      // objectFit='contain'
                     />
                   </div>
                 </Link>
@@ -39,7 +41,7 @@ const Posts = ({ posts }: { posts: Post[] }) => (
                   style={{ boxShadow: `none`, color: "var(--textLink)" }}
                   href={`/blog/${node.slug}`}
                 >
-                  <a style={{ color: "var(--textLink)" }}>{title}</a>
+                  <span style={{ color: "var(--textLink)" }}>{title}</span>
                 </Link>
               </h1>
               <div className="tags">
@@ -54,7 +56,7 @@ const Posts = ({ posts }: { posts: Post[] }) => (
                           query: { category },
                         }}
                       >
-                        <a className="tag-link">{category}</a>
+                        <span className="tag-link">{category}</span>
                       </Link>
                     </span>
                   )

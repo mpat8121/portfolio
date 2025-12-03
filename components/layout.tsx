@@ -52,10 +52,10 @@ const Layout = ({ children }: any) => {
                 <ThemeToggle />
               </a>
               <Link href={`/`}>
-                <a className="navbar-item">Home</a>
+                <span className="navbar-item">Home</span>
               </Link>
               <Link href={`/about`}>
-                <a className="navbar-item">About</a>
+                <span className="navbar-item">About</span>
               </Link>
               {/* <Link href={`/contact`}>
                 <a className="navbar-item">Contact</a>
@@ -77,11 +77,11 @@ const Layout = ({ children }: any) => {
         <div className="content has-text-centered">
           © {new Date().getFullYear()},{" "}
           <Link href={`/`}>
-            <a style={{ color: "var(--text)" }}>Mick Patterson</a>
+            <span style={{ color: "var(--text)" }}>Mick Patterson</span>
           </Link>
           <div>
             <Link style={{ color: "var(--text)" }} href={`/privacy`}>
-              <a style={{ color: "var(--text)" }}>Privacy Policy</a>
+              <span style={{ color: "var(--text)" }}>Privacy Policy</span>
             </Link>
           </div>
         </div>

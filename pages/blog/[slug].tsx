@@ -55,9 +55,7 @@ const BlogPost = (post: any) => {
   const shareUrl = `${config.siteUrl}/blog/${post.slug}`
   return (
     <Layout>
-      <SEO
-        post={post}
-      />
+      <SEO post={post} />
       <article
         className="blog-post"
         itemScope
@@ -94,18 +92,20 @@ const BlogPost = (post: any) => {
             </p>
           </header>
           <ReactMarkdown
-            className="content"
+            // className="content"
             remarkPlugins={[remarkHtml]}
             components={{
-              code({ node, inline, className, children, ...props }) {
+              code({ node, className, children, ...props }) {
                 const match = /language-(\w+)/.exec(className || "")
-                return !inline && match ? (
+                return match ? (
                   <SyntaxHighlighter
                     style={a11yDark as any}
                     language={match[1]}
                     PreTag="div"
-                    {...props}
-                  >{String(children).replace(/\n$/, "")}</SyntaxHighlighter>
+                    //{...props}
+                  >
+                    {String(children).replace(/\n$/, "")}
+                  </SyntaxHighlighter>
                 ) : (
                   <code className={className} {...props}>
                     {children}
@@ -113,13 +113,18 @@ const BlogPost = (post: any) => {
                 )
               },
             }}
-          >{post.content}</ReactMarkdown>
+          >
+            {post.content}
+          </ReactMarkdown>
           <div className="has-text-centered">
             <p className="content">If you liked this post, please share it!</p>
             <TwitterShareButton url={shareUrl} title={post.frontMatter.title}>
               <TwitterIcon size={32} round />
             </TwitterShareButton>
-            <FacebookShareButton url={shareUrl} quote={post.frontMatter.title}>
+            <FacebookShareButton
+              url={shareUrl}
+              //</div>quote={post.frontMatter.title}
+            >
               <FacebookIcon size={32} round />
             </FacebookShareButton>
           </div>
@@ -135,18 +140,18 @@ const BlogPost = (post: any) => {
             <li>
               {post.previousPost && (
                 <Link href={`${config.siteUrl}/blog/${post.previousPost.slug}`}>
-                  <a style={{ color: "var(--text)" }}>
+                  <span style={{ color: "var(--text)" }}>
                     ← {post.previousPost.frontMatter.title}
-                  </a>
+                  </span>
                 </Link>
               )}
             </li>
             <li>
               {post.nextPost && (
                 <Link href={`${config.siteUrl}/blog/${post.nextPost.slug}`}>
-                  <a style={{ color: "var(--text)" }}>
+                  <span style={{ color: "var(--text)" }}>
                     {post.nextPost.frontMatter.title} →
-                  </a>
+                  </span>
                 </Link>
               )}
             </li>

@@ -1,7 +1,7 @@
 import React from "react"
 import Head from "next/head"
 import config from "../config"
-import { NextSeo } from "next-seo"
+import { ArticleJsonLd } from "next-seo"
 import { Post } from "../lib/blog"
 
 const SEO = ({ title, keywords, heroImg, post, category }: any) => {
@@ -23,41 +23,38 @@ const SEO = ({ title, keywords, heroImg, post, category }: any) => {
 
     return (
       <>
-        <NextSeo
-          title={metaTitle}
+        <ArticleJsonLd
+          headline={metaTitle}
           description={metaDescription}
-          canonical={canonical}
-          openGraph={{
-            type: "website",
-            url: config.siteUrl,
-            title: metaTitle,
-            description: metaDescription,
-            locale: "en-AU",
-            images: [
-              {
-                url: image,
-                width: 800,
-                height: 600,
-                alt: `hero image for ${metaTitle}`,
-              },
-            ],
-            site_name: metaTitle,
-          }}
-          twitter={{
-            handle: config.social.twitter,
-            site: config.siteUrl,
-            cardType: "summary",
-          }}
+          url={canonical}
+          // openGraph={{
+          //   type: "website",
+          //   url: config.siteUrl,
+          //   title: metaTitle,
+          //   description: metaDescription,
+          //   locale: "en-AU",
+          //   images: [
+          //     {
+          //       url: image,
+          //       width: 800,
+          //       height: 600,
+          //       alt: `hero image for ${metaTitle}`,
+          //     },
+          //   ],
+          //   site_name: metaTitle,
+          // }}
+          // twitter={{
+          //   handle: config.social.twitter,
+          //   site: config.siteUrl,
+          //   cardType: "summary",
+          // }}
         />
         <meta name="keywords" content={metaKeywords.join(",")}></meta>
         <meta name="monetization" content="$ilp.uphold.com/4giKKPBDELyR"></meta>
       </>
     )
   } else {
-    let url = siteUrl
-    if (category) {
-      url = `${url}/categories/${category}`
-    }
+    const url = category ? `${siteUrl}/categories/${category}` : siteUrl
     return (
       <Head>
         <title>{title}</title>

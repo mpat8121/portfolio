@@ -76,7 +76,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       >
         This site uses cookies to improve your experience. Our{" "}
         <Link href={`/privacy`}>
-          <a style={{ color: "var(--consent-accept-text)" }}>Privacy Policy</a>
+          <span style={{ color: "var(--consent-accept-text)" }}>Privacy Policy</span>
         </Link>{" "}
         has more details
       </CookieConsent>
