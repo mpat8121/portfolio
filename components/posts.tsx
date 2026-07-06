@@ -21,11 +21,17 @@ const Posts = ({ posts }: { posts: Post[] }) => (
                   style={{ boxShadow: `none`, color: "var(--textLink)" }}
                   href={`/blog/${node.slug}`}
                 >
-                  <div style={{width: '100%', height: '300px', position: 'relative'}}>
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "300px",
+                      position: "relative",
+                    }}
+                  >
                     <Image
                       className="blog-image"
-                      width={'100'}
-                      height={'300'}
+                      width={"100"}
+                      height={"300"}
                       // layout="fill"
                       src={image ? image : ""}
                       alt="Blog card feature"
@@ -63,11 +69,7 @@ const Posts = ({ posts }: { posts: Post[] }) => (
                 })}
               </div>
               <small>{node.frontMatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontMatter.description,
-                }}
-              />
+              <p>{node.frontMatter.description}</p>
             </div>
           </div>
         </div>

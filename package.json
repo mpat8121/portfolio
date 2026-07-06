@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "postbuild": "next-sitemap",
-    "export": "npm run build && next export"
+    "export": "npm run build"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.1.2",

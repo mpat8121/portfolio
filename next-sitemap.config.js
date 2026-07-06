@@ -4,7 +4,8 @@ const sitemapConfig = {
     generateRobotsTxt: true, // (optional)
     // ...other options
     exclude: ['/admin'],
-    generateIndexSitemap: false
+    generateIndexSitemap: false,
+    output: 'export'
   }
   
 module.exports = sitemapConfig

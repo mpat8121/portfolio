@@ -43,7 +43,7 @@ export const getPostsBySlug = (slug: string): Post => {
 
 /**
  * Retrieves all posts matching a given category
- * @param {string} category The category to filter posts by 
+ * @param {string} category The category to filter posts by
  * @returns {Array<Post>} Posts matching the category
  */
 export const getPostsByCategory = (category: string): Post[] => {
@@ -59,21 +59,25 @@ export const getPostsByCategory = (category: string): Post[] => {
  * @returns {Post[]} Array of Posts
  */
 export const getAllPosts = (): Post[] => {
-  const slugs = fs.readdirSync(postsDir)
-  const posts = slugs.map((slug) => getPostsBySlug(slug))
-  return posts
+  const slugs = fs.readdirSync(postsDir);
+  const posts = slugs.filter((slug) => slug.toLowerCase().endsWith('md')).map((slug) => getPostsBySlug(slug));
+  return posts;
 }
 
 export const getNextPost = (currentPostSlug: string) => {
   const allPosts = getAllPosts()
-  const currentIndex = allPosts.findIndex(post => post.slug === currentPostSlug)
+  const currentIndex = allPosts.findIndex(
+    (post) => post.slug === currentPostSlug
+  )
   const nextPost = allPosts[currentIndex + 1]
   return nextPost || null
 }
 
 export const getPreviousPost = (currentPostSlug: string) => {
   const allPosts = getAllPosts()
-  const currentIndex = allPosts.findIndex(post => post.slug === currentPostSlug);
-  const previousPost = allPosts[currentIndex - 1];
+  const currentIndex = allPosts.findIndex(
+    (post) => post.slug === currentPostSlug
+  )
+  const previousPost = allPosts[currentIndex - 1]
   return previousPost || null
 }

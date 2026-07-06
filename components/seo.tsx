@@ -19,7 +19,7 @@ const SEO = ({ title, keywords, heroImg, post, category }: any) => {
     const metaKeywords = configKeywords
     const imageSrc = post.frontMatter.image
     const image = `${siteUrl}${imageSrc}`
-    const canonical = `${siteUrl}${post.slug}`
+    const canonical = `${siteUrl}/blog/${post.slug}`
 
     return (
       <>
