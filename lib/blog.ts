@@ -11,6 +11,11 @@ export interface Post {
   content: string
 }
 
+/** Post metadata without the markdown body — for listing/card views that don't render content. */
+export type PostSummary = Omit<Post, "content">
+
+const toSummary = ({ content, ...summary }: Post): PostSummary => summary
+
 interface FrontMatter {
   /** Raw ISO 8601 date, suitable for sorting and structured data */
   date: string
@@ -48,19 +53,6 @@ export const getPostsBySlug = (slug: string): Post => {
 }
 
 /**
- * Retrieves all posts matching a given category
- * @param {string} category The category to filter posts by
- * @returns {Array<Post>} Posts matching the category
- */
-export const getPostsByCategory = (category: string): Post[] => {
-  const allPosts = getAllPosts()
-  const categoryPosts = allPosts.filter((post) =>
-    post.frontMatter.categories.includes(category)
-  )
-  return categoryPosts
-}
-
-/**
  * Retrieves all posts in html format, sorted newest first
  * @returns {Post[]} Array of Posts
  */
@@ -72,8 +64,24 @@ export const getAllPosts = (): Post[] => {
   return posts.sort((a, b) => (a.frontMatter.date < b.frontMatter.date ? 1 : -1))
 }
 
+/**
+ * Retrieves all posts' metadata (no markdown body), sorted newest first —
+ * for listing/card views that don't render post content.
+ */
+export const getAllPostSummaries = (): PostSummary[] => getAllPosts().map(toSummary)
+
+/**
+ * Retrieves all posts matching a given category, without markdown body content
+ * @param {string} category The category to filter posts by
+ * @returns {Array<PostSummary>} Posts matching the category
+ */
+export const getPostSummariesByCategory = (category: string): PostSummary[] => {
+  const allPosts = getAllPostSummaries()
+  return allPosts.filter((post) => post.frontMatter.categories.includes(category))
+}
+
 export const getAdjacentPosts = (currentPostSlug: string) => {
-  const allPosts = getAllPosts()
+  const allPosts = getAllPostSummaries()
   const currentIndex = allPosts.findIndex(
     (post) => post.slug === currentPostSlug
   )

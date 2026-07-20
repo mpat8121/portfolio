@@ -1,9 +1,9 @@
 import React from "react"
-import { Post } from "../lib/blog"
+import { PostSummary } from "../lib/blog"
 import Link from "next/link"
 import Image from "next/image"
 
-const Posts = ({ posts }: { posts: Post[] }) => (
+const Posts = ({ posts }: { posts: PostSummary[] }) => (
   <div className="container">
     <div className="columns is-multiline">
       {posts.map((post) => {

@@ -2,16 +2,16 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Posts from "../components/posts"
-import { getAllPosts, Post } from "../lib/blog"
+import { getAllPostSummaries, PostSummary } from "../lib/blog"
 
 export async function getStaticProps() {
-  const posts = getAllPosts()
+  const posts = getAllPostSummaries()
   return {
     props: { posts },
   }
 }
 
-const Blog = ({ posts }: { posts: Post[] }) => (
+const Blog = ({ posts }: { posts: PostSummary[] }) => (
   <Layout>
     <SEO title="All posts" path="/blog" />
     <Posts posts={posts} />

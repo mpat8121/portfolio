@@ -1,15 +1,15 @@
 import Layout from "../../components/layout"
 import Posts from "../../components/posts"
 import SEO from "../../components/seo"
-import { getAllPosts, getPostsByCategory, Post } from "../../lib/blog"
+import { getAllPosts, getPostSummariesByCategory, PostSummary } from "../../lib/blog"
 
 interface CategoryPageProps {
-  categoryPosts: Post[]
+  categoryPosts: PostSummary[]
   category: string
 }
 
 export async function getStaticProps({ params }: { params: { category: string } }) {
-  const categoryPosts = getPostsByCategory(params.category)
+  const categoryPosts = getPostSummariesByCategory(params.category)
   return {
     props: {
       categoryPosts,

@@ -4,17 +4,17 @@ import type { NextPage } from "next"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { getAllPosts, Post } from "../lib/blog"
+import { getAllPostSummaries, PostSummary } from "../lib/blog"
 import Posts from "../components/posts"
 
 export async function getStaticProps() {
-  const posts = getAllPosts()
+  const posts = getAllPostSummaries()
   return {
     props: { posts },
   }
 }
 
-const Home: NextPage<{ posts: Post[] }> = ({ posts }) => (
+const Home: NextPage<{ posts: PostSummary[] }> = ({ posts }) => (
   <Layout>
     <SEO title="All posts" path="/" />
     <Bio />
