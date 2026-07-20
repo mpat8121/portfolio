@@ -9,9 +9,7 @@ const Bio = () => {
       <div className="columns is-mobile is-multiline">
         <div className="column content has-text-centered">
           <div>
-            <p className="title" style={{ color: "var(--text)" }}>
-              A window into the Full-Stack World
-            </p>
+            <p className="title">A window into the Full-Stack World</p>
             <p>
               In this blog, I explore the world of full-stack web development. Here you will find
               everything I learned in over a decade on the job, from niche bug fixes, how-to&apos;s on mobile app development and API
@@ -27,33 +25,16 @@ const Bio = () => {
               or MongoDB. After building several indie apps currently sold in the major stores, I can share quite a few tidbits to make
               your life easier.
             </p>
-            <p style={{ color: "var(--text)" }}>
+            <p>
               Follow me on Twitter{" "}
-              <a
-                href={`https://twitter.com/${social.twitter}`}
-                style={{ color: "var(--text)" }}
-              >
-                @{social.twitter}
-              </a>{" "}
+              <a href={`https://twitter.com/${social.twitter}`}>@{social.twitter}</a>{" "}
               for updates and thoughts on life.
             </p>
             <p>
-              As featured on{" "}
-              <a href="https://tech-blogs.dev" style={{ color: "var(--text)" }}>
-                tech-blogs.dev
-              </a>
+              As featured on <a href="https://tech-blogs.dev">tech-blogs.dev</a>
             </p>
           </div>
         </div>
-        {/* <div className="column">
-          <figure className="image">
-            <img
-              style={{ filter: "var(--svg-color-filter)", maxHeight: "300px" }}
-              src="../blog-header-image.svg"
-              alt="Blog card feature"
-            />
-          </figure>
-        </div> */}
       </div>
     </div>
   )

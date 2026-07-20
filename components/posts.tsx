@@ -4,77 +4,55 @@ import Link from "next/link"
 import Image from "next/image"
 
 const Posts = ({ posts }: { posts: Post[] }) => (
-  <div className="columns is-multiline">
-    {posts.map((node) => {
-      const title = node.frontMatter.title || node.slug
-      const { categories, image } = node.frontMatter
+  <div className="container">
+    <div className="columns is-multiline">
+      {posts.map((post) => {
+        const title = post.frontMatter.title || post.slug
+        const { categories, image, dateDisplay, description } = post.frontMatter
 
-      return (
-        <div
-          className="column is-half-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd"
-          key={node.slug}
-        >
-          <div className="card has-equal-height">
-            <div className="card-image">
-              <figure className="image">
-                <Link
-                  style={{ boxShadow: `none`, color: "var(--textLink)" }}
-                  href={`/blog/${node.slug}`}
-                >
-                  <div
-                    style={{
-                      width: "100%",
-                      height: "300px",
-                      position: "relative",
-                    }}
-                  >
+        return (
+          <div
+            className="column is-half-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd"
+            key={post.slug}
+          >
+            <article className="card has-equal-height">
+              <div className="card-image">
+                <figure className="image post-card-image">
+                  <Link href={`/blog/${post.slug}`} className="post-card-link">
                     <Image
                       className="blog-image"
-                      width={"100"}
-                      height={"300"}
-                      // layout="fill"
-                      src={image ? image : ""}
-                      alt="Blog card feature"
-                      // objectFit='contain'
+                      src={image}
+                      alt={title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1216px) 50vw, 25vw"
+                      style={{ objectFit: "cover" }}
                     />
-                  </div>
-                </Link>
-              </figure>
-            </div>
-            <div className="card-content">
-              <h1 className="title">
-                <Link
-                  style={{ boxShadow: `none`, color: "var(--textLink)" }}
-                  href={`/blog/${node.slug}`}
-                >
-                  <span style={{ color: "var(--textLink)" }}>{title}</span>
-                </Link>
-              </h1>
-              <div className="tags">
-                {categories.map((category) => {
-                  return (
+                  </Link>
+                </figure>
+              </div>
+              <div className="card-content">
+                <h1 className="title">
+                  <Link href={`/blog/${post.slug}`} className="post-card-link">
+                    {title}
+                  </Link>
+                </h1>
+                <div className="tags">
+                  {categories.map((category) => (
                     <span key={category} className="tag">
-                      <Link
-                        style={{ boxShadow: `none`, color: "var(--textLink)" }}
-                        as={`/category/${category}`}
-                        href={{
-                          pathname: `/category/[category]`,
-                          query: { category },
-                        }}
-                      >
-                        <span className="tag-link">{category}</span>
+                      <Link href={`/category/${category}`} className="tag-link">
+                        {category}
                       </Link>
                     </span>
-                  )
-                })}
+                  ))}
+                </div>
+                <small>{dateDisplay}</small>
+                <p>{description}</p>
               </div>
-              <small>{node.frontMatter.date}</small>
-              <p>{node.frontMatter.description}</p>
-            </div>
+            </article>
           </div>
-        </div>
-      )
-    })}
+        )
+      })}
+    </div>
   </div>
 )
 

@@ -1,4 +1,3 @@
-import config from "../config"
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -7,11 +6,7 @@ import ContactForm from "../components/contactForm"
 const ContactPage = () => {
   return (
     <Layout>
-      <SEO
-        title="Contact"
-        keywords={config.keywords}
-        // image={image}
-      />
+      <SEO title="Contact" path="/contact" />
       <section className="hero is-fullheight">
         <div className="hero-body">
           <div className="container">

@@ -1,81 +1,69 @@
 import React from "react"
 import Head from "next/head"
-import config from "../config"
 import { ArticleJsonLd } from "next-seo"
+import config from "../config"
 import { Post } from "../lib/blog"
 
-const SEO = ({ title, keywords, heroImg, post, category }: any) => {
-  const {
-    title: configTitle,
-    description: configDesc,
-    keywords: configKeywords,
-    social,
-    siteUrl,
-  } = config
+interface SeoProps {
+  /** Page title. Ignored when `post` is set (the post's own title is used). */
+  title?: string
+  description?: string
+  /** Route path, e.g. "/" or "/category/sql" — used to build the canonical URL. Ignored when `post` is set. */
+  path?: string
+  image?: string
+  post?: Post
+}
 
-  if (post) {
-    const metaDescription = post.frontMatter.description || configDesc
-    const metaTitle = post.frontMatter.title || configTitle
-    const metaKeywords = configKeywords
-    const imageSrc = post.frontMatter.image
-    const image = `${siteUrl}${imageSrc}`
-    const canonical = `${siteUrl}/blog/${post.slug}`
+const resolveImage = (image: string | undefined): string => {
+  const src = image || config.image
+  return src.startsWith("http") ? src : `${config.siteUrl}${src}`
+}
 
-    return (
-      <>
+const SEO = ({ title, description, path, image, post }: SeoProps) => {
+  const metaTitle = post ? post.frontMatter.title : title || config.title
+  const metaDescription = post
+    ? post.frontMatter.description || config.description
+    : description || config.description
+  const canonicalPath = post ? `/blog/${post.slug}` : path || "/"
+  const canonical = `${config.siteUrl}${canonicalPath}`
+  const metaImage = resolveImage(post ? post.frontMatter.image : image)
+
+  return (
+    <>
+      <Head>
+        <title>{metaTitle}</title>
+        <meta name="description" content={metaDescription} />
+        <meta name="robots" content="follow, index" />
+        {!post && <meta name="keywords" content={config.keywords.join(", ")} />}
+        <meta name="monetization" content="$ilp.uphold.com/4giKKPBDELyR" />
+        <link rel="canonical" href={canonical} />
+
+        <meta property="og:type" content={post ? "article" : "website"} />
+        <meta property="og:title" content={metaTitle} />
+        <meta property="og:description" content={metaDescription} />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:image" content={metaImage} />
+        <meta property="og:site_name" content={config.title} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content={`@${config.social.twitter}`} />
+        <meta name="twitter:title" content={metaTitle} />
+        <meta name="twitter:description" content={metaDescription} />
+        <meta name="twitter:image" content={metaImage} />
+      </Head>
+      {post && (
         <ArticleJsonLd
+          type="BlogPosting"
           headline={metaTitle}
           description={metaDescription}
           url={canonical}
-          // openGraph={{
-          //   type: "website",
-          //   url: config.siteUrl,
-          //   title: metaTitle,
-          //   description: metaDescription,
-          //   locale: "en-AU",
-          //   images: [
-          //     {
-          //       url: image,
-          //       width: 800,
-          //       height: 600,
-          //       alt: `hero image for ${metaTitle}`,
-          //     },
-          //   ],
-          //   site_name: metaTitle,
-          // }}
-          // twitter={{
-          //   handle: config.social.twitter,
-          //   site: config.siteUrl,
-          //   cardType: "summary",
-          // }}
+          datePublished={post.frontMatter.date}
+          image={metaImage}
+          author={{ "@type": "Person", name: config.author }}
         />
-        <meta name="keywords" content={metaKeywords.join(",")}></meta>
-        <meta name="monetization" content="$ilp.uphold.com/4giKKPBDELyR"></meta>
-      </>
-    )
-  } else {
-    const url = category ? `${siteUrl}/categories/${category}` : siteUrl
-    return (
-      <Head>
-        <title>{title}</title>
-        <meta name="robots" content="follow, index" />
-        <meta name="keywords" content={keywords}></meta>
-        <meta content={title} name="description" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={title} />
-        <meta property="og:image" content={heroImg} />
-        <meta property="og:site_name" content={title} />
-        <meta property="twitter:card" content="summary" />
-        <meta property="twitter:creator" content={social.twitter} />
-        <meta property="twitter:title" content={title} />
-        <meta property="twitter:description" content={title} />
-        <meta property="twitter:image" content={heroImg} />
-        <meta name="monetization" content="$ilp.uphold.com/4giKKPBDELyR"></meta>
-        <link rel="canonical" href={url} />
-      </Head>
-    )
-  }
+      )}
+    </>
+  )
 }
 
 export default SEO

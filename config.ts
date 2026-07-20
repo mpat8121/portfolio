@@ -1,8 +1,20 @@
-const config: any = {
+interface SiteConfig {
+  title: string
+  author: string
+  description: string
+  siteUrl: string
+  social: {
+    twitter: string
+  }
+  keywords: string[]
+  image: string
+}
+
+const config: SiteConfig = {
   title: `Mick Patterson`,
   author: `Mick Patterson`,
-  description: `Short snippets of frequent functions, 
-    small tips and tricks I've found important and useful while building things, 
+  description: `Short snippets of frequent functions,
+    small tips and tricks I've found important and useful while building things,
     along with some case studies of my projects and bits about me and my story`,
   siteUrl: `https://www.mickpatterson.com.au`,
   social: {
@@ -21,6 +33,8 @@ const config: any = {
     `fullstack`,
     `html`,
   ],
+  image: ``,
 }
-config.image =`${config.siteUrl}/blog-header-image.svg`;
+config.image = `${config.siteUrl}/blog-header-image.svg`
+
 export default config

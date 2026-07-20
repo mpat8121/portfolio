@@ -1,5 +1,3 @@
-import "typeface-montserrat"
-import "typeface-merriweather"
 import { AppProps } from "next/app"
 import "../styles/global.scss"
 import Script from "next/script"
@@ -61,24 +59,25 @@ function MyApp({ Component, pageProps }: AppProps) {
       <BuyMeACoffee />
       <Component {...pageProps} />
       <CookieConsent
-        // style={{ width: '94%'}}
-        buttonStyle={{
-          background: "var(--consent-accept)",
-          color: "var(--consent-accept-text)",
-        }}
+        disableStyles
         location="bottom"
         buttonText="Accept"
         enableDeclineButton={true}
         declineButtonText="Decline"
         cookieName="google-analytics"
+        expires={365}
+        containerClasses="cookie-consent-container"
+        contentClasses="cookie-consent-content"
+        buttonWrapperClasses="cookie-consent-btn-wrapper"
+        buttonClasses="cookie-consent-btn cookie-consent-btn--accept"
+        declineButtonClasses="cookie-consent-btn cookie-consent-btn--decline"
+        ariaAcceptLabel="Accept cookies"
+        ariaDeclineLabel="Decline cookies"
         onAccept={() => handleAccept(true)}
         onDecline={() => handleAccept(false)}
       >
-        This site uses cookies to improve your experience. Our{" "}
-        <Link href={`/privacy`}>
-          <span style={{ color: "var(--consent-accept-text)" }}>Privacy Policy</span>
-        </Link>{" "}
-        has more details
+        This site uses cookies to improve your experience. Read our{" "}
+        <Link href={`/privacy`}>Privacy Policy</Link> to learn more.
       </CookieConsent>
     </>
   )

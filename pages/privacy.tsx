@@ -1,13 +1,11 @@
-import config from "../config"
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const PrivacyPage = () => {
-  const { title, keywords } = config
   return (
     <Layout>
-      <SEO title={title} keywords={keywords} />
+      <SEO title="Privacy Policy" path="/privacy" />
       <div className="columns">
         <div className="column">
           <div className="content">

@@ -1,5 +1,6 @@
 import React from "react"
 import Link from "next/link"
+import dynamic from "next/dynamic"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
@@ -7,8 +8,7 @@ import {
   getPostsBySlug,
   getAllPosts,
   Post,
-  getNextPost,
-  getPreviousPost,
+  getAdjacentPosts,
 } from "../../lib/blog"
 import {
   FacebookIcon,
@@ -18,18 +18,21 @@ import {
 } from "react-share"
 import config from "../../config"
 import ReactMarkdown from "react-markdown"
-import remarkHtml from "remark-html"
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
-import { a11yDark } from "react-syntax-highlighter/dist/cjs/styles/prism"
+import { SUPPORTED_LANGUAGES } from "../../components/supportedCodeLanguages"
 
-export async function getStaticProps({ params }: any) {
+const CodeBlock = dynamic(() => import("../../components/codeBlock"))
+
+interface BlogPostProps extends Post {
+  nextPost: Post | null
+  previousPost: Post | null
+}
+
+export async function getStaticProps({ params }: { params: { slug: string } }) {
   const post = getPostsBySlug(params.slug)
-  const nextPost = getNextPost(params.slug)
-  const previousPost = getPreviousPost(params.slug)
+  const { nextPost, previousPost } = getAdjacentPosts(params.slug)
   return {
     props: {
       ...post,
-      content: post.content,
       nextPost,
       previousPost,
     },
@@ -40,19 +43,18 @@ export async function getStaticPaths() {
   const posts = getAllPosts()
 
   return {
-    paths: posts.map((post) => {
-      return {
-        params: {
-          slug: post.slug,
-        },
-      }
-    }),
+    paths: posts.map((post) => ({
+      params: {
+        slug: post.slug,
+      },
+    })),
     fallback: false,
   }
 }
 
-const BlogPost = (post: any) => {
+const BlogPost = (post: BlogPostProps) => {
   const shareUrl = `${config.siteUrl}/blog/${post.slug}`
+
   return (
     <Layout>
       <SEO post={post} />
@@ -61,97 +63,82 @@ const BlogPost = (post: any) => {
         itemScope
         itemType="http://schema.org/Article"
       >
-        <div className="container">
-          <header className="content">
-            <h1
-              className="title"
-              style={{ color: "var(--text)" }}
-              itemProp="headline"
-            >
+        <div className="container blog-post-container">
+          <header className="content blog-post-header">
+            <h1 className="title" itemProp="headline">
               {post.frontMatter.title}
             </h1>
-            <p className="content">{post.frontMatter.date}</p>
+            <p className="content">{post.frontMatter.dateDisplay}</p>
             <p className="content">
               <span className="tags">
-                {post.frontMatter.categories.map(
-                  (category: string, index: number) => {
-                    return (
-                      <Link
-                        key={index}
-                        href={`/category/${category}`}
-                        style={{ color: "var(--text)" }}
-                      >
-                        <span key={category} className="tag">
-                          {category}
-                        </span>
-                      </Link>
-                    )
-                  }
-                )}
+                {post.frontMatter.categories.map((category) => (
+                  <Link key={category} href={`/category/${category}`}>
+                    <span className="tag">{category}</span>
+                  </Link>
+                ))}
               </span>
             </p>
           </header>
-          <ReactMarkdown
-            // className="content"
-            remarkPlugins={[remarkHtml]}
-            components={{
-              code({ node, className, children, ...props }) {
-                const match = /language-(\w+)/.exec(className || "")
-                return match ? (
-                  <SyntaxHighlighter
-                    style={a11yDark as any}
-                    language={match[1]}
-                    PreTag="div"
-                    //{...props}
-                  >
-                    {String(children).replace(/\n$/, "")}
-                  </SyntaxHighlighter>
-                ) : (
-                  <code className={className} {...props}>
-                    {children}
-                  </code>
-                )
-              },
-            }}
-          >
-            {post.content}
-          </ReactMarkdown>
+          <div className="content blog-post-content">
+            <ReactMarkdown
+              components={{
+                pre({ children }) {
+                  return <>{children}</>
+                },
+                code({ node, className, children, ...props }) {
+                  const match = /language-(\w+)/.exec(className || "")
+                  const isBlock =
+                    node?.position &&
+                    node.position.start.line !== node.position.end.line
+                  const codeText = String(children).replace(/\n$/, "")
+                  const language = match?.[1]
+
+                  if (isBlock) {
+                    if (language && SUPPORTED_LANGUAGES.has(language)) {
+                      return (
+                        <CodeBlock language={language}>{codeText}</CodeBlock>
+                      )
+                    }
+
+                    return (
+                      <pre className="blog-code-block">
+                        <code>{codeText}</code>
+                      </pre>
+                    )
+                  }
+
+                  return (
+                    <code className="inline-code" {...props}>
+                      {children}
+                    </code>
+                  )
+                },
+              }}
+            >
+              {post.content}
+            </ReactMarkdown>
+          </div>
           <div className="has-text-centered">
             <p className="content">If you liked this post, please share it!</p>
             <TwitterShareButton url={shareUrl} title={post.frontMatter.title}>
               <TwitterIcon size={32} round />
             </TwitterShareButton>
-            <FacebookShareButton
-              url={shareUrl}
-              //</div>quote={post.frontMatter.title}
-            >
+            <FacebookShareButton url={shareUrl}>
               <FacebookIcon size={32} round />
             </FacebookShareButton>
           </div>
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
+          <ul className="blog-post-nav">
             <li>
               {post.previousPost && (
-                <Link href={`${config.siteUrl}/blog/${post.previousPost.slug}`}>
-                  <span style={{ color: "var(--text)" }}>
-                    ← {post.previousPost.frontMatter.title}
-                  </span>
+                <Link href={`/blog/${post.previousPost.slug}`}>
+                  ← {post.previousPost.frontMatter.title}
                 </Link>
               )}
             </li>
             <li>
               {post.nextPost && (
-                <Link href={`${config.siteUrl}/blog/${post.nextPost.slug}`}>
-                  <span style={{ color: "var(--text)" }}>
-                    {post.nextPost.frontMatter.title} →
-                  </span>
+                <Link href={`/blog/${post.nextPost.slug}`}>
+                  {post.nextPost.frontMatter.title} →
                 </Link>
               )}
             </li>

@@ -3,12 +3,17 @@ import Posts from "../../components/posts"
 import SEO from "../../components/seo"
 import { getAllPosts, getPostsByCategory, Post } from "../../lib/blog"
 
-export async function getStaticProps({ params }: any) {
+interface CategoryPageProps {
+  categoryPosts: Post[]
+  category: string
+}
+
+export async function getStaticProps({ params }: { params: { category: string } }) {
   const categoryPosts = getPostsByCategory(params.category)
   return {
     props: {
       categoryPosts,
-      category: params.category
+      category: params.category,
     },
   }
 }
@@ -35,10 +40,10 @@ export async function getStaticPaths() {
   }
 }
 
-const CategoryPage = ({ categoryPosts, category }: any) => {
+const CategoryPage = ({ categoryPosts, category }: CategoryPageProps) => {
   return (
     <Layout>
-      <SEO title={category} category={category} />
+      <SEO title={`Category: ${category}`} path={`/category/${category}`} />
       <Posts posts={categoryPosts} />
     </Layout>
   )

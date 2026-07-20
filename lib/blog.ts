@@ -12,10 +12,16 @@ export interface Post {
 }
 
 interface FrontMatter {
+  /** Raw ISO 8601 date, suitable for sorting and structured data */
   date: string
+  /** Human-readable date for display, e.g. "02 June, 2022" */
+  dateDisplay: string
   excerpt: string
   categories: string[]
-  [key: string]: any
+  title: string
+  description: string
+  image: string
+  path?: string
 }
 
 /**
@@ -28,14 +34,14 @@ export const getPostsBySlug = (slug: string): Post => {
   const fullPath = join(postsDir, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, "utf8")
   const { data, content, excerpt } = matter(fileContents)
-  const date = format(data.date, "dd MMMM, yyyy")
+  const frontMatterData = data as Omit<FrontMatter, "date" | "dateDisplay" | "excerpt">
   return {
     slug: realSlug,
     frontMatter: {
-      ...data,
-      date,
+      ...frontMatterData,
+      date: new Date(data.date).toISOString(),
+      dateDisplay: format(data.date, "dd MMMM, yyyy"),
       excerpt: excerpt ? excerpt : "",
-      categories: data.categories,
     },
     content,
   }
@@ -55,29 +61,24 @@ export const getPostsByCategory = (category: string): Post[] => {
 }
 
 /**
- * Retrieves all posts in html format
+ * Retrieves all posts in html format, sorted newest first
  * @returns {Post[]} Array of Posts
  */
 export const getAllPosts = (): Post[] => {
-  const slugs = fs.readdirSync(postsDir);
-  const posts = slugs.filter((slug) => slug.toLowerCase().endsWith('md')).map((slug) => getPostsBySlug(slug));
-  return posts;
+  const slugs = fs.readdirSync(postsDir)
+  const posts = slugs
+    .filter((slug) => slug.toLowerCase().endsWith(".md"))
+    .map((slug) => getPostsBySlug(slug))
+  return posts.sort((a, b) => (a.frontMatter.date < b.frontMatter.date ? 1 : -1))
 }
 
-export const getNextPost = (currentPostSlug: string) => {
+export const getAdjacentPosts = (currentPostSlug: string) => {
   const allPosts = getAllPosts()
   const currentIndex = allPosts.findIndex(
     (post) => post.slug === currentPostSlug
   )
-  const nextPost = allPosts[currentIndex + 1]
-  return nextPost || null
-}
-
-export const getPreviousPost = (currentPostSlug: string) => {
-  const allPosts = getAllPosts()
-  const currentIndex = allPosts.findIndex(
-    (post) => post.slug === currentPostSlug
-  )
-  const previousPost = allPosts[currentIndex - 1]
-  return previousPost || null
+  return {
+    previousPost: allPosts[currentIndex - 1] || null,
+    nextPost: allPosts[currentIndex + 1] || null,
+  }
 }
