@@ -9,29 +9,34 @@ const Bio = () => {
       <div className="columns is-mobile is-multiline">
         <div className="column content has-text-centered">
           <div>
-            <p className="title">A window into the Full-Stack World</p>
+            <p className="title">The Full-Stack Log</p>
             <p>
-              In this blog, I explore the world of full-stack web development. Here you will find
-              everything I learned in over a decade on the job, from niche bug fixes, how-to&apos;s on mobile app development and API
-              configuration questions to info about the life of a web developer.
+              I&apos;m a full-stack developer based in Sydney with over a decade
+              in the industry. This blog is where I write up the bug fixes,
+              architecture decisions and production lessons I&apos;d otherwise
+              lose to a Slack thread. Stuff that only makes sense
+              once you&apos;ve hit it in the wild.
             </p>
             <p>
-              For front-end developers I will be outlining common
-              configurations and quirks you may find when working with JavaScript, Angular,
-              React, Flutter and Ionic/Capacitor.js.
+              Day-to-day I work across the stack &dash; Node.js, C#/.NET, SQL
+              and MongoDB on the back end, Azure infrastructure and DevOps,
+              security hardening, and solutions architecture for client and
+              vendor integrations. On the front end I&apos;ve spent plenty of
+              time in JavaScript, Angular and React.
             </p>
             <p>
-              These days I most commonly work on the back-end using Node.Js, C#/.NET and SQL
-              or MongoDB. After building several indie apps currently sold in the major stores, I can share quite a few tidbits to make
-              your life easier.
+              I&apos;m also co-founder and technical lead of{" "}
+              <a href="https://defectwise.com.au">DefectWise</a>, a SaaS
+              platform for construction defect management. This means
+              most of what I write here is informed by building and running a
+              real product, not just side projects.
             </p>
             <p>
               Follow me on Twitter{" "}
-              <a href={`https://twitter.com/${social.twitter}`}>@{social.twitter}</a>{" "}
-              for updates and thoughts on life.
-            </p>
-            <p>
-              As featured on <a href="https://tech-blogs.dev">tech-blogs.dev</a>
+              <a href={`https://twitter.com/${social.twitter}`}>
+                @{social.twitter}
+              </a>{" "}
+              for updates and thoughts on the industry.
             </p>
           </div>
         </div>
